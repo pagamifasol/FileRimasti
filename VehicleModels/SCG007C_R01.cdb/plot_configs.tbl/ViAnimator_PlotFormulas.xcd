@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VI-ANIMATOR>
+  <viframework::viobjects::CalculatedComponent expression="res(&apos;Aero.DownForceF&apos;)/(res(&apos;Aero.DownForceF&apos;)+res(&apos;Aero.DownForceR&apos;))" name="AeroBalance"></viframework::viobjects::CalculatedComponent>
+  <viframework::viobjects::CalculatedComponent expression="res(&apos;Aero.DragForce&apos;)/(0.5*1.18*res(&apos;Chassis.Velx&apos;)*res(&apos;Chassis.Velx&apos;))*1e6" name="SCx"></viframework::viobjects::CalculatedComponent>
+  <viframework::viobjects::CalculatedComponent expression="(res(&apos;Aero.DownForceF&apos;)+res(&apos;Aero.DownForceR&apos;))/(0.5*1.18*res(&apos;Chassis.Velx&apos;)*res(&apos;Chassis.Velx&apos;))*1e6" name="SCz"></viframework::viobjects::CalculatedComponent>
+</VI-ANIMATOR>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<afc xmlns="http://www.mscsoftware.com/:vfc" xmlns:afc="http://www.mscsoftware.com/:afc">
+     <afc:Bibliography>
+          <File schema="afc" version="2.0.0.0" URI="mdids://SCG007C_R01/bumpstops.tbl/Rear_nonlin_6Hz_32mm_16000N.xml" publicationDate="2020-04-22 14:27:19+02:00"/>
+          <Revision version="17.0"/>
+          <Corporation author="MSC.Software" URI="http://www.mscsoftware.com/"/>
+          <Author user="Stefano.Rapisarda" name="-unknown name-"/>
+          <Environment hostName="PE-NTBK-007" operatingSystem="MS Windows NT 6.2"/>
+          <Application name="MSC/AFC" version="02.00.00"/>
+     </afc:Bibliography>
+     <afc:Units>
+          <afc:UnitSetting name="angle" current="deg"/>
+          <afc:UnitSetting name="current" current="ampere"/>
+          <afc:UnitSetting name="force" current="newton"/>
+          <afc:UnitSetting name="length" current="mm"/>
+          <afc:UnitSetting name="luminosity" current="candela"/>
+          <afc:UnitSetting name="mass" current="kg"/>
+          <afc:UnitSetting name="quantity" current="mole"/>
+          <afc:UnitSetting name="solidAngle" current="steradian"/>
+          <afc:UnitSetting name="temperature" current="kelvin"/>
+          <afc:UnitSetting name="time" current="sec"/>
+          <afc:UnitSetting name="frequency" current="Hz"/>
+     </afc:Units>
+     <BumpStopProperties name="bumpstop" active="true" userDefined="false" diameter="0" height="0" dampingMethod="linear" dampingRate="0" scaleFactor="1" linearRate="0" quadraticRate="0" cubicRate="0" method="polynomial">
+          <BumpStopSpline name="spline_data" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Compression" yLabel="Force" xUnit="length" yUnit="force" datablock="Bumpstop Force vs. Compression">
+            <![CDATA[
+              0               0
+              1              10
+              2              40
+              3              93
+              4             170
+              5             270
+              6             395
+              7             544
+              8             718
+              9             917
+             10            1141
+             11            1391
+             12            1667
+             13            1968
+             14            2296
+             15            2650
+             16            3031
+             17            3438
+             18            3871
+             19            4332
+             20            4819
+             21            5333
+             22            5875
+             23            6443
+             24            7039
+             25            7663
+             26            8313
+             27            8992
+             28            9698
+             29           10432
+             30           11193
+             31           11983
+             32           12800
+             33           13645
+             34           14519
+             35           15421
+             36           16350
+             37           17309
+             38           18295
+             39           19310
+             40           20353
+             41           21425
+             42           22525
+             43           23654
+             44           24812
+             45           25999
+]]>
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </BumpStopSpline>
+          <BumpStopSpline name="damping_data" id="0" active="true" userDefined="false" interpolation_method="akima">
+            <![CDATA[
+         -50000               0
+         -20000               0
+              0               0
+          20000               0
+          50000               0
+]]>
+          </BumpStopSpline>
+     </BumpStopProperties>
+</afc>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<afc xmlns="http://www.mscsoftware.com/:vfc" xmlns:afc="http://www.mscsoftware.com/:afc">
+     <afc:Bibliography>
+          <File schema="afc" version="2.0.0.0" URI="mdids://SCG007C_R01/dampers.tbl/DAMPER_SCG003C_Front_Estimate2019.xml" publicationDate="2019-11-06 15:11:35+01:00"/>
+          <Revision version="17.0"/>
+          <Corporation author="MSC.Software" URI="http://www.mscsoftware.com/"/>
+          <Author user="Stefano.Rapisarda" name="-unknown name-"/>
+          <Environment hostName="PE-NTBK-007" operatingSystem="MS Windows NT 6.2"/>
+          <Application name="MSC/AFC" version="02.00.00"/>
+     </afc:Bibliography>
+     <afc:Units>
+          <afc:UnitSetting name="angle" current="deg"/>
+          <afc:UnitSetting name="current" current="ampere"/>
+          <afc:UnitSetting name="force" current="newton"/>
+          <afc:UnitSetting name="length" current="mm"/>
+          <afc:UnitSetting name="luminosity" current="candela"/>
+          <afc:UnitSetting name="mass" current="kg"/>
+          <afc:UnitSetting name="quantity" current="mole"/>
+          <afc:UnitSetting name="solidAngle" current="steradian"/>
+          <afc:UnitSetting name="temperature" current="kelvin"/>
+          <afc:UnitSetting name="time" current="sec"/>
+          <afc:UnitSetting name="frequency" current="Hz"/>
+     </afc:Units>
+     <DamperProperties name="damper" active="true" userDefined="false" method="non_linear" upperDiameter="60" upperLength="50" lowerDiameter="300" lowerLength="300" rate="30" dampingMethod="non_linear" gasPreloadMethod="none" gasPreloadConstant="0">
+          <Spline name="spline_data" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Damper Velocity (positive in extension)" yLabel="Damper Force" xUnit="velocity" yUnit="force" datablock="Damper Force vs. Velocity">
+            <![CDATA[
+       -1003.17        -9978.96
+        -903.43        -9420.92
+        -801.63        -8990.54
+        -701.67         -8725.4
+        -600.73        -8397.63
+        -525.08        -8138.52
+        -339.67         -7130.9
+        -261.67        -6810.94
+        -182.74      -6280.8592
+        -130.82       -5577.735
+         -99.77        -4864.86
+         -77.83       -3258.184
+         -51.86       -1612.624
+         -29.91        -618.016
+         -25.94        -485.288
+         -19.95        -317.784
+         -12.96        -173.976
+          -6.99         -126.16
+              0               0
+           6.99         105.248
+          12.96         117.192
+          19.95         124.336
+          25.94         129.912
+          29.91         137.104
+          51.87          264.16
+          77.79          495.76
+          99.74         824.652
+         130.65       1263.3005
+         182.56       1508.0338
+         261.38         1717.92
+         339.28         1868.99
+         523.25         2309.45
+            599         2493.02
+         699.63         2723.29
+            800         2913.36
+         900.62         3119.47
+        1000.71          3331.1
+]]>
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </Spline>
+          <Spline name="gasPreloadForceCurve" id="0" active="true" userDefined="false" interpolation_method="akima">
+            <![CDATA[
+         -50000               0
+         -20000               0
+              0               0
+          20000               0
+          50000               0
+]]>
+          </Spline>
+     </DamperProperties>
+</afc>

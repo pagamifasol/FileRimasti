@@ -1,0 +1,1764 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<afc xmlns="http://www.mscsoftware.com/:vfc" xmlns:afc="http://www.mscsoftware.com/:afc">
+     <afc:Bibliography>
+          <File schema="afc" version="2.0.0.0" URI="mdids://SCG007C_R01/subsystems.tbl/SUSP_FRONT_LMPH_V07_iss1_LCAF0_LCAR0.xml" publicationDate="2020-10-23 16:41:17+02:00"/>
+          <Revision version="17.0"/>
+          <Corporation author="MSC.Software" URI="http://www.mscsoftware.com/"/>
+          <Author user="Stefano.Rapisarda" name="-unknown name-"/>
+          <Environment hostName="PE-NTBK-047" operatingSystem="MS Windows NT 6.2"/>
+          <Application name="MSC/AFC" version="02.00.00"/>
+     </afc:Bibliography>
+     <afc:Units>
+          <afc:UnitSetting name="angle" current="deg"/>
+          <afc:UnitSetting name="current" current="ampere"/>
+          <afc:UnitSetting name="force" current="newton"/>
+          <afc:UnitSetting name="length" current="mm"/>
+          <afc:UnitSetting name="luminosity" current="candela"/>
+          <afc:UnitSetting name="mass" current="kg"/>
+          <afc:UnitSetting name="quantity" current="mole"/>
+          <afc:UnitSetting name="solidAngle" current="steradian"/>
+          <afc:UnitSetting name="temperature" current="kelvin"/>
+          <afc:UnitSetting name="time" current="sec"/>
+          <afc:UnitSetting name="frequency" current="Hz"/>
+     </afc:Units>
+     <Subsystem name="SUSP_FRONT_LMPH_V07_iss1_LCAF0_LCAR0" active="true" userDefined="false">
+          <AntiRollBar name="front" active="true" userDefined="false" attach_part_1="0" attach_part_2="0" attach_location_1="(0 0 0)" attach_location_2="(0 0 0)" activeFlag="true">
+               <AntiRollBarContext active="true" propertyURI="mdids://SCG007C_R01/springs.tbl/SUSP_FRONT_LMPH_V07_iss1_LCAF0_LCAR0_anti_roll_bar.xml" userDefined="false" context="default" offset="(0 0 0)" installMethod="preload" installValue="0" scaleFactor="1.222">
+                    <CRTSuspensionData name="compression_ratio" active="true" userDefined="false" method="constant" constant="1.0" unit="angle/length" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="Deformation" xUnit="length" yUnit="angle" datablock="ARB Deformation vs. Delta Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -60 -46.6667 -33.3333 -20 -6.66667 6.66667 20 33.3333 46.6667 60
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                18.7844 14.5773 10.3952 6.23036 2.07567 -2.07567 -6.23036 -10.3952 -14.5773 -18.7844 18.7619 14.5675 10.3921 6.23 2.07579 -2.07579 -6.23 -10.3921 -14.5675 -18.7619 18.7429 14.5604 10.3909 6.23074 2.07628 -2.07628 -6.23074 -10.3909 -14.5604 -18.7429 18.7263 14.555 10.3909 6.23229 2.07704 -2.07704 -6.23229 -10.3909 -14.555 -18.7263 18.711 14.5508 10.3918 6.23431 2.07796 -2.07796 -6.23431 -10.3918 -14.5508 -18.711 18.6956 14.5466 10.3929 6.2365 2.07895 -2.07895 -6.2365 -10.3929 -14.5466 -18.6956 18.6791 14.5419 10.3936 6.23852 2.07988 -2.07988 -6.23852 -10.3936 -14.5419 -18.6791 18.6603 14.5356 10.3933 6.24005 2.08066 -2.08066 -6.24005 -10.3933 -14.5356 -18.6603 18.6377 14.5268 10.3916 6.24073 2.08117 -2.08117 -6.24073 -10.3916 -14.5268 -18.6377 18.6102 14.5147 10.3876 6.24019 2.08129 -2.08129 -6.24019 -10.3876 -14.5147 -18.6102 18.5764 14.4981 10.3808 6.23806 2.0809 -2.0809 -6.23806 -10.3808 -14.4981 -18.5764 18.5347 14.4761 10.3705 6.23392 2.07986 -2.07986 -6.23392 -10.3705 -14.4761 -18.5347 18.4835 14.4476 10.3558 6.22733 2.07802 -2.07802 -6.22733 -10.3558 -14.4476 -18.4835
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0 2.5 5 7.5 10 12.5 15 17.5 20 22.5 25 27.5 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+               </AntiRollBarContext>
+          </AntiRollBar>
+          <CRTSuspensionGeneralProperties name="front" active="true" userDefined="false" trackWidth="1637.25">
+               <Spline3d name="left_x_vs_z" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="X-coordinate" xUnit="length" yUnit="length" datablock="Left X-coordinate vs. Jounce" zLabel="Paired Wheel Jounce" zUnit="length">
+                    <afc:VectorAttribute name="x_data">
+                      -30 -20 -10 0 10 20 30 40 50 60
+                    </afc:VectorAttribute>
+                    <afc:VectorAttribute name="y_data">
+                      1.39529 1.03449 0.607144 0.118947 -0.425864 -1.02422 -1.674 -2.37389 -3.12328 -3.92218
+                    </afc:VectorAttribute>
+                    <afc:VectorAttribute name="z_data">
+                      0
+                    </afc:VectorAttribute>
+               </Spline3d>
+               <Spline3d name="left_y_vs_z" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="Y-coordinate" xUnit="length" yUnit="length" datablock="Left Y-coordinate vs. Jounce" zLabel="Paired Wheel Jounce" zUnit="length">
+                    <afc:VectorAttribute name="x_data">
+                      -30 -20 -10 0 10 20 30 40 50 60
+                    </afc:VectorAttribute>
+                    <afc:VectorAttribute name="y_data">
+                      -2.88125 -2.17256 -1.85129 -1.90849 -2.33761 -3.13427 -4.29594 -5.82186 -7.71289 -9.971489999999999
+                    </afc:VectorAttribute>
+                    <afc:VectorAttribute name="z_data">
+                      0
+                    </afc:VectorAttribute>
+               </Spline3d>
+               <Spline3d name="right_x_vs_z" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="X-coordinate" xUnit="length" yUnit="length" datablock="Right X-coordinate vs. Jounce" zLabel="Paired Wheel Jounce" zUnit="length">
+                    <afc:VectorAttribute name="x_data">
+                      -30 -20 -10 0 10 20 30 40 50 60
+                    </afc:VectorAttribute>
+                    <afc:VectorAttribute name="y_data">
+                      1.39529 1.03449 0.607144 0.118947 -0.425864 -1.02422 -1.674 -2.37389 -3.12328 -3.92218
+                    </afc:VectorAttribute>
+                    <afc:VectorAttribute name="z_data">
+                      0
+                    </afc:VectorAttribute>
+               </Spline3d>
+               <Spline3d name="right_y_vs_z" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="Y-coordinate" xUnit="length" yUnit="length" datablock="Right Y-coordinate vs. Jounce" zLabel="Paired Wheel Jounce" zUnit="length">
+                    <afc:VectorAttribute name="x_data">
+                      -30 -20 -10 0 10 20 30 40 50 60
+                    </afc:VectorAttribute>
+                    <afc:VectorAttribute name="y_data">
+                      2.88125 2.17256 1.85129 1.90849 2.33761 3.13427 4.29594 5.82186 7.71289 9.971489999999999
+                    </afc:VectorAttribute>
+                    <afc:VectorAttribute name="z_data">
+                      0
+                    </afc:VectorAttribute>
+               </Spline3d>
+          </CRTSuspensionGeneralProperties>
+          <CRTKinematicsPair name="front" active="true" userDefined="false" symmetry="left_right">
+               <CRTKinematics name="left" active="true" userDefined="false">
+                    <CRTSuspensionData name="camber_Jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/length" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="Camber" xUnit="length" yUnit="angle" datablock="Camber vs. Jounce" zLabel="Paired Wheel Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                -2.68876 -2.76338 -2.86758 -3 -3.15978 -3.34645 -3.55988 -3.80027 -4.06813 -4.36425
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="toe_Jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/length" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="Toe" xUnit="length" yUnit="angle" datablock="Toe vs. Jounce" zLabel="Paired Wheel Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                -0.268124 -0.203218 -0.154566 -0.12 -0.0979273 -0.087211 -0.0870838 -0.0970887 -0.11704 -0.146998
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_Jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/length" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="Side-View Angle" xUnit="length" yUnit="angle" datablock="Side-View Angle vs. Jounce" zLabel="Paired Wheel Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                -0.907987 -0.607418 -0.303031 0.00464097 0.315238 0.628532 0.944406 1.26284 1.58391 1.90777
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+               </CRTKinematics>
+          </CRTKinematicsPair>
+          <CRTCompliancePair name="front" active="true" userDefined="false" symmetry="none">
+               <CRTCompliance name="left" active="true" userDefined="false" auxConstantWheelTravel="0" auxConstantWheelTravelFlag="false">
+                    <CRTSuspensionData name="toe_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Toe Angle" xUnit="force" yUnit="angle" datablock="Toe vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="toe_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Toe Angle" xUnit="force" yUnit="angle" datablock="Toe vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="toe_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/torque" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Toe Angle" xUnit="torque" yUnit="angle" datablock="Toe vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -500000 -375000 -250000 -125000 0 125000 250000 375000 500000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="toe_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Toe Angle" xUnit="force" yUnit="angle" datablock="Toe vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="toe_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Toe Angle" xUnit="force" yUnit="angle" datablock="Toe vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1474.55 -869.847 -241.413 410.18 1083.17 1774.3 2478.36 3187.42 3889.89 4569.07
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Camber Angle" xUnit="force" yUnit="angle" datablock="Camber vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Camber Angle" xUnit="force" yUnit="angle" datablock="Camber vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/torque" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Camber Angle" xUnit="torque" yUnit="angle" datablock="Camber vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -500000 -375000 -250000 -125000 0 125000 250000 375000 500000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Camber Angle" xUnit="force" yUnit="angle" datablock="Camber vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Camber Angle" xUnit="force" yUnit="angle" datablock="Camber vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1474.55 -869.847 -241.413 410.18 1083.17 1774.3 2478.36 3187.42 3889.89 4569.07
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Side View Angle" xUnit="force" yUnit="angle" datablock="Side View Angle vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Side View Angle" xUnit="force" yUnit="angle" datablock="Side View Angle vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/torque" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Side View Angle" xUnit="torque" yUnit="angle" datablock="Side View Angle vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -500000 -375000 -250000 -125000 0 125000 250000 375000 500000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Side View Angle" xUnit="force" yUnit="angle" datablock="Side View Angle vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Side View Angle" xUnit="force" yUnit="angle" datablock="Side View Angle vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1474.55 -869.847 -241.413 410.18 1083.17 1774.3 2478.36 3187.42 3889.89 4569.07
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="zx" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Track variation" xUnit="force" yUnit="length" datablock="Track variation vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="z" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Track variation" xUnit="force" yUnit="length" datablock="Track variation vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/torque" mirror="z" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Track variation" xUnit="torque" yUnit="length" datablock="Track variation vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -500000 -375000 -250000 -125000 0 125000 250000 375000 500000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="zx" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Track variation" xUnit="force" yUnit="length" datablock="Track variation vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="zx" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Track variation" xUnit="force" yUnit="length" datablock="Track variation vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1474.55 -869.847 -241.413 410.18 1083.17 1774.3 2478.36 3187.42 3889.89 4569.07
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Base variation" xUnit="force" yUnit="length" datablock="Base variation vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Base variation" xUnit="force" yUnit="length" datablock="Base variation vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/torque" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Base variation" xUnit="torque" yUnit="length" datablock="Base variation vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -500000 -375000 -250000 -125000 0 125000 250000 375000 500000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Base variation" xUnit="force" yUnit="length" datablock="Base vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Base variation" xUnit="force" yUnit="length" datablock="Base variation vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1474.55 -869.847 -241.413 410.18 1083.17 1774.3 2478.36 3187.42 3889.89 4569.07
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+               </CRTCompliance>
+               <CRTCompliance name="right" active="true" userDefined="false" auxConstantWheelTravel="0" auxConstantWheelTravelFlag="false">
+                    <CRTSuspensionData name="toe_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Toe Angle" xUnit="force" yUnit="angle" datablock="Toe vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="toe_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Toe Angle" xUnit="force" yUnit="angle" datablock="Toe vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="toe_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/torque" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Toe Angle" xUnit="torque" yUnit="angle" datablock="Toe vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -500000 -375000 -250000 -125000 0 125000 250000 375000 500000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="toe_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Toe Angle" xUnit="force" yUnit="angle" datablock="Toe vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="toe_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Toe Angle" xUnit="force" yUnit="angle" datablock="Toe vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1474.55 -869.847 -241.413 410.18 1083.17 1774.3 2478.36 3187.42 3889.89 4569.07
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Camber Angle" xUnit="force" yUnit="angle" datablock="Camber vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Camber Angle" xUnit="force" yUnit="angle" datablock="Camber vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/torque" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Camber Angle" xUnit="torque" yUnit="angle" datablock="Camber vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -500000 -375000 -250000 -125000 0 125000 250000 375000 500000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Camber Angle" xUnit="force" yUnit="angle" datablock="Camber vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Camber Angle" xUnit="force" yUnit="angle" datablock="Camber vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1474.55 -869.847 -241.413 410.18 1083.17 1774.3 2478.36 3187.42 3889.89 4569.07
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Side View Angle" xUnit="force" yUnit="angle" datablock="Side View Angle vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Side View Angle" xUnit="force" yUnit="angle" datablock="Side View Angle vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/torque" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Side View Angle" xUnit="torque" yUnit="angle" datablock="Side View Angle vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -500000 -375000 -250000 -125000 0 125000 250000 375000 500000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Side View Angle" xUnit="force" yUnit="angle" datablock="Side View Angle vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Side View Angle" xUnit="force" yUnit="angle" datablock="Side View Angle vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1474.55 -869.847 -241.413 410.18 1083.17 1774.3 2478.36 3187.42 3889.89 4569.07
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="zx" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Track variation" xUnit="force" yUnit="length" datablock="Track variation vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="z" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Track variation" xUnit="force" yUnit="length" datablock="Track variation vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/torque" mirror="z" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Track variation" xUnit="torque" yUnit="length" datablock="Track variation vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -500000 -375000 -250000 -125000 0 125000 250000 375000 500000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="zx" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Track variation" xUnit="force" yUnit="length" datablock="Track variation vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="zx" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Track variation" xUnit="force" yUnit="length" datablock="Track variation vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1474.55 -869.847 -241.413 410.18 1083.17 1774.3 2478.36 3187.42 3889.89 4569.07
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Base variation" xUnit="force" yUnit="length" datablock="Base variation vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Base variation" xUnit="force" yUnit="length" datablock="Base variation vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/torque" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Base variation" xUnit="torque" yUnit="length" datablock="Base variation vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -500000 -375000 -250000 -125000 0 125000 250000 375000 500000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Base variation" xUnit="force" yUnit="length" datablock="Base vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -3500 -2625 -1750 -875 0 875 1750 2625 3500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Base variation" xUnit="force" yUnit="length" datablock="Base variation vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1474.55 -869.847 -241.413 410.18 1083.17 1774.3 2478.36 3187.42 3889.89 4569.07
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+               </CRTCompliance>
+          </CRTCompliancePair>
+          <InfluenceMatrixPair name="front_pushrod" active="true" userDefined="false" symmetry="left_right">
+               <InfluenceMatrix name="left" active="true" userDefined="false" activeFlag="true" xType="inherited" zType="inherited">
+                    <CRTSuspensionData name="fx" active="true" userDefined="false" method="table" constant="0" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="Fx-Coeff" xUnit="length" datablock="Influence Matrix Coeff vs Hub_Fx" zLabel="Geared-Down Input Steer" zUnit="angle">
+                              <afc:VectorAttribute name="x_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -360 -280 -200 -120 -40 0 120 200 280 360
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="fy" active="true" userDefined="false" method="table" constant="0" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="Fy-Coeff" xUnit="length" datablock="Influence Matrix Coeff vs Hub_Fy" zLabel="Geared-Down Input Steer" zUnit="angle">
+                              <afc:VectorAttribute name="x_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -360 -280 -200 -120 -40 0 120 200 280 360
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="fz" active="true" userDefined="false" method="table" constant="0" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="Fz-Coeff" xUnit="length" datablock="Influence Matrix Coeff vs Hub_Fz" zLabel="Geared-Down Input Steer" zUnit="angle">
+                              <afc:VectorAttribute name="x_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -360 -280 -200 -120 -40 0 120 200 280 360
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="mx" active="true" userDefined="false" method="table" constant="0" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="Mx-Coeff" xUnit="length" datablock="Influence Matrix Coeff vs Hub_Mx" zLabel="Geared-Down Input Steer" zUnit="angle">
+                              <afc:VectorAttribute name="x_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -360 -280 -200 -120 -40 0 120 200 280 360
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="my" active="true" userDefined="false" method="table" constant="0" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="My-Coeff" xUnit="length" datablock="Influence Matrix Coeff vs Hub_My" zLabel="Geared-Down Input Steer" zUnit="angle">
+                              <afc:VectorAttribute name="x_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -360 -280 -200 -120 -40 0 120 200 280 360
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="mz" active="true" userDefined="false" method="table" constant="0" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="Mz-Coeff" xUnit="length" datablock="Influence Matrix Coeff vs Hub_Mz" zLabel="Geared-Down Input Steer" zUnit="angle">
+                              <afc:VectorAttribute name="x_data">
+                                -30 -20 -10 0 10 20 30 40 50 60
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -360 -280 -200 -120 -40 0 120 200 280 360
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+               </InfluenceMatrix>
+          </InfluenceMatrixPair>
+          <CRTCompliancePair name="front_cross" active="true" userDefined="false" symmetry="none">
+               <CRTCompliance name="left" active="true" userDefined="false" auxConstantWheelTravel="0" auxConstantWheelTravelFlag="false">
+                    <CRTSuspensionData name="toe_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Toe Angle" xUnit="force" yUnit="angle" datablock="Toe vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="toe_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Toe Angle" xUnit="force" yUnit="angle" datablock="Toe vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1200 -900 -600 -300 0 300 600 900 1200 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="toe_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/torque" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Toe Angle" xUnit="torque" yUnit="angle" datablock="Toe vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -150 -120 -90 -60 -30 0 30 60 90 120 150
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="toe_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Toe Angle" xUnit="force" yUnit="angle" datablock="Toe vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="toe_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Toe Angle" xUnit="force" yUnit="angle" datablock="Toe vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1000 -500 0 500 1000 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Camber Angle" xUnit="force" yUnit="angle" datablock="Camber vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Camber Angle" xUnit="force" yUnit="angle" datablock="Camber vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1200 -900 -600 -300 0 300 600 900 1200 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/torque" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Camber Angle" xUnit="torque" yUnit="angle" datablock="Camber vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -150 -120 -90 -60 -30 0 30 60 90 120 150
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Camber Angle" xUnit="force" yUnit="angle" datablock="Camber vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Camber Angle" xUnit="force" yUnit="angle" datablock="Camber vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1000 -500 0 500 1000 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Side View Angle" xUnit="force" yUnit="angle" datablock="Side View Angle vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Side View Angle" xUnit="force" yUnit="angle" datablock="Side View Angle vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1200 -900 -600 -300 0 300 600 900 1200 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/torque" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Side View Angle" xUnit="torque" yUnit="angle" datablock="Side View Angle vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -150 -120 -90 -60 -30 0 30 60 90 120 150
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Side View Angle" xUnit="force" yUnit="angle" datablock="Side View Angle vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Side View Angle" xUnit="force" yUnit="angle" datablock="Side View Angle vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1000 -500 0 500 1000 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="zx" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Track variation" xUnit="force" yUnit="length" datablock="Track variation vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="z" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Track variation" xUnit="force" yUnit="length" datablock="Track variation vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1200 -900 -600 -300 0 300 600 900 1200 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/torque" mirror="z" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Track variation" xUnit="torque" yUnit="length" datablock="Track variation vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -150 -120 -90 -60 -30 0 30 60 90 120 150
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="zx" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Track variation" xUnit="force" yUnit="length" datablock="Track variation vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="zx" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Track variation" xUnit="force" yUnit="length" datablock="Track variation vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1000 -500 0 500 1000 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Base variation" xUnit="force" yUnit="length" datablock="Base variation vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Base variation" xUnit="force" yUnit="length" datablock="Base variation vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1200 -900 -600 -300 0 300 600 900 1200 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/torque" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Base variation" xUnit="torque" yUnit="length" datablock="Base variation vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -150 -120 -90 -60 -30 0 30 60 90 120 150
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Base variation" xUnit="force" yUnit="length" datablock="Base vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Base variation" xUnit="force" yUnit="length" datablock="Base variation vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1000 -500 0 500 1000 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+               </CRTCompliance>
+               <CRTCompliance name="right" active="true" userDefined="false" auxConstantWheelTravel="0" auxConstantWheelTravelFlag="false">
+                    <CRTSuspensionData name="toe_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Toe Angle" xUnit="force" yUnit="angle" datablock="Toe vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="toe_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Toe Angle" xUnit="force" yUnit="angle" datablock="Toe vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1200 -900 -600 -300 0 300 600 900 1200 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="toe_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/torque" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Toe Angle" xUnit="torque" yUnit="angle" datablock="Toe vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -150 -120 -90 -60 -30 0 30 60 90 120 150
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="toe_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Toe Angle" xUnit="force" yUnit="angle" datablock="Toe vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="toe_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Toe Angle" xUnit="force" yUnit="angle" datablock="Toe vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1000 -500 0 500 1000 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Camber Angle" xUnit="force" yUnit="angle" datablock="Camber vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Camber Angle" xUnit="force" yUnit="angle" datablock="Camber vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1200 -900 -600 -300 0 300 600 900 1200 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/torque" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Camber Angle" xUnit="torque" yUnit="angle" datablock="Camber vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -150 -120 -90 -60 -30 0 30 60 90 120 150
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Camber Angle" xUnit="force" yUnit="angle" datablock="Camber vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="camber_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Camber Angle" xUnit="force" yUnit="angle" datablock="Camber vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1000 -500 0 500 1000 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Side View Angle" xUnit="force" yUnit="angle" datablock="Side View Angle vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Side View Angle" xUnit="force" yUnit="angle" datablock="Side View Angle vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1200 -900 -600 -300 0 300 600 900 1200 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/torque" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Side View Angle" xUnit="torque" yUnit="angle" datablock="Side View Angle vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -150 -120 -90 -60 -30 0 30 60 90 120 150
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Side View Angle" xUnit="force" yUnit="angle" datablock="Side View Angle vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="sva_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="angle/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Side View Angle" xUnit="force" yUnit="angle" datablock="Side View Angle vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1000 -500 0 500 1000 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="zx" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Track variation" xUnit="force" yUnit="length" datablock="Track variation vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="z" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Track variation" xUnit="force" yUnit="length" datablock="Track variation vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1200 -900 -600 -300 0 300 600 900 1200 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/torque" mirror="z" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Track variation" xUnit="torque" yUnit="length" datablock="Track variation vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -150 -120 -90 -60 -30 0 30 60 90 120 150
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="zx" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Track variation" xUnit="force" yUnit="length" datablock="Track variation vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="track_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="zx" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Track variation" xUnit="force" yUnit="length" datablock="Track variation vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1000 -500 0 500 1000 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Force" yLabel="Base variation" xUnit="force" yUnit="length" datablock="Base variation vs. FX (braking) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_fy_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Lateral Force" yLabel="Base variation" xUnit="force" yUnit="length" datablock="Base variation vs. FY vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1200 -900 -600 -300 0 300 600 900 1200 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_mz_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/torque" mirror="yz" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Aligning Torque" yLabel="Base variation" xUnit="torque" yUnit="length" datablock="Base variation vs. MZ vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -150 -120 -90 -60 -30 0 30 60 90 120 150
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_whe_ctr_fx_vs_jounce" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Wheel Center Longitudinal Force" yLabel="Base variation" xUnit="force" yUnit="length" datablock="Base vs. FX (traction) vs. Jounce" zLabel="Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                -1000 -800 -600 -400 -200 0 200 400 600 800 1000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -30 -15 0 15 30
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <CRTSuspensionData name="base_vs_fz" active="true" userDefined="false" method="table" constant="0" unit="length/force" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Vertical Wheel Force" yLabel="Base variation" xUnit="force" yUnit="length" datablock="Base variation vs. FZ">
+                              <afc:VectorAttribute name="x_data">
+                                -1500 -1000 -500 0 500 1000 1500
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+               </CRTCompliance>
+          </CRTCompliancePair>
+          <SpringPair name="front" active="true" userDefined="false" symmetry="left_right">
+               <Spring name="left" active="true" userDefined="false" attach_part_1="0" attach_part_2="0" attach_location_1="(0 0 0)" attach_location_2="(0 0 0)" activeFlag="true">
+                    <CRTSpringContext active="true" propertyURI="mdids://SCG007C_R01/springs.tbl/SUSP_FRONT_LMPH_V07_iss1_LCAF0_LCAR0_spring.xml" userDefined="false" context="default" offset="(0 0 0)" installMethod="preload" installValue="2627.0" installationStiffness="0" installationStiffnessActiveFlag="false" multiplicityFlag="false" scaleFactor="1.0" multiplicity="1.0" decouplingFlag="false">
+                         <CRTSuspensionData name="compression_ratio" active="true" userDefined="false" method="table" constant="0" mirror="none" scaleFactor="1.0">
+                              <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="Deflection" xUnit="length" yUnit="length" datablock="Spring Deflection vs. Jounce" zUnit="length">
+                                   <afc:VectorAttribute name="x_data">
+                                     -30 -20 -10 0 10 20 30 40 50 60
+                                   </afc:VectorAttribute>
+                                   <afc:VectorAttribute name="y_data">
+                                     -23.7758 -15.9995 -8.07213 0 8.20359 16.517 24.9078 33.3284 41.7097 49.951
+                                   </afc:VectorAttribute>
+                                   <afc:VectorAttribute name="z_data">
+                                     0
+                                   </afc:VectorAttribute>
+                              </Spline3d>
+                         </CRTSuspensionData>
+                    </CRTSpringContext>
+               </Spring>
+          </SpringPair>
+          <Spring name="single" active="true" userDefined="false" attach_part_1="0" attach_part_2="0" attach_location_1="(0 0 0)" attach_location_2="(0 0 0)" activeFlag="true">
+               <CRTSpringContext active="true" propertyURI="mdids://SCG007C_R01/springs.tbl/SUSP_FRONT_LMPH_V07_iss1_LCAF0_LCAR0_single_spring.xml" userDefined="false" context="default" offset="(0 0 0)" installMethod="preload" installValue="1100.0" installationStiffness="0" installationStiffnessActiveFlag="false" multiplicityFlag="false" scaleFactor="1.0" multiplicity="1.0" decouplingFlag="false">
+                    <CRTSuspensionData name="compression_ratio" active="true" userDefined="false" method="table" constant="0" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="Deflection" xUnit="length" yUnit="length" datablock="Spring Deflection vs. Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                0 2.5 5 7.5 10 12.5 15 17.5 20 22.5 25 27.5 30
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0.8465240000000001 3.85632 6.87499 9.9017 12.9356 15.9757 19.0211 22.0708 25.1236 28.1785 31.2342 34.2894 37.3428 0.514989 3.54081 6.57662 9.62167 12.6752 15.7363 18.8043 21.8781 24.9569 28.0397 31.1253 34.2128 37.301 0.263834 3.30131 6.34958 9.40794 12.4757 15.552 18.6363 21.7275 24.825 27.9278 31.035 34.1457 37.2587 0.0952363 3.14032 6.1967 9.263730000000001 12.3407 15.427 18.5218 21.6244 24.734 27.8498 30.9709 34.0965 37.2256 0.0105959 3.05944 6.11982 9.19112 12.2727 15.3638 18.4638 21.572 24.6875 27.8097 30.9377 34.0706 37.2075 0.0105959 3.05944 6.11982 9.19112 12.2727 15.3638 18.4638 21.572 24.6875 27.8097 30.9377 34.0706 37.2075 0.0952363 3.14032 6.1967 9.263730000000001 12.3407 15.427 18.5218 21.6244 24.734 27.8498 30.9709 34.0965 37.2256 0.263834 3.30131 6.34958 9.40794 12.4757 15.552 18.6363 21.7275 24.825 27.9278 31.035 34.1457 37.2587 0.514989 3.54081 6.57662 9.62167 12.6752 15.7363 18.8043 21.8781 24.9569 28.0397 31.1253 34.2128 37.301 0.8465240000000001 3.85632 6.87499 9.9017 12.9356 15.9757 19.0211 22.0708 25.1236 28.1785 31.2342 34.2894 37.3428
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -60 -46.6667 -33.3333 -20 -6.66667 6.66667 20 33.3333 46.6667 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+               </CRTSpringContext>
+          </Spring>
+          <DamperPair name="front" active="true" userDefined="false" symmetry="left_right">
+               <Damper name="left" active="true" userDefined="false" attach_part_1="0" attach_part_2="0" attach_location_1="(0 0 0)" attach_location_2="(0 0 0)" activeFlag="true">
+                    <CRTDamperContext active="true" propertyURI="mdids://SCG007C_R01/dampers.tbl/SUSP_FRONT_LMPH_V07_iss1_LCAF0_LCAR0_damper.xml" userDefined="false" context="default" offset="(0 0 0)" scaleFactor="1.563" input_stretch="1.0" output_stretch="1.0" time_stretch="1.0" multiplicityFlag="false" multiplicity="1.0">
+                         <CRTSuspensionData name="compression_ratio" active="true" userDefined="false" method="table" constant="0" mirror="none" scaleFactor="1.0">
+                              <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="Deflection" xUnit="length" yUnit="length" datablock="Damper Deflection vs. Jounce" zUnit="length">
+                                   <afc:VectorAttribute name="x_data">
+                                     -30 -20 -10 0 10 20 30 40 50 60
+                                   </afc:VectorAttribute>
+                                   <afc:VectorAttribute name="y_data">
+                                     -23.7758 -15.9995 -8.07213 0 8.20359 16.517 24.9078 33.3284 41.7097 49.951
+                                   </afc:VectorAttribute>
+                                   <afc:VectorAttribute name="z_data">
+                                     0
+                                   </afc:VectorAttribute>
+                              </Spline3d>
+                         </CRTSuspensionData>
+                    </CRTDamperContext>
+               </Damper>
+          </DamperPair>
+          <Damper name="single" active="true" userDefined="false" attach_part_1="0" attach_part_2="0" attach_location_1="(0 0 0)" attach_location_2="(0 0 0)" activeFlag="true">
+               <CRTDamperContext active="true" propertyURI="mdids://SCG007C_R01/dampers.tbl/SUSP_FRONT_LMPH_V07_iss1_LCAF0_LCAR0_single_damper.xml" userDefined="false" context="default" offset="(0 0 0)" scaleFactor="0.694" input_stretch="1.0" output_stretch="1.0" time_stretch="1.0" multiplicityFlag="false" multiplicity="1.0">
+                    <CRTSuspensionData name="compression_ratio" active="true" userDefined="false" method="table" constant="0" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="Deflection" xUnit="length" yUnit="length" datablock="Damper Deflection vs. Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                0 2.5 5 7.5 10 12.5 15 17.5 20 22.5 25 27.5 30
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0.8465240000000001 3.85632 6.87499 9.9017 12.9356 15.9757 19.0211 22.0708 25.1236 28.1785 31.2342 34.2894 37.3428 0.514989 3.54081 6.57662 9.62167 12.6752 15.7363 18.8043 21.8781 24.9569 28.0397 31.1253 34.2128 37.301 0.263834 3.30131 6.34958 9.40794 12.4757 15.552 18.6363 21.7275 24.825 27.9278 31.035 34.1457 37.2587 0.0952363 3.14032 6.1967 9.263730000000001 12.3407 15.427 18.5218 21.6244 24.734 27.8498 30.9709 34.0965 37.2256 0.0105959 3.05944 6.11982 9.19112 12.2727 15.3638 18.4638 21.572 24.6875 27.8097 30.9377 34.0706 37.2075 0.0105959 3.05944 6.11982 9.19112 12.2727 15.3638 18.4638 21.572 24.6875 27.8097 30.9377 34.0706 37.2075 0.0952363 3.14032 6.1967 9.263730000000001 12.3407 15.427 18.5218 21.6244 24.734 27.8498 30.9709 34.0965 37.2256 0.263834 3.30131 6.34958 9.40794 12.4757 15.552 18.6363 21.7275 24.825 27.9278 31.035 34.1457 37.2587 0.514989 3.54081 6.57662 9.62167 12.6752 15.7363 18.8043 21.8781 24.9569 28.0397 31.1253 34.2128 37.301 0.8465240000000001 3.85632 6.87499 9.9017 12.9356 15.9757 19.0211 22.0708 25.1236 28.1785 31.2342 34.2894 37.3428
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -60 -46.6667 -33.3333 -20 -6.66667 6.66667 20 33.3333 46.6667 60
+                              </afc:VectorAttribute>
+                              <Comment userDefined="false">
+                                <![CDATA[]]>
+                              </Comment>
+                         </Spline3d>
+                    </CRTSuspensionData>
+               </CRTDamperContext>
+          </Damper>
+          <BumpStopPair name="jounce_bumper" active="true" userDefined="false" symmetry="left_right">
+               <BumpStop name="left" active="true" userDefined="false" attach_part_1="0" attach_part_2="0" attach_location_1="(0 0 0)" attach_location_2="(0 0 0)" activeFlag="true" metalToMetalRate="0">
+                    <CRTBumperContext active="true" propertyURI="mdids://SCG007C_R01/bumpstops.tbl/KW_RD60_20mm.xml" userDefined="false" context="default" offset="(0 0 0)" installMethod="use_hardpoints" installValue="30.0" scaleFactor="1.0" multiplicityFlag="false" multiplicity="1.0">
+                         <CRTSuspensionData name="compression_ratio" active="true" userDefined="false" method="table" constant="0" mirror="none" scaleFactor="1.0">
+                              <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="Deflection" xUnit="length" yUnit="length" datablock="Jounce Deflection vs. Jounce" zUnit="length">
+                                   <afc:VectorAttribute name="x_data">
+                                     -30 -20 -10 0 10 20 30 40 50 60
+                                   </afc:VectorAttribute>
+                                   <afc:VectorAttribute name="y_data">
+                                     -23.7758 -15.9995 -8.07213 0 8.20359 16.517 24.9078 33.3284 41.7097 49.951
+                                   </afc:VectorAttribute>
+                                   <afc:VectorAttribute name="z_data">
+                                     0
+                                   </afc:VectorAttribute>
+                              </Spline3d>
+                         </CRTSuspensionData>
+                    </CRTBumperContext>
+               </BumpStop>
+          </BumpStopPair>
+          <BumpStop name="single_spr_jounce_bumper" active="true" userDefined="false" attach_part_1="0" attach_part_2="0" attach_location_1="(0 0 0)" attach_location_2="(0 0 0)" activeFlag="true" metalToMetalRate="0">
+               <CRTBumperContext active="true" propertyURI="mdids://SCG007C_R01/bumpstops.tbl/f7-T36-F2893-V001-TM40-V001.xml" userDefined="false" context="default" offset="(0 0 0)" installMethod="use_hardpoints" installValue="-0.5" scaleFactor="1.0" multiplicityFlag="false" multiplicity="1.0">
+                    <CRTSuspensionData name="compression_ratio" active="true" userDefined="false" method="table" constant="0" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="Deflection" xUnit="length" yUnit="length" datablock="Jounce Deflection vs. Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                0 2.5 5 7.5 10 12.5 15 17.5 20 22.5 25 27.5 30
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0.8465240000000001 3.85632 6.87499 9.9017 12.9356 15.9757 19.0211 22.0708 25.1236 28.1785 31.2342 34.2894 37.3428 0.514989 3.54081 6.57662 9.62167 12.6752 15.7363 18.8043 21.8781 24.9569 28.0397 31.1253 34.2128 37.301 0.263834 3.30131 6.34958 9.40794 12.4757 15.552 18.6363 21.7275 24.825 27.9278 31.035 34.1457 37.2587 0.0952363 3.14032 6.1967 9.263730000000001 12.3407 15.427 18.5218 21.6244 24.734 27.8498 30.9709 34.0965 37.2256 0.0105959 3.05944 6.11982 9.19112 12.2727 15.3638 18.4638 21.572 24.6875 27.8097 30.9377 34.0706 37.2075 0.0105959 3.05944 6.11982 9.19112 12.2727 15.3638 18.4638 21.572 24.6875 27.8097 30.9377 34.0706 37.2075 0.0952363 3.14032 6.1967 9.263730000000001 12.3407 15.427 18.5218 21.6244 24.734 27.8498 30.9709 34.0965 37.2256 0.263834 3.30131 6.34958 9.40794 12.4757 15.552 18.6363 21.7275 24.825 27.9278 31.035 34.1457 37.2587 0.514989 3.54081 6.57662 9.62167 12.6752 15.7363 18.8043 21.8781 24.9569 28.0397 31.1253 34.2128 37.301 0.8465240000000001 3.85632 6.87499 9.9017 12.9356 15.9757 19.0211 22.0708 25.1236 28.1785 31.2342 34.2894 37.3428
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -60 -46.6667 -33.3333 -20 -6.66667 6.66667 20 33.3333 46.6667 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+               </CRTBumperContext>
+          </BumpStop>
+          <BumpStop name="single_dmp_jounce_bumper" active="true" userDefined="false" attach_part_1="0" attach_part_2="0" attach_location_1="(0 0 0)" attach_location_2="(0 0 0)" activeFlag="true" metalToMetalRate="0">
+               <CRTBumperContext active="true" propertyURI="mdids://SCG007C_R01/bumpstops.tbl/SUSP_FRONT_LMPH_V07_iss1_LCAF0_LCAR0_single_damper_bumpstop.xml" userDefined="false" context="default" offset="(0 0 0)" installMethod="use_hardpoints" installValue="0" scaleFactor="1.0" multiplicityFlag="false" multiplicity="1.0">
+                    <CRTSuspensionData name="compression_ratio" active="true" userDefined="false" method="table" constant="0" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Jounce" yLabel="Deflection" xUnit="length" yUnit="length" datablock="Jounce Deflection vs. Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                0 2.5 5 7.5 10 12.5 15 17.5 20 22.5 25 27.5 30
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0.8465240000000001 3.85632 6.87499 9.9017 12.9356 15.9757 19.0211 22.0708 25.1236 28.1785 31.2342 34.2894 37.3428 0.514989 3.54081 6.57662 9.62167 12.6752 15.7363 18.8043 21.8781 24.9569 28.0397 31.1253 34.2128 37.301 0.263834 3.30131 6.34958 9.40794 12.4757 15.552 18.6363 21.7275 24.825 27.9278 31.035 34.1457 37.2587 0.0952363 3.14032 6.1967 9.263730000000001 12.3407 15.427 18.5218 21.6244 24.734 27.8498 30.9709 34.0965 37.2256 0.0105959 3.05944 6.11982 9.19112 12.2727 15.3638 18.4638 21.572 24.6875 27.8097 30.9377 34.0706 37.2075 0.0105959 3.05944 6.11982 9.19112 12.2727 15.3638 18.4638 21.572 24.6875 27.8097 30.9377 34.0706 37.2075 0.0952363 3.14032 6.1967 9.263730000000001 12.3407 15.427 18.5218 21.6244 24.734 27.8498 30.9709 34.0965 37.2256 0.263834 3.30131 6.34958 9.40794 12.4757 15.552 18.6363 21.7275 24.825 27.9278 31.035 34.1457 37.2587 0.514989 3.54081 6.57662 9.62167 12.6752 15.7363 18.8043 21.8781 24.9569 28.0397 31.1253 34.2128 37.301 0.8465240000000001 3.85632 6.87499 9.9017 12.9356 15.9757 19.0211 22.0708 25.1236 28.1785 31.2342 34.2894 37.3428
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -60 -46.6667 -33.3333 -20 -6.66667 6.66667 20 33.3333 46.6667 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+               </CRTBumperContext>
+          </BumpStop>
+          <ReboundStopPair name="rebound_bumper" active="true" userDefined="false" symmetry="left_right">
+               <ReboundStop name="left" active="true" userDefined="false" attach_part_1="0" attach_part_2="0" attach_location_1="(0 0 0)" attach_location_2="(0 0 0)" activeFlag="true" metalToMetalRate="0">
+                    <CRTBumperContext active="true" propertyURI="mdids://SCG007C_R01/bumpstops.tbl/SUSP_FRONT_LMPH_V07_iss1_LCAF0_LCAR0_reboundstop.xml" userDefined="false" context="default" offset="(0 0 0)" installMethod="use_hardpoints" installValue="0" scaleFactor="1.0" multiplicityFlag="false" multiplicity="1.0">
+                         <CRTSuspensionData name="compression_ratio" active="true" userDefined="false" method="table" constant="0" mirror="none" scaleFactor="1.0">
+                              <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Rebound" yLabel="Deflection" xUnit="length" yUnit="length" datablock="Rebound Deflection vs. Jounce" zUnit="length">
+                                   <afc:VectorAttribute name="x_data">
+                                     -30 -20 -10 0 10 20 30 40 50 60
+                                   </afc:VectorAttribute>
+                                   <afc:VectorAttribute name="y_data">
+                                     -23.7758 -15.9995 -8.07213 0 8.20359 16.517 24.9078 33.3284 41.7097 49.951
+                                   </afc:VectorAttribute>
+                                   <afc:VectorAttribute name="z_data">
+                                     0
+                                   </afc:VectorAttribute>
+                              </Spline3d>
+                         </CRTSuspensionData>
+                    </CRTBumperContext>
+               </ReboundStop>
+          </ReboundStopPair>
+          <ReboundStop name="single_spr_rebound_bumper" active="true" userDefined="false" attach_part_1="0" attach_part_2="0" attach_location_1="(0 0 0)" attach_location_2="(0 0 0)" activeFlag="true" metalToMetalRate="0">
+               <CRTBumperContext active="true" propertyURI="mdids://SCG007C_R01/bumpstops.tbl/SUSP_FRONT_LMPH_V07_iss1_LCAF0_LCAR0_single_spring_reboundstop.xml" userDefined="false" context="default" offset="(0 0 0)" installMethod="use_hardpoints" installValue="0" scaleFactor="1.0" multiplicityFlag="false" multiplicity="1.0">
+                    <CRTSuspensionData name="compression_ratio" active="true" userDefined="false" method="table" constant="0" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Rebound" yLabel="Deflection" xUnit="length" yUnit="length" datablock="Rebound Deflection vs. Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                0 2.5 5 7.5 10 12.5 15 17.5 20 22.5 25 27.5 30
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0.8465240000000001 3.85632 6.87499 9.9017 12.9356 15.9757 19.0211 22.0708 25.1236 28.1785 31.2342 34.2894 37.3428 0.514989 3.54081 6.57662 9.62167 12.6752 15.7363 18.8043 21.8781 24.9569 28.0397 31.1253 34.2128 37.301 0.263834 3.30131 6.34958 9.40794 12.4757 15.552 18.6363 21.7275 24.825 27.9278 31.035 34.1457 37.2587 0.0952363 3.14032 6.1967 9.263730000000001 12.3407 15.427 18.5218 21.6244 24.734 27.8498 30.9709 34.0965 37.2256 0.0105959 3.05944 6.11982 9.19112 12.2727 15.3638 18.4638 21.572 24.6875 27.8097 30.9377 34.0706 37.2075 0.0105959 3.05944 6.11982 9.19112 12.2727 15.3638 18.4638 21.572 24.6875 27.8097 30.9377 34.0706 37.2075 0.0952363 3.14032 6.1967 9.263730000000001 12.3407 15.427 18.5218 21.6244 24.734 27.8498 30.9709 34.0965 37.2256 0.263834 3.30131 6.34958 9.40794 12.4757 15.552 18.6363 21.7275 24.825 27.9278 31.035 34.1457 37.2587 0.514989 3.54081 6.57662 9.62167 12.6752 15.7363 18.8043 21.8781 24.9569 28.0397 31.1253 34.2128 37.301 0.8465240000000001 3.85632 6.87499 9.9017 12.9356 15.9757 19.0211 22.0708 25.1236 28.1785 31.2342 34.2894 37.3428
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -60 -46.6667 -33.3333 -20 -6.66667 6.66667 20 33.3333 46.6667 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+               </CRTBumperContext>
+          </ReboundStop>
+          <ReboundStop name="single_dmp_rebound_bumper" active="true" userDefined="false" attach_part_1="0" attach_part_2="0" attach_location_1="(0 0 0)" attach_location_2="(0 0 0)" activeFlag="true" metalToMetalRate="0">
+               <CRTBumperContext active="true" propertyURI="mdids://SCG007C_R01/bumpstops.tbl/SUSP_FRONT_LMPH_V07_iss1_LCAF0_LCAR0_single_damper_reboundstop.xml" userDefined="false" context="default" offset="(0 0 0)" installMethod="use_hardpoints" installValue="0" scaleFactor="1.0" multiplicityFlag="false" multiplicity="1.0">
+                    <CRTSuspensionData name="compression_ratio" active="true" userDefined="false" method="table" constant="0" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xLabel="Rebound" yLabel="Deflection" xUnit="length" yUnit="length" datablock="Rebound Deflection vs. Jounce" zUnit="length">
+                              <afc:VectorAttribute name="x_data">
+                                0 2.5 5 7.5 10 12.5 15 17.5 20 22.5 25 27.5 30
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0.8465240000000001 3.85632 6.87499 9.9017 12.9356 15.9757 19.0211 22.0708 25.1236 28.1785 31.2342 34.2894 37.3428 0.514989 3.54081 6.57662 9.62167 12.6752 15.7363 18.8043 21.8781 24.9569 28.0397 31.1253 34.2128 37.301 0.263834 3.30131 6.34958 9.40794 12.4757 15.552 18.6363 21.7275 24.825 27.9278 31.035 34.1457 37.2587 0.0952363 3.14032 6.1967 9.263730000000001 12.3407 15.427 18.5218 21.6244 24.734 27.8498 30.9709 34.0965 37.2256 0.0105959 3.05944 6.11982 9.19112 12.2727 15.3638 18.4638 21.572 24.6875 27.8097 30.9377 34.0706 37.2075 0.0105959 3.05944 6.11982 9.19112 12.2727 15.3638 18.4638 21.572 24.6875 27.8097 30.9377 34.0706 37.2075 0.0952363 3.14032 6.1967 9.263730000000001 12.3407 15.427 18.5218 21.6244 24.734 27.8498 30.9709 34.0965 37.2256 0.263834 3.30131 6.34958 9.40794 12.4757 15.552 18.6363 21.7275 24.825 27.9278 31.035 34.1457 37.2587 0.514989 3.54081 6.57662 9.62167 12.6752 15.7363 18.8043 21.8781 24.9569 28.0397 31.1253 34.2128 37.301 0.8465240000000001 3.85632 6.87499 9.9017 12.9356 15.9757 19.0211 22.0708 25.1236 28.1785 31.2342 34.2894 37.3428
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -60 -46.6667 -33.3333 -20 -6.66667 6.66667 20 33.3333 46.6667 60
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+               </CRTBumperContext>
+          </ReboundStop>
+          <Spline name="left_auxiliary_vertical_force" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Suspension Jounce" yLabel="Force" xUnit="length" yUnit="force" datablock="Auxiliary Vertical Force vs. Jounce">
+            <![CDATA[
+            -30               0
+            -20               0
+            -10               0
+              0               0
+             10               0
+             20               0
+             30               0
+             40               0
+             50               0
+             60               0
+]]>
+          </Spline>
+          <Spline name="right_auxiliary_vertical_force" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Suspension Jounce" yLabel="Force" xUnit="length" yUnit="force" datablock="Auxiliary Vertical Force vs. Jounce">
+            <![CDATA[
+            -30               0
+            -20               0
+            -10               0
+              0               0
+             10               0
+             20               0
+             30               0
+             40               0
+             50               0
+             60               0
+]]>
+          </Spline>
+          <CRTSuspensionSetupData name="suspensionSetupData" active="true" userDefined="false" wheelAnglesSetupStage="after settle" camberAngleSetupStage="after settle" toeAngleSetupStage="after settle" indipendentAngleSetupFlag="false" rideHeightAdjustmentActiveFlag="true" leftBumperClearanceAdjustmentActiveFlag="true" rightBumperClearanceAdjustmentActiveFlag="true" leftBumperPassiveAdjustmentActiveFlag="false" rightBumperPassiveAdjustmentActiveFlag="false" leftReboundstopClearanceAdjustmentActiveFlag="false" rightReboundstopClearanceAdjustmentActiveFlag="false" leftPinHeightAdjustmentMethod="pin_height" rightPinHeightAdjustmentMethod="pin_height" centerBumperClearanceAdjustmentActiveFlag="true" centerReboundstopClearanceAdjustmentActiveFlag="false" centerPinHeightAdjustmentMethod="pin_height" setupStageBumpersActivity="inherit" complianceActiveFlag="true" directCmplActiveFlag="true" crossCmplActiveFlag="true" dirLongTracCmplActiveFlag="true" dirLongBrakCmplActiveFlag="true" dirLatCmplActiveFlag="true" dirAlignCmplActiveFlag="true" dirVertCmplActiveFlag="true" crossLongTracCmplActiveFlag="true" crossLongBrakCmplActiveFlag="true" crossLatCmplActiveFlag="true" crossAlignCmplActiveFlag="true" crossVertCmplActiveFlag="true" Direct_ToeFx_scaleFactor="1.0" Direct_ToeFy_scaleFactor="1.0" Direct_ToeMz_scaleFactor="1.0" Direct_ToeWheCtrFx_scaleFactor="1.0" Direct_ToeFz_scaleFactor="1.0" Direct_CamberFx_scaleFactor="1.0" Direct_CamberFy_scaleFactor="1.0" Direct_CamberMz_scaleFactor="1.0" Direct_CamberWheCtrFx_scaleFactor="1.0" Direct_CamberFz_scaleFactor="1.0" Direct_SvaFx_scaleFactor="1.0" Direct_SvaFy_scaleFactor="1.0" Direct_SvaMz_scaleFactor="1.0" Direct_SvaWheCtrFx_scaleFactor="1.0" Direct_SvaFz_scaleFactor="1.0" Direct_TrackFx_scaleFactor="1.0" Direct_TrackFy_scaleFactor="1.0" Direct_TrackMz_scaleFactor="1.0" Direct_TrackWheCtrFx_scaleFactor="1.0" Direct_TrackFz_scaleFactor="1.0" Direct_BaseFx_scaleFactor="1.0" Direct_BaseFy_scaleFactor="1.0" Direct_BaseMz_scaleFactor="1.0" Direct_BaseWheCtrFx_scaleFactor="1.0" Direct_BaseFz_scaleFactor="1.0" Cross_ToeFx_scaleFactor="1.0" Cross_ToeFy_scaleFactor="1.0" Cross_ToeMz_scaleFactor="1.0" Cross_ToeWheCtrFx_scaleFactor="1.0" Cross_ToeFz_scaleFactor="1.0" Cross_CamberFx_scaleFactor="1.0" Cross_CamberFy_scaleFactor="1.0" Cross_CamberMz_scaleFactor="1.0" Cross_CamberWheCtrFx_scaleFactor="1.0" Cross_CamberFz_scaleFactor="1.0" Cross_SvaFx_scaleFactor="1.0" Cross_SvaFy_scaleFactor="1.0" Cross_SvaMz_scaleFactor="1.0" Cross_SvaWheCtrFx_scaleFactor="1.0" Cross_SvaFz_scaleFactor="1.0" Cross_TrackFx_scaleFactor="1.0" Cross_TrackFy_scaleFactor="1.0" Cross_TrackMz_scaleFactor="1.0" Cross_TrackWheCtrFx_scaleFactor="1.0" Cross_TrackFz_scaleFactor="1.0" Cross_BaseFx_scaleFactor="1.0" Cross_BaseFy_scaleFactor="1.0" Cross_BaseMz_scaleFactor="1.0" Cross_BaseWheCtrFx_scaleFactor="1.0" Cross_BaseFz_scaleFactor="1.0" SideViewAngle_scaleFactor="1.0" Camber_scaleFactor="1.0" Toe_scaleFactor="1.0" Base_scaleFactor="1.0" Track_scaleFactor="1.0">
+               <CRTAdjustment name="leftCamber" active="true" userDefined="false" activeFlag="true" value="-3.0"/>
+               <CRTAdjustment name="rightCamber" active="true" userDefined="false" activeFlag="true" value="-3.0"/>
+               <CRTAdjustment name="leftToe" active="true" userDefined="false" activeFlag="true" value="-0.12"/>
+               <CRTAdjustment name="rightToe" active="true" userDefined="false" activeFlag="true" value="-0.12"/>
+               <CRTLengthAdjustment name="leftPinHeight" active="true" userDefined="false" activeFlag="false" value="0"/>
+               <CRTLengthAdjustment name="rightPinHeight" active="true" userDefined="false" activeFlag="false" value="0"/>
+               <CRTForceAdjustment name="leftPreload" active="true" userDefined="false" activeFlag="false" value="0"/>
+               <CRTForceAdjustment name="rightPreload" active="true" userDefined="false" activeFlag="false" value="0"/>
+               <CRTRideHeightSensor name="leftRideHeightSensor" active="true" userDefined="false" activeFlag="true" location="(0 245.587 76.0)" rideHeight="65.0"/>
+               <CRTRideHeightSensor name="rightRideHeightSensor" active="true" userDefined="false" activeFlag="true" location="(0 -245.587 76.0)" rideHeight="65.0"/>
+               <CRTRideHeightSensor name="centerRideHeightSensor" active="true" userDefined="false" activeFlag="false" location="(0 0 0)" rideHeight="0"/>
+               <CRTLengthAdjustment name="centerPinHeight" active="true" userDefined="false" activeFlag="false" value="0"/>
+               <CRTForceAdjustment name="centerPreload" active="true" userDefined="false" activeFlag="false" value="0"/>
+               <CRTLengthAdjustment name="leftSpringOffset" active="true" userDefined="false" activeFlag="false" value="0"/>
+               <CRTLengthAdjustment name="rightSpringOffset" active="true" userDefined="false" activeFlag="false" value="0"/>
+               <CRTLengthAdjustment name="leftBumperOffset" active="true" userDefined="false" activeFlag="false" value="0"/>
+               <CRTLengthAdjustment name="rightBumperOffset" active="true" userDefined="false" activeFlag="false" value="0"/>
+               <CRTLengthAdjustment name="centerBumperOffset" active="true" userDefined="false" activeFlag="false" value="0"/>
+               <CRTLengthAdjustment name="leftReboundstopOffset" active="true" userDefined="false" activeFlag="false" value="0"/>
+               <CRTLengthAdjustment name="rightReboundstopOffset" active="true" userDefined="false" activeFlag="false" value="0"/>
+               <CRTLengthAdjustment name="centerReboundstopOffset" active="true" userDefined="false" activeFlag="false" value="0"/>
+          </CRTSuspensionSetupData>
+          <CRTInstallationStiffnessPair name="installation_stiffness" active="true" userDefined="false" symmetry="left_right">
+               <CRTInstallationStiffness name="left" active="true" userDefined="false" activeFlag="false" antiRollBarActiveFlag="false" springActiveFlag="true" value="0" computationMode="static" mass="2.0" cutoffFrequency="200.0" dampingRatio="0.001"/>
+          </CRTInstallationStiffnessPair>
+          <CRTAuxiliaryTranslationalDOFPair name="AuxiliaryDOFX" active="true" userDefined="false" symmetry="right_left">
+               <CRTAuxiliaryTranslationalDOF name="right" active="true" userDefined="false" activeFlag="false" tFNumCoeff0="0" tFNumCoeff1="0" tFNumCoeff2="0" tFNumCoeff3="0" tFNumCoeff4="0" tFDenCoeff0="0" tFDenCoeff1="0" tFDenCoeff2="0" tFDenCoeff3="0" tFDenCoeff4="0" tFOrder="first" lowPassCutoffFrequency="500.0" mass="25.0" dampingMode="ratio" damping="1.0" dampingRatio="0.01" degreeOfFreedom="x" modelType="dynamic" excitationMode="force"/>
+          </CRTAuxiliaryTranslationalDOFPair>
+     </Subsystem>
+</afc>

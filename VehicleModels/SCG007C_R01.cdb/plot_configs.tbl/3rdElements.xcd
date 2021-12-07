@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VI-ANIMATOR>
+  <viframework::viobjects::CalculatedComponent expression="res(&apos;bus_dmp_jounce_stop_data.force_front&apos;)+res(&apos;bus_spr_jounce_stop_data.force_front&apos;)+res(&apos;das_ride_damper_data.force_front&apos;)" name="3rd_element_front_tot_force"></viframework::viobjects::CalculatedComponent>
+  <viframework::viobjects::CalculatedComponent expression="res(&apos;bus_dmp_jounce_stop_data.force_rear&apos;)+res(&apos;bus_spr_jounce_stop_data.force_rear&apos;)+res(&apos;das_ride_damper_data.force_rear&apos;)" name="3rd_element_rear_tot_force"></viframework::viobjects::CalculatedComponent>
+</VI-ANIMATOR>

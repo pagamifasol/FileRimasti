@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mxp::tree::NodeSequence name="btroot">
+  <mxp::tree::NodeSelector name="TireMarginSelector" policy="SUCCEED_IF_ALL">
+    <mxp::tree::LeafSegmentCondition name="CheckTireMargin">
+      <mxp::SegmentConditionObject name="SegmentConditionObject">
+        <viframework::viobjects::String data="CheckTireMargin" name="CondName"></viframework::viobjects::String>
+        <viframework::viobjects::String data="min(c1,c2,c3,c4)&lt;=50" name="CheckExpr"></viframework::viobjects::String>
+        <viframework::viobjects::Double name="FinalIdx" units="0" value="0"></viframework::viobjects::Double>
+        <viframework::viobjects::Double name="StartingPoint" units="0" value="0"></viframework::viobjects::Double>
+        <viframework::viobjects::Double name="StartIdx" units="0" value="0"></viframework::viobjects::Double>
+        <viframework::viobjects::Double name="Direction" units="0" value="1"></viframework::viobjects::Double>
+        <viframework::viobjects::String data="tirelimits_FL.margin,minOnSeg" name="channel1"></viframework::viobjects::String>
+        <viframework::viobjects::String data="c1" name="var1"></viframework::viobjects::String>
+        <viframework::viobjects::String data="tirelimits_RL.margin,minOnSeg" name="channel2"></viframework::viobjects::String>
+        <viframework::viobjects::String data="c2" name="var2"></viframework::viobjects::String>
+        <viframework::viobjects::String data="tirelimits_FR.margin,minOnSeg" name="channel3"></viframework::viobjects::String>
+        <viframework::viobjects::String data="c3" name="var3"></viframework::viobjects::String>
+        <viframework::viobjects::String data="tirelimits_RR.margin,minOnSeg" name="channel4"></viframework::viobjects::String>
+        <viframework::viobjects::String data="c4" name="var4"></viframework::viobjects::String>
+        <viframework::viobjects::String data="" name="channel5"></viframework::viobjects::String>
+        <viframework::viobjects::String data="c5" name="var5"></viframework::viobjects::String>
+      </mxp::SegmentConditionObject>
+    </mxp::tree::LeafSegmentCondition>
+    <mxp::tree::NodeParallel name="SingleMargins" policy="ALWAYS_SUCCEED">
+      <mxp::tree::NodeSelector name="TireLatCorrection" policy="SUCCEED_IF_ANY">
+        <mxp::tree::LeafSegmentCondition name="CheckTireMarginLat">
+          <mxp::SegmentConditionObject name="SegmentConditionObject">
+            <viframework::viobjects::String data="CheckTireMarginLat" name="CondName"></viframework::viobjects::String>
+            <viframework::viobjects::String data="min(c1,c2,c3,c4)&lt;=50" name="CheckExpr"></viframework::viobjects::String>
+            <viframework::viobjects::Double name="FinalIdx" units="0" value="0"></viframework::viobjects::Double>
+            <viframework::viobjects::Double name="StartingPoint" units="0" value="0"></viframework::viobjects::Double>
+            <viframework::viobjects::Double name="StartIdx" units="0" value="0"></viframework::viobjects::Double>
+            <viframework::viobjects::Double name="Direction" units="0" value="1"></viframework::viobjects::Double>
+            <viframework::viobjects::String data="tirelimits_FL.marginLat,minOnSeg" name="channel1"></viframework::viobjects::String>
+            <viframework::viobjects::String data="c1" name="var1"></viframework::viobjects::String>
+            <viframework::viobjects::String data="tirelimits_RL.marginLat,minOnSeg" name="channel2"></viframework::viobjects::String>
+            <viframework::viobjects::String data="c2" name="var2"></viframework::viobjects::String>
+            <viframework::viobjects::String data="tirelimits_FR.marginLat,minOnSeg" name="channel3"></viframework::viobjects::String>
+            <viframework::viobjects::String data="c3" name="var3"></viframework::viobjects::String>
+            <viframework::viobjects::String data="tirelimits_RR.marginLat,minOnSeg" name="channel4"></viframework::viobjects::String>
+            <viframework::viobjects::String data="c4" name="var4"></viframework::viobjects::String>
+            <viframework::viobjects::String data="" name="channel5"></viframework::viobjects::String>
+            <viframework::viobjects::String data="c5" name="var5"></viframework::viobjects::String>
+          </mxp::SegmentConditionObject>
+        </mxp::tree::LeafSegmentCondition>
+        <mxp::tree::LeafCommandAction conditionName="CheckTireMargin" joinDistance="0" name="PushtLat" scaleBrake="0" scaleLat="0.05" scaleLonAcc="0" scaleLonDec="0" scaleThrottle="0" weight="1"></mxp::tree::LeafCommandAction>
+      </mxp::tree::NodeSelector>
+      <mxp::tree::NodeParallel name="TireLonParallel" policy="ALWAYS_SUCCEED">
+        <mxp::tree::NodeSelector name="TireAccCorrection" policy="SUCCEED_IF_ANY">
+          <mxp::tree::LeafSegmentCondition name="CheckTireMarginLon">
+            <mxp::SegmentConditionObject name="SegmentConditionObject">
+              <viframework::viobjects::String data="CheckTireMarginLon" name="CondName"></viframework::viobjects::String>
+              <viframework::viobjects::String data="min(c1,c2,c3,c4)&lt;=50" name="CheckExpr"></viframework::viobjects::String>
+              <viframework::viobjects::Double name="FinalIdx" units="0" value="0"></viframework::viobjects::Double>
+              <viframework::viobjects::Double name="StartingPoint" units="0" value="0"></viframework::viobjects::Double>
+              <viframework::viobjects::Double name="StartIdx" units="0" value="0"></viframework::viobjects::Double>
+              <viframework::viobjects::Double name="Direction" units="0" value="1"></viframework::viobjects::Double>
+              <viframework::viobjects::String data="tirelimits_FL.marginLon,minOnSeg" name="channel1"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c1" name="var1"></viframework::viobjects::String>
+              <viframework::viobjects::String data="tirelimits_RL.marginLon,minOnSeg" name="channel2"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c2" name="var2"></viframework::viobjects::String>
+              <viframework::viobjects::String data="tirelimits_FR.marginLon,minOnSeg" name="channel3"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c3" name="var3"></viframework::viobjects::String>
+              <viframework::viobjects::String data="tirelimits_RR.marginLon,minOnSeg" name="channel4"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c4" name="var4"></viframework::viobjects::String>
+              <viframework::viobjects::String data="" name="channel5"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c5" name="var5"></viframework::viobjects::String>
+            </mxp::SegmentConditionObject>
+          </mxp::tree::LeafSegmentCondition>
+          <mxp::tree::LeafSegmentCondition name="CheckFullThrottle">
+            <mxp::SegmentConditionObject name="SegmentConditionObject">
+              <viframework::viobjects::String data="CheckFullThrottle" name="CondName"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c1==100" name="CheckExpr"></viframework::viobjects::String>
+              <viframework::viobjects::Double name="FinalIdx" units="0" value="0"></viframework::viobjects::Double>
+              <viframework::viobjects::Double name="StartingPoint" units="0" value="0"></viframework::viobjects::Double>
+              <viframework::viobjects::Double name="StartIdx" units="0" value="0"></viframework::viobjects::Double>
+              <viframework::viobjects::Double name="Direction" units="0" value="1"></viframework::viobjects::Double>
+              <viframework::viobjects::String data="driver_demands.throttle,maxOnSeg" name="channel1"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c1" name="var1"></viframework::viobjects::String>
+              <viframework::viobjects::String data="" name="channel2"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c2" name="var2"></viframework::viobjects::String>
+              <viframework::viobjects::String data="" name="channel3"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c3" name="var3"></viframework::viobjects::String>
+              <viframework::viobjects::String data="" name="channel4"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c4" name="var4"></viframework::viobjects::String>
+              <viframework::viobjects::String data="" name="channel5"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c5" name="var5"></viframework::viobjects::String>
+            </mxp::SegmentConditionObject>
+          </mxp::tree::LeafSegmentCondition>
+          <mxp::tree::LeafCommandAction conditionName="CheckTireMargin" joinDistance="0" name="PushtAcc" scaleBrake="0" scaleLat="0" scaleLonAcc="0.05" scaleLonDec="0" scaleThrottle="0" weight="1"></mxp::tree::LeafCommandAction>
+        </mxp::tree::NodeSelector>
+        <mxp::tree::NodeSelector name="TireDecCorrection" policy="SUCCEED_IF_ANY">
+          <mxp::tree::LeafSegmentCondition name="CheckTireMarginLon">
+            <mxp::SegmentConditionObject name="SegmentConditionObject">
+              <viframework::viobjects::String data="CheckTireMarginLon" name="CondName"></viframework::viobjects::String>
+              <viframework::viobjects::String data="min(c1,c2,c3,c4)&lt;=50" name="CheckExpr"></viframework::viobjects::String>
+              <viframework::viobjects::Double name="FinalIdx" units="0" value="0"></viframework::viobjects::Double>
+              <viframework::viobjects::Double name="StartingPoint" units="0" value="0"></viframework::viobjects::Double>
+              <viframework::viobjects::Double name="StartIdx" units="0" value="0"></viframework::viobjects::Double>
+              <viframework::viobjects::Double name="Direction" units="0" value="1"></viframework::viobjects::Double>
+              <viframework::viobjects::String data="tirelimits_FL.marginLon,minOnSeg" name="channel1"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c1" name="var1"></viframework::viobjects::String>
+              <viframework::viobjects::String data="tirelimits_RL.marginLon,minOnSeg" name="channel2"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c2" name="var2"></viframework::viobjects::String>
+              <viframework::viobjects::String data="tirelimits_FR.marginLon,minOnSeg" name="channel3"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c3" name="var3"></viframework::viobjects::String>
+              <viframework::viobjects::String data="tirelimits_RR.marginLon,minOnSeg" name="channel4"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c4" name="var4"></viframework::viobjects::String>
+              <viframework::viobjects::String data="" name="channel5"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c5" name="var5"></viframework::viobjects::String>
+            </mxp::SegmentConditionObject>
+          </mxp::tree::LeafSegmentCondition>
+          <mxp::tree::LeafSegmentCondition name="CheckFullBrake">
+            <mxp::SegmentConditionObject name="SegmentConditionObject">
+              <viframework::viobjects::String data="CheckFullBrake" name="CondName"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c1&gt;=95" name="CheckExpr"></viframework::viobjects::String>
+              <viframework::viobjects::Double name="FinalIdx" units="0" value="0"></viframework::viobjects::Double>
+              <viframework::viobjects::Double name="StartingPoint" units="0" value="0"></viframework::viobjects::Double>
+              <viframework::viobjects::Double name="StartIdx" units="0" value="0"></viframework::viobjects::Double>
+              <viframework::viobjects::Double name="Direction" units="0" value="1"></viframework::viobjects::Double>
+              <viframework::viobjects::String data="driver_demands.brake,maxOnSeg" name="channel1"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c1" name="var1"></viframework::viobjects::String>
+              <viframework::viobjects::String data="" name="channel2"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c2" name="var2"></viframework::viobjects::String>
+              <viframework::viobjects::String data="" name="channel3"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c3" name="var3"></viframework::viobjects::String>
+              <viframework::viobjects::String data="" name="channel4"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c4" name="var4"></viframework::viobjects::String>
+              <viframework::viobjects::String data="" name="channel5"></viframework::viobjects::String>
+              <viframework::viobjects::String data="c5" name="var5"></viframework::viobjects::String>
+            </mxp::SegmentConditionObject>
+          </mxp::tree::LeafSegmentCondition>
+          <mxp::tree::LeafCommandAction conditionName="CheckTireMargin" joinDistance="0" name="PushtDec" scaleBrake="0" scaleLat="0" scaleLonAcc="0" scaleLonDec="0.05" scaleThrottle="0" weight="1"></mxp::tree::LeafCommandAction>
+        </mxp::tree::NodeSelector>
+      </mxp::tree::NodeParallel>
+    </mxp::tree::NodeParallel>
+  </mxp::tree::NodeSelector>
+</mxp::tree::NodeSequence>

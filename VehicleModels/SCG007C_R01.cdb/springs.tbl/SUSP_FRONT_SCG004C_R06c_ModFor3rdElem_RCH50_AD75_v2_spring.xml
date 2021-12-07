@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<afc xmlns="http://www.mscsoftware.com/:vfc" xmlns:afc="http://www.mscsoftware.com/:afc">
+     <afc:Bibliography>
+          <File schema="afc" version="2.0.0.0" URI="mdids://SCG007C_R01/springs.tbl/SUSP_FRONT_SCG004C_R06c_ModFor3rdElem_RCH50_AD75_v2_spring.xml" publicationDate="2019-11-12 17:23:08+01:00"/>
+          <Revision version="17.0"/>
+          <Corporation author="MSC.Software" URI="http://www.mscsoftware.com/"/>
+          <Author user="Stefano.Rapisarda" name="-unknown name-"/>
+          <Environment hostName="PE-NTBK-007" operatingSystem="MS Windows NT 6.2"/>
+          <Application name="MSC/AFC" version="02.00.00"/>
+     </afc:Bibliography>
+     <afc:Units>
+          <afc:UnitSetting name="angle" current="deg"/>
+          <afc:UnitSetting name="current" current="ampere"/>
+          <afc:UnitSetting name="force" current="newton"/>
+          <afc:UnitSetting name="length" current="mm"/>
+          <afc:UnitSetting name="luminosity" current="candela"/>
+          <afc:UnitSetting name="mass" current="kg"/>
+          <afc:UnitSetting name="quantity" current="mole"/>
+          <afc:UnitSetting name="solidAngle" current="steradian"/>
+          <afc:UnitSetting name="temperature" current="kelvin"/>
+          <afc:UnitSetting name="time" current="sec"/>
+          <afc:UnitSetting name="frequency" current="Hz"/>
+     </afc:Units>
+     <SpringProperties name="spring" active="true" userDefined="false" diameter="1" coils="5" rate="150" freeLength="300" method="linear" independentAxis="deflection">
+          <Spline name="spline_data" id="0" active="true" userDefined="false" interpolation_method="akima" yLabel="Spring Force" xUnit="length" yUnit="force" datablock="Spring Force">
+            <![CDATA[
+       -57.5351        -10931.7
+       -48.1111         -9141.1
+       -38.6758         -7348.4
+       -29.1812        -5544.43
+       -19.5903        -3722.16
+       -9.87231        -1875.74
+              0      0.00018397
+         10.052         1909.89
+        20.3087         3858.65
+        30.7951         5851.07
+        41.5377         7892.16
+        52.5648         9987.31
+        63.9076         12142.4
+]]>
+          </Spline>
+     </SpringProperties>
+</afc>

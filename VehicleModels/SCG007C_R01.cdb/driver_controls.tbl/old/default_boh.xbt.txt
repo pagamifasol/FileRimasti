@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mxp::tree::NodeSequence name="btroot">
+  <mxp::tree::NodeSelector name="action_Path_Distance" policy="SUCCEED_IF_ALL">
+    <mxp::tree::LeafSimCondition name="Condition_Path_Distance">
+      <mxp::SimConditionObject name="SimConditionObject">
+        <viframework::viobjects::String data="Condition_Path_Distance" name="CondName"/>
+        <viframework::viobjects::String data="abs(c1)&lt;1.5" name="CheckExpr"/>
+        <viframework::viobjects::Double name="FinalIdx" units="0" value="0"/>
+        <viframework::viobjects::Double name="StartingPoint" units="0" value="0"/>
+        <viframework::viobjects::Double name="StartIdx" units="0" value="0"/>
+        <viframework::viobjects::Double name="Direction" units="0" value="1"/>
+        <viframework::viobjects::String data="OUTPUT_driving_machine_monitor_path_distance" name="channel1"/>
+        <viframework::viobjects::String data="c1" name="var1"/>
+        <viframework::viobjects::String data="" name="channel2"/>
+        <viframework::viobjects::String data="c2" name="var2"/>
+        <viframework::viobjects::String data="" name="channel3"/>
+        <viframework::viobjects::String data="c3" name="var3"/>
+        <viframework::viobjects::String data="" name="channel4"/>
+        <viframework::viobjects::String data="c4" name="var4"/>
+        <viframework::viobjects::String data="" name="channel5"/>
+        <viframework::viobjects::String data="c5" name="var5"/>
+      </mxp::SimConditionObject>
+    </mxp::tree::LeafSimCondition>
+    <mxp::tree::LeafCustomCommand ConditionName="Condition_Path_Distance" ScalingAccExpression="cos(atan2(((c1/3.6)*(c1/3.6)*c2),c3*9.81)) &gt; 0 ? -0.05*(cos(1.0*atan2(((c1/3.6)*(c1/3.6)*c2),c3*9.81))*cos(1.0*atan2(((c1/3.6)*(c1/3.6)*c2),c3*9.81))) : 0.0" ScalingDecExpression="cos(atan2(((c1/3.6)*(c1/3.6)*c2),c3*9.81)) &lt; 0 ? -0.05*(cos(1.0*atan2(((c1/3.6)*(c1/3.6)*c2),c3*9.81))*cos(1.0*atan2(((c1/3.6)*(c1/3.6)*c2),c3*9.81))) : 0.0" ScalingLatExpression="-0.05*abs(sin(1.0*atan2(((c1/3.6)*(c1/3.6)*c2),c3*9.81))*sin(1.0*atan2(((c1/3.6)*(c1/3.6)*c2),c3*9.81)))" channel1="OUTPUT_driving_machine_monitor_target_vx" channel2="OUTPUT_driving_machine_monitor_path_curvature" channel3="OUTPUT_driving_machine_monitor_target_ax" channel4="" channel5="" joinDistance="25" name="pathDistanceCommand" var1="" var2="" var3="" var4="" var5="" weight="1"></mxp::tree::LeafCustomCommand>
+  </mxp::tree::NodeSelector>
+</mxp::tree::NodeSequence>

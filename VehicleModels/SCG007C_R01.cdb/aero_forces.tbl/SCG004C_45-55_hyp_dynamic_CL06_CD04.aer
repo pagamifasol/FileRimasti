@@ -1,0 +1,94 @@
+﻿$---------------------------------------------------------------------MDI_HEADER
+[MDI_HEADER]
+FILE_TYPE  =  'aer'
+FILE_VERSION  =  5.00
+FILE_FORMAT  =  'ASCII'
+(COMMENTS)
+{comment_string}
+'SCG 004C - Hypothesis - Using Huracan GT3 Evo % sensitivity'
+'CD 0.4, CL 0.6, Frontal Area 2 m^2, reference RH 70mm front, 80mm rear'
+'Aero balance 45/55: front CL 0.27, rear CL 0.33'
+'NOTE: the user-defined unit tags are not supported within tables'
+'      They are accepted for single value parameters only.'
+$--------------------------------------------------------------------------UNITS
+[UNITS]
+(BASE)
+{length  force      angle       mass    time}
+'mm'   'N'   'degree'   'kg'    'sec'
+(USER)
+{unit_type    length  force  angle  mass  time  conversion}
+'kmh'            1       0      0      0    -1    277.77778
+$----------------------------------------------------------------TEST_CONDITIONS                                   
+[TEST_CONDITIONS]                                   
+reference_velocity   <kmh>             =    255                                   
+air_density          <kgpm3>           =  1.24       $[kg/m^3]
+reference_density                      =  1.24                          
+front_ride_height_min     =   30.0                                   
+front_ride_height_max     =   90.0                                   
+rear_ride_height_min      =   30.0                                   
+rear_ride_height_max      =   100.0                                   
+DRAG_ARM_HEIGHT_MIN = 0.0                                   
+DRAG_ARM_HEIGHT_MAX = 0.0                                   
+$----------------------------------------------------------------FRONT_DOWNFORCE                                   
+[FRONT_DOWNFORCE]                                   
+(Z_DATA)                                   
+{rear_ride_height }
+30
+40
+50
+60
+70
+80
+90
+100
+(XY_DATA)                                   
+{front_ride_height   downforce }
+30	1772	2172	2530	2797	2933	3332	3627	3923
+40	1283	1526	1875	2214	2621	2803	3179	3500
+50	1064	1290	1530	1813	2116	2375	2633	2811
+60	853	1078	1285	1545	1766	1960	2202	2427
+70	612	814	1015	1221	1421	1625	1820	2021
+80	396	584	773	962	1150	1339	1520	1707
+90	186	363	534	709	882	1057	1237	1405
+$-----------------------------------------------------------------REAR_DOWNFORCE                                   
+[REAR_DOWNFORCE]                                   
+(Z_DATA)                                   
+{rear_ride_height }                                   
+30
+40
+50
+60
+70
+80
+90
+100
+(XY_DATA)                                   
+{front_ride_height   downforce }                                   
+30	1739	1706	1624	1514	1434	1360	1279	1199
+40	1859	1788	1745	1708	1662	1600	1551	1502
+50	2038	1987	1889	1830	1800	1796	1700	1647
+60	2115	2072	2049	1960	1931	1919	1858	1815
+70	2303	2168	2124	2074	2035	1987	1942	1897
+80	2380	2253	2203	2154	2105	2055	2009	1960
+90	2380	2325	2270	2215	2160	2105	2054	1995
+$---------------------------------------------------------------------------DRAG                                   
+[DRAG]                                   
+(Z_DATA)                                   
+{rear_ride_height }
+30
+40
+50
+60
+70
+80
+90
+100
+(XY_DATA)                                   
+{front_ride_height   drag }                                   
+30	1938	1989	2036	2055	2091	2135	2172	2209
+40	2019	2066	2093	2115	2163	2189	2221	2254
+50	2039	2099	2152	2200	2228	2265	2314	2358
+60	2093	2144	2183	2232	2281	2332	2376	2420
+70	2138	2178	2200	2235	2294	2334	2387	2431
+80	2145	2200	2222	2244	2310	2343	2381	2413
+90	2145	2211	2226	2248	2321	2354	2373	2398

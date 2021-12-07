@@ -1,0 +1,110 @@
+assemblyName	AssemblyDoubleWishBonePRUBar
+lonPosType	                     rear
+unitsFile
+                   length	mm
+                    force	newton
+end
+leftSuspFile
+                 suspType	DoubleWishBonePR
+                 suspName	SUSP_REAR_LMPH_V04
+               latPosType	left
+               lonPosType	rear
+              wheelCenter	                 3067.566	                   -799.5	                  339.986
+                 ucaFront	                 2532.251	                 -231.536	                  372.251
+                  ucaRear	                 2991.119	                 -199.451	                  368.943
+                 ucaOuter	                 3067.566	                 -643.563	                  391.864
+                 lcaFront	                 2754.299	                 -180.885	                  238.039
+                  lcaRear	                 3211.197	                  -132.88	                  214.803
+                 lcaOuter	                 3083.789	                  -686.92	                      200
+              tierodOuter	                 3297.865	                   -609.4	                  340.712
+              tierodInner	                 3265.472	                     -136	                  328.805
+             pushrodOuter	                     3095	                   -632.7	                     64.1
+             pushrodInner	                   3048.8	                   -157.3	                      363
+              rockerPivot	                     3140	                     -200	                      347
+          rockerPivotAxis	                     3140	                     -200	                      367
+               rockerLink	                     3140	                     -165	                      400
+         springUpperMount	                     3300	                      -69	                      455
+         springLowerMount	                     3140	                 -100.292	                  404.932
+         damperUpperMount	                     3300	                      -69	                      455
+         damperLowerMount	                     3140	                 -100.292	                  404.932
+rockerLinkToCentralSpring	                     3100	                    -89.7	                      400
+rockerLinkToCentralDamper	                     3100	                    -73.9	                      400
+   rockerLinkToRollDamper	                    -80.4	                   -101.6	                    142.2
+      rockerLinkToInerter	                   -108.8	                      -58	                    200.1
+                 toeAngle	                        0
+              camberAngle	                       -1
+             groundHeigth	                       90
+              wheelRadius	                      340
+               wheelWidth	                      340
+           toeSetupActive	                        0
+                 toeSetup	                        0
+        camberSetupActive	                        0
+              camberSetup	                        0
+          pinHeigthActive	                        0
+                pinHeigth	                    177.5
+         rideHeigthActive	                        1
+               rideHeigth	                       90
+                  kSpring	                      100
+            springPreload	                      500
+                 cgHeight	                      320
+                wheelBase	                     3140
+               driveRatio	                        0
+               brakeRatio	                       60
+           pRodAttachment	                        0
+               springType	                        0
+         springAttachment	                        3
+                  cDamper	                       10
+    rideHeightRefPosition	                        1
+                kUcaFront	                   875040	                   875040	                   875040	                    64736	                    64736	                        0	                   87.753	                       90	                      270
+                 kUcaRear	                   875040	                   875040	                   875040	                    64736	                    64736	                        0	                  267.753	                       90	                       90
+                kLcaFront	                   875040	                   875040	                   875040	                    64736	                    64736	                        0	                   88.238	                       90	                      270
+                 kLcaRear	                   875040	                   875040	                   875040	                    64736	                    64736	                        0	                  268.238	                       90	                       90
+             kTierodInner	                  1000000	                  1000000	                  1000000	                       10	                       10	                       10	                      180	                       90	                      180
+end
+rightSuspFile
+                     symm
+end
+aBumpFile
+                aBumpType	CentralSpring
+                aBumpName	TestCSpring
+               lonPosType	rear
+           kCentralSpring	                      280
+     centralSpringPreload	                     1100
+end
+aBumpFile
+                aBumpType	CentralDamper
+                aBumpName	TestCDamper
+               lonPosType	rear
+           cCentralDamper	                        0
+end
+aRollFile
+                aRollType	AntiRollBar
+                aRollName	TestAR
+               lonPosType	rear
+               bendARLeft	                     3390	                     -155	                      500
+               dropARLeft	                     3340	                     -155	                      400
+              bendARRight	                     3390	                      155	                      500
+              dropARRight	                     3340	                      155	                      400
+                 kTorsion	                      500
+             kTorsionType	                        0
+end
+analysisFile
+                    setup	1
+                      kin	1
+              jounceStart	-20
+                jounceEnd	50
+                  nJounce	7
+               steerStart	-360
+                 steerEnd	360
+                   nSteer	9
+              forceXStart	-3500
+                forceXEnd	3500
+              forceYStart	-3500
+                forceYEnd	3500
+             momentZStart	-500000
+               momentZEnd	500000
+                   nForce	8
+              deltaJounce	50
+                    nRoll	10
+               outputFile	output
+end

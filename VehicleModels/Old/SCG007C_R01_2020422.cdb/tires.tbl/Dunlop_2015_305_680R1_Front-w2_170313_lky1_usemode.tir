@@ -1,0 +1,241 @@
+[MDI_HEADER]
+FILE_TYPE='tir'
+FILE_VERSION=3.0
+FILE_FORMAT='ASCII'
+$--------------------------------------------------------------units
+[UNITS]
+LENGTH='meter'
+FORCE='newton'
+ANGLE='radians'
+MASS='kg'
+TIME='second'
+$--------------------------------------------------------------model
+[MODEL]
+PROPERTY_FILE_FORMAT='PAC2002'
+USE_MODE= 4		$Tyreuseswitch(IUSED)
+VXLOW=1
+LONGVL=27.78  		$Measurementspeed
+TYRESIDE='RIGHT'  	$Mountedsideoftyreatvehicle/testbench
+$---------------------------------------------------------dimensions
+[DIMENSION]
+UNLOADED_RADIUS=0.340  $Freetyreradius
+WIDTH=0.305  $Nominalsectionwidthofthetyre
+ASPECT_RATIO=0.380  $Nominalaspectratio
+RIM_RADIUS=0.2286  $Nominalrimradius
+RIM_WIDTH=0.300  $Rimwidth
+$----------------------------------------------------------parameter
+[VERTICAL]
+VERTICAL_STIFFNESS=305148.1  $Tyreverticalstiffness - 305148
+VERTICAL_DAMPING=300  $Tyreverticaldamping
+BREFF=8.40  $Lowloadstiffnesse.r.r.
+DREFF=0.270  $Peakvalueofe.r.r.
+FREFF=0.070  $Highloadstiffnesse.r.r.
+FNOMIN=6000.0  $Nominalwheelload
+$----------------------------------------------------long_slip_range
+[LONG_SLIP_RANGE]
+KPUMIN=-1.5000000  $Minimumvalidwheelslip,notdefinedinthedocs
+KPUMAX=1.5000000  $Maximumvalidwheelslip
+$---------------------------------------------------slip_angle_range
+[SLIP_ANGLE_RANGE]
+ALPMIN=-1.5  $Minimumvalidslipangle
+ALPMAX=1.5  $Maximumvalidslipangle
+$---------------------------------------------inclination_slip_range
+[INCLINATION_ANGLE_RANGE]
+CAMMIN=-0.300000  $Minimumvalidcamberangle,max3degfromtiredata
+CAMMAX=0.300000  $Maximumvalidcamberangle
+$------------------------------------------------vertical_force_range
+[VERTICAL_FORCE_RANGE]
+FZMIN=100  $Minimumallowedwheelload
+FZMAX=10000  $Maximumallowedwheelload
+$-------------------------------------------------------------scaling
+[SCALING_COEFFICIENTS]
+LFZO = 1   $Scale factor of nominal (rated) load
+LCX = 1   $Scale factor of Fx shape factor
+LMUX = 0.80  $Scale factor of Fx peak friction coefficient
+LEX = 1   $Scale factor of Fx curvature factor
+LKX = -1   $Scale factor of Fx slip stiffness
+LHX = 1   $Scale factor of Fx horizontal shift
+LVX = 1   $Scale factor of Fx vertical shift
+LGAX = 1   $Scale factor of camber for Fx
+LCY = 1   $Scale factor of Fy shape factor
+LMUY = 0.80   $Scale factor of Fy peak friction coefficient
+LEY = 1   $Scale factor of Fy curvature factor
+LKY = -1				$-0.85   $Scale factor of Fy cornering stiffness
+LHY = 1   $Scale factor of Fy horizontal shift
+LVY = 1   $Scale factor of Fy vertical shift
+LGAY = 1   $Scale factor of camber for Fy
+LTR = 1   $Scale factor of Peak of pneumatic trail
+LRES = 1   $Scale factor for offset of residual torque
+LGAZ = 1   $Scale factor of camber for Mz
+LXAL = 1   $Scale factor of alpha influence on Fx
+LYKA = 0.7   $Scale factor of alpha influence on Fx
+LVYKA = 1   $Scale factor of kappa induced Fy
+LS = 1   $Scale factor of Moment arm of Fx
+LSGKP = 1   $Scale factor of Relaxation length of Fx
+LSGAL = 1   $Scale factor of Relaxation length of Fy
+LGYR = 1   $Scale factor of gyroscopic torque
+LMX = 1   $Scale factor of overturning couple
+LVMX = 1   $Scale factor of Mx vertical shift
+LMY = 1   $Scale factor of rolling resistance torque
+$-------------------------------------------------------longitudinal
+[LONGITUDINAL_COEFFICIENTS]
+PCX1=-1.5597090  $ShapefactorCfxforlongitudinalforce
+PDX1=2.1910820  $LongitudinalfrictionMuxatFznom
+PDX2=-0.2427211  $VariationoffrictionMuxwithload
+PDX3=-3.6738780  $VariationoffrictionMuxwithcamber
+PEX1=-1.1738970  $LongitudinalcurvatureEfxatFznom
+PEX2=-0.2229446  $VariationofcurvatureEfxwithload
+PEX3=1.4766170  $VariationofcurvatureEfxwithloadsquared
+PEX4=-0.215348  $FactorincurvatureEfxwhiledriving
+PKX1=-71.6628600  $LongitudinalslipstiffnessKfx/FzatFznom
+PKX2=33.4150400  $VariationofslipstiffnessKfx/Fzwithload change
+PKX3=0.4248453  $ExponentinslipstiffnessKfx/Fzwithload
+PHX1=-0.0000478  $HorizontalshiftShxatFznom
+PHX2=-0.0007055  $VariationofshiftShxwithload
+PVX1=0.0061466  $VerticalshiftSvx/FzatFznom
+PVX2=-0.1062804  $VariationofshiftSvx/Fzwithload
+RBX1=16.4306400  $SlopefactorforcombinedslipFxreduction
+RBX2=18.4681300  $VariationofslopeFxreductionwithkappa
+RCX1=-1.2109120  $ShapefactorforcombinedslipFxreduction
+REX1=-0.0557595  $CurvaturefactorofcombinedFx
+REX2=0.1236505  $CurvaturefactorofcombinedFxwithload
+RHX1=-0.0047606  $ShiftfactorforcombinedslipFxreduction
+PTX1=0.0000000  $RelaxationlengthSigKap0/FzatFznom
+PTX2=0.0000000  $VariationofSigKap0/Fzwithload
+PTX3=0.0000000  $VariationofSigKap0/Fzwithexponentofload
+$--------------------------------------------------------overturning
+[OVERTURNING_COEFFICIENTS]
+QSX1=0.0000000  $Lateralforceinducedoverturningmoment
+QSX2=0.0000000  $Camberinducedoverturningcouple
+QSX3=0.0000000  $Fyinducedoverturningcouple
+$------------------------------------------------------------lateral
+[LATERAL_COEFFICIENTS]
+PCY1=1.4519880  $ShapefactorCfyforlateralforces
+PDY1=-1.8079810  $LateralfrictionMuy
+PDY2=0.4654161  $VariationoffrictionMuywithload
+PDY3=-0.7525135  $VariationoffrictionMuywithsquaredcamber
+PEY1=-3.4772910  $LateralcurvatureEfyatFznom
+PEY2=-4.3830220  $VariationofcurvatureEfywithload
+PEY3=-0.0085639  $ZeroordercamberdependencyofcurvatureEfy
+PEY4=2.5296190  $VariationofcurvatureEfywithcamber
+PKY1=35.5064300  $MaximumvalueofstiffnessKfy/Fznom
+PKY2=1.3221200  $LoadatwhichKfyreachesmaximumvalue
+PKY3=-0.0287592  $VariationofKfy/Fznomwithcamber
+PHY1=-0.0020639  $HorizontalshiftShyatFznom
+PHY2=0.0005868  $VariationofshiftShywithload
+PHY3=-0.0569248  $VariationofshiftShywithcamber
+PVY1=0.0064946  $VerticalshiftinSvy/FzatFznom
+PVY2=-0.0343597  $VariationofshiftSvy/Fzwithload
+PVY3=-1.8366400  $VariationofshiftSvy/Fzwithcamber
+PVY4=-2.3778690  $VariationofshiftSvy/Fzwithcamberandload
+RBY1=18.6170600  $SlopefactorforcombinedFyreduction
+RBY2=-11.6501200  $VariationofslopeFyreductionwithalpha
+RBY3=0.0032741  $ShifttermforalphainslopeFyreduction
+RCY1=1.0608890  $ShapefactorforcombinedFyreduction
+REY1=0.0080484  $CurvaturefactorofcombinedFy
+REY2=0.2419128  $CurvaturefactorofcombinedFywithload
+RHY1=0.0095599  $ShiftfactorforcombinedFyreduction
+RHY2=0.0086598  $ShiftfactorforcombinedFyreductionwithload
+RVY1=0.0556006  $KappainducedsideforceSvyk/Muy*FzatFznom
+RVY2=-2.2270140  $VariationofSvyk/Muy*Fzwithload
+RVY3=85.9486200  $VariationofSvyk/Muy*Fzwithcamber
+RVY4=-48.5284200  $VariationofSvyk/Muy*Fzwithalpha
+RVY5=-3.5130000  $VariationofSvyk/Muy*Fzwithkappa
+RVY6=0.0203887  $VariationofSvyk/Muy*Fzwithatan(kappa)
+PTY1=0.0000000  $PeakvalueofrelaxationlengthSigAlp0/R0
+PTY2=0.0000000  $ValueofFz/FznomwhereSigAlp0isextreme
+$-------------------------------------------------rollingresistance
+[ROLLING_COEFFICIENTS] 	 			
+QSY1 	= 	1.13593E-02 	$Rolling resistance torque coefficient      							
+QSY2 	= 	0.00000E+00 	$Rolling resistance torque depending on Fx    							
+QSY3 	= 	-1.39242E-03 	$Rolling resistance torque depending on speed    							
+QSY4 	= 	2.30827E-04 	$Rolling resistance torque depending on speed ^4   $-----------------------------------------------------------aligning
+[ALIGNING_COEFFICIENTS]
+QBZ1=5.0930850  $TrailslopefactorfortrailBptatFznom
+QBZ2=-0.0294079  $VariationofslopeBptwithload
+QBZ3=-0.6205854  $VariationofslopeBptwithloadsquared
+QBZ4=2.5057900  $VariationofslopeBptwithcamber
+QBZ5=0.0765467  $VariationofslopeBptwithabsolutecamber
+QBZ9=20.7362600  $SlopefactorBrofresidualtorqueMzr
+QBZ10=-1.2800850  $SlopefactorBrofresidualtorqueMzr
+QCZ1=-0.9276185  $ShapefactorCptforpneumatictrail
+QDZ1=0.1823156 $PeaktrailDpt=Dpt*(Fz/Fznom*R0)
+QDZ2=0.0504094  $VariationofpeakDptwithload
+QDZ3=-1.1711920  $VariationofpeakDptwithcamber
+QDZ4=-93.6238500  $VariationofpeakDptwithcambersquared
+QDZ6=-0.0102837  $PeakresidualtorqueDmr=Dmr/(Fz*R0)
+QDZ7=-0.0102110 $VariationofpeakfactorDmrwithload
+QDZ8=-2.1514800 $VariationofpeakfactorDmrwithcamber
+QDZ9=0.0299520  $VariationofpeakfactorDmrwithcamberandload
+QEZ1=-191.0723000  $TrailcurvatureEptatFznom
+QEZ2=0.2160476  $VariationofcurvatureEptwithload
+QEZ3=1.3721290  $VariationofcurvatureEptwithloadsquared
+QEZ4=1.3721290  $VariationofcurvatureEptwithsignofAlpha-t
+QEZ5=-7.5135860  $VariationofEptwithcamberandsignAlpha-t
+QHZ1=0.0003101  $TrailhorizontalshiftShtatFznom
+QHZ2=0.0019420  $VariationofshiftShtwithload
+QHZ3=-0.1363338  $VariationofshiftShtwithcamber
+QHZ4=0.0207927  $VariationofshiftShtwithcamberandload
+SSZ1=0.0787697  $Nominalvalueofs/R0:effectofFxonMz
+SSZ2=-0.0371433  $Variationofdistances/R0withFy/Fznom
+SSZ3=-1.8183800  $Variationofdistances/R0withcamber
+SSZ4=1.0059060  $Variationofdistances/R0withloadandcamber
+QTZ1 = 0.2   $Gyration torque constant
+MBELT = 5.4   $Belt mass of the wheel
+$-----------------------------------------------turn-slipparameters
+[TURNSLIP_COEFFICIENTS]
+PECP1=0.0000000  $Camberstiffnessreductionfactor
+PECP2=0.0000000  $Camberstiffnessreductionfactorwithload
+PDXP1=0.0000000  $PeakFxreductionduetospin
+PDXP2=0.0000000  $PeakFxreductionduetospinwithload
+PDXP3=0.0000000  $PeakFxreductionduetospinwithlongitudinalslip
+PDYP1=0.0000000  $PeakFyreductionduetospin
+PDYP2=0.0000000  $PeakFyreductionduetospinwithload
+PDYP3=0.0000000  $PeakFyreductionduetospinwithlateralslip
+PDYP4=0.0000000  $PeakFyreductionwithsquarerootofspin
+PKYP1=0.0000000  $Corneringstiffnessreductionduetospin
+PHYP1=0.0000000  $Fylateralshiftshapefactor
+PHYP2=0.0000000  $MaximumFylateralshift
+PHYP3=0.0000000  $MaximumFylateralshiftwithload
+PHYP4=0.0000000  $Fylateralshiftcurvaturefactor
+QDTP1=0.0000000  $Pneumatictrailreductionfactor
+QBRP1=0.0000000  $Residualtorquereductionfactorwithlateralslip
+QCRP1=0.0000000  $Turningmomentatconstantturningwithzerospeed
+QCRP2=0.0000000  $Turningmomentat90deglateralslip
+QDRP1=0.0000000  $Maximumturningmoment
+QDRP2=0.0000000  $Locationofmaximumturningmoment
+$--------------------------------------------contactpatchparameters
+[CONTACT_COEFFICIENTS]
+PA1=0.0000000  $HalfcontactlengthdependencyonFz)
+PA2=0.0000000  $Halfcontactlengthdependencyonsqrt(Fz/R0)
+$--------------------------------------------contactpatchslipmodel
+[DYNAMIC_COEFFICIENTS]
+MC=0.0000000  $Contactmass
+IC=0.0000000  $Contactmomentofinertia
+KX=0.0000000  $Contactlongitudinaldamping
+KY=0.0000000  $Contactlateraldamping
+KP=0.0000000  $Contactyawdamping
+CX=0.0000000  $Contactlongitudinalstiffness
+CY=0.0000000  $Contactlateralstiffness
+CP=0.0000000  $Contactyawstiffness
+EP=0.0000000
+EP12=0.0000000
+BF2=0.0000000
+BP1=0.0000000
+BP2=0.0000000
+$------------------------------------------------------loadedradius
+[LOADED_RADIUS_COEFFICIENTS]
+QV1 = 0   $Tire radius growth coefficient
+QV2 = 0   $Tire stiffness variation coefficient with speed
+QFCX1 = 0   $Tire stiffness interaction with Fx
+QFCY1 = 0   $Tire stiffness interaction with Fy
+QFCG1 = 0.0   $Tire stiffness interaction with camber
+QFZ1 = 0.0   $Linear stiffness coefficient, if zero, VERTICAL_STIFFNESS is taken
+QFZ2 = 0   $Tire vertical stiffness coefficient (quadratic)
+
+
+$-----------------------------------------------contact patch parameters
+! 3D contact can be switched on by deleting the comment ! character
+! When no further coefficients are specified, default values will be taken
+[CONTACT_COEFFICIENTS]
+CONTACT_MODEL            = '3D_ENVELOPING'

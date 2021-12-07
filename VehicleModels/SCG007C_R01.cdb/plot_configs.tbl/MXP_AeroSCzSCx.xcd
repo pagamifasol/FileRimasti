@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VI-ANIMATOR>
+  <viframework::viobjects::CalculatedComponent expression="res(&apos;aero_forces.drag_force&apos;)/(0.5*1.18*res(&apos;aero_forces.longitudinal_velocity&apos;)*res(&apos;aero_forces.longitudinal_velocity&apos;))*1e6" name="SCx"></viframework::viobjects::CalculatedComponent>
+  <viframework::viobjects::CalculatedComponent expression="(res(&apos;aero_forces.front_downforce&apos;)+res(&apos;aero_forces.rear_downforce&apos;))/(0.5*1.18*res(&apos;aero_forces.longitudinal_velocity&apos;)*res(&apos;aero_forces.longitudinal_velocity&apos;))*1e6" name="SCz"></viframework::viobjects::CalculatedComponent>
+</VI-ANIMATOR>

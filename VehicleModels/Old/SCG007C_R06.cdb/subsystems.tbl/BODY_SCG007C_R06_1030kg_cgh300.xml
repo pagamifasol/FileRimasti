@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<afc xmlns="http://www.mscsoftware.com/:vfc" xmlns:afc="http://www.mscsoftware.com/:afc">
+     <afc:Bibliography>
+          <File schema="afc" version="2.0.0.0" URI="mdids://SCG007C_R06/subsystems.tbl/BODY_SCG007C_R06_1030kg_cgh300.xml" publicationDate="2020-05-27 14:34:09+02:00"/>
+          <Revision version="17.0"/>
+          <Corporation author="MSC.Software" URI="http://www.mscsoftware.com/"/>
+          <Author user="Stefano.Rapisarda" name="-unknown name-"/>
+          <Environment hostName="PE-NTBK-007" operatingSystem="MS Windows NT 6.2"/>
+          <Application name="MSC/AFC" version="02.00.00"/>
+     </afc:Bibliography>
+     <afc:Units>
+          <afc:UnitSetting name="angle" current="deg"/>
+          <afc:UnitSetting name="current" current="ampere"/>
+          <afc:UnitSetting name="force" current="newton"/>
+          <afc:UnitSetting name="length" current="mm"/>
+          <afc:UnitSetting name="luminosity" current="candela"/>
+          <afc:UnitSetting name="mass" current="kg"/>
+          <afc:UnitSetting name="quantity" current="mole"/>
+          <afc:UnitSetting name="solidAngle" current="steradian"/>
+          <afc:UnitSetting name="temperature" current="kelvin"/>
+          <afc:UnitSetting name="time" current="sec"/>
+          <afc:UnitSetting name="frequency" current="Hz"/>
+     </afc:Units>
+     <Subsystem name="BODY_SCG007C_R06_1030kg_cgh300" active="true" userDefined="false">
+          <CRTSprungMass name="body" active="true" propertyURI="mdids://SCG007C_R06/graphic_models.tbl/RaceCar.cmd" userDefined="false" cgHeight="300.0" cgX="1727.0" cgY="0" ixx="219326800.0" ixz="0" iyy="1382026500.0" izz="1505211100.0" ixy="0" iyz="0" mass="1005.0" front_cgX="1572.42" front_cgY="0" front_cgZ="409.02" front_ixx="88495700.0" front_ixz="-15691100.0" front_iyy="398532210.0" front_izz="440940958.0" front_ixy="900805.0" front_iyz="235100.0" front_mass="571.21" rear_cgX="1572.42" rear_cgY="0" rear_cgZ="409.02" rear_ixx="88495700.0" rear_ixz="-15691100.0" rear_iyy="398532210.0" rear_izz="440940958.0" rear_ixy="900805.0" rear_iyz="235100.0" rear_mass="571.21" wheelbase="3140.0" graphicsCmdFile="mdids://RaceCar/graphic_models.tbl/RaceCar.cmd" complianceLocation="(-1566.0 0 412.1)" torsionalStiffness="1.0" verticalBendingStiffness="1.0" lateralBendingStiffness="1.0" verticalStiffness="1.0" lateralStiffness="1.0" axialStiffness="1.0" torsionalDamping="0.01" verticalBendingDamping="0.01" lateralBendingDamping="0.01" verticalDamping="0.01" lateralDamping="0.01" axialDamping="0.01" torsionalStiffnessActiveFlag="false" verticalBendingStiffnessActiveFlag="false" lateralBendingStiffnessActiveFlag="false" verticalStiffnessActiveFlag="false" lateralStiffnessActiveFlag="false" axialStiffnessActiveFlag="false"/>
+          <SensorPoint name="sensor_point" active="true" userDefined="false" location="(-1727 0 320)" yaw="0" pitch="0" roll="0"/>
+          <cgReferencePoint name="cg_reference_point" active="true" userDefined="false" location="(-1727 0 320)"/>
+          <Spline name="front_ride_height_map" id="0" active="true" userDefined="false" interpolation_method="akima" xUnit="velocity" yUnit="length">
+            <![CDATA[
+    -2594.83356      56.5223119
+     8339.38135      54.1995283
+     18745.2782      51.6324309
+     28232.0472      49.3910815
+     36625.5516      47.2613184
+     40648.0283      48.2715024
+     40707.3553      49.0348534
+     41648.4971       46.136686
+     41648.9488      48.9373275
+     43457.4046      48.4757541
+     43818.5109       45.051325
+     43942.2378       43.964268
+     46161.4739      47.9188775
+     47388.0085      43.0850021
+     49546.8833      47.9513527
+      49660.064      43.5601609
+     51356.1253      43.1271761
+     53055.7722      47.1787177
+     54015.0259        42.60243
+     55481.9062      39.8848851
+     55911.7779      45.2620329
+     56674.5075      42.1907842
+     57340.6704      43.3424912
+     59378.6565      35.2350839
+     62510.4956      34.9610012
+]]>
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </Spline>
+          <Spline name="rear_ride_height_map" id="0" active="true" userDefined="false" interpolation_method="akima" xUnit="velocity" yUnit="length">
+            <![CDATA[
+    -2594.83356      84.9517755
+     8339.38135      81.7311883
+     18745.2782      77.8175393
+     28232.0472      73.7636669
+     36625.5516      70.5234384
+     40648.0283      71.8143222
+     40707.3553      71.9393665
+     41648.4971       70.496348
+     41648.9488      72.3052042
+     43457.4046      73.3646613
+     43818.5109      68.1771007
+     43942.2378      67.4588138
+     46161.4739      74.3758526
+     47388.0085      64.3477916
+     49546.8833      73.6924625
+      49660.064      65.6895768
+     51356.1253      61.8647106
+     53055.7722      71.5730962
+     54015.0259      63.9529372
+     55481.9062      60.6006946
+     55911.7779      68.8308534
+     56674.5075      64.1607105
+     57340.6704      65.9123299
+     59378.6565      58.1470834
+     62510.4956      53.4052893
+]]>
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </Spline>
+          <CRTSensor name="lap_sensor" active="true" userDefined="false" activeFlag="true" type="Lap" drdFile="mdids://carrealtime_shared/driver_roads.tbl/VI_Track_drv.drd" triggerS="1.0" typeOfFreedom="Translational" angleMethod="AX_AY_AZ" iBody="front_chassis" iLoc="(0 0 0)" iOri="(0 0 0)" jBody="ground" jLoc="(0 0 0)" jOri="(0 0 0)" refBody="gyro" refLoc="(0 0 0)" refOri="(0 0 0)">
+               <OutputChannel name="outputChannel_1" active="true" userDefined="false" activeFlag="true" resultSet="path_sensor" component="total_lap_time" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_2" active="true" userDefined="false" activeFlag="true" resultSet="path_sensor" component="total_lap_count" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_3" active="true" userDefined="false" activeFlag="true" resultSet="path_sensor" component="last_sector_time" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_4" active="true" userDefined="false" activeFlag="true" resultSet="path_sensor" component="progressive_time" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_5" active="true" userDefined="false" activeFlag="true" resultSet="path_sensor" component="path_s" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_6" active="true" userDefined="false" activeFlag="true" resultSet="path_sensor" component="path_distance" scale="1.0" offset="0" isLive="false"/>
+          </CRTSensor>
+          <CRTSensor name="beacon_1" active="true" userDefined="false" activeFlag="false" type="Beacon" triggerS="0" typeOfFreedom="Translational" angleMethod="AX_AY_AZ" iBody="front_chassis" iLoc="(0 0 0)" iOri="(0 0 0)" jBody="ground" jLoc="(0 0 0)" jOri="(0 0 0)" refBody="gyro" refLoc="(0 0 0)" refOri="(0 0 0)">
+               <OutputChannel name="outputChannel_1" active="true" userDefined="false" activeFlag="true" resultSet="path_sensor" component="beacon_1_time" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_2" active="true" userDefined="false" activeFlag="true" resultSet="path_sensor" component="beacon_1_lap" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_3" active="true" userDefined="false" activeFlag="true" resultSet="path_sensor" component="beacon_1_sector_time" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_4" active="true" userDefined="false" activeFlag="true" resultSet="path_sensor" component="beacon_1_progressive_time" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_5" active="true" userDefined="false" activeFlag="true" resultSet="path_sensor" component="beacon_1_path_s" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_6" active="true" userDefined="false" activeFlag="true" resultSet="path_sensor" component="beacon_1_path_distance" scale="1.0" offset="0" isLive="false"/>
+          </CRTSensor>
+          <CRTSensor name="driverEYE" active="true" userDefined="false" activeFlag="false" type="Acceleration" triggerS="1.0" typeOfFreedom="Translational" angleMethod="AX_AY_AZ" iBody="front_chassis" iLoc="(0 0 0)" iOri="(0 0 0)" jBody="ground" jLoc="(0 0 0)" jOri="(0 0 0)" refBody="front_chassis" refLoc="(0 0 0)" refOri="(0 0 0)">
+               <OutputChannel name="outputChannel_1" active="true" userDefined="false" activeFlag="true" resultSet="driverEYE_sensor" component="ACCX" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_2" active="true" userDefined="false" activeFlag="true" resultSet="driverEYE_sensor" component="ACCY" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_3" active="true" userDefined="false" activeFlag="true" resultSet="driverEYE_sensor" component="ACCZ" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_4" active="true" userDefined="false" activeFlag="true" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_5" active="true" userDefined="false" activeFlag="true" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_6" active="true" userDefined="false" activeFlag="true" scale="1.0" offset="0" isLive="false"/>
+          </CRTSensor>
+          <CRTBodySetupData name="bodySetupData" active="true" userDefined="false" massSetupMethod="racing">
+               <CRTFuelConfiguration name="fuelConfiguration" active="true" userDefined="false" setupActiveFlag="false" runningActiveFlag="false" location="(0 0 0)" setupMass="0" runningMass="0"/>
+               <CRTDriverConfiguration name="driverConfiguration" active="true" userDefined="false" setupActiveFlag="false" runningActiveFlag="false" location="(0 0 0)" mass="0"/>
+               <CRTBallast name="ballast1" active="true" userDefined="false" setupActiveFlag="false" runningActiveFlag="false" location="(0 0 0)" mass="0"/>
+               <CRTBallast name="ballast2" active="true" userDefined="false" setupActiveFlag="false" runningActiveFlag="false" location="(0 0 0)" mass="0"/>
+               <CRTBallast name="ballast3" active="true" userDefined="false" setupActiveFlag="false" runningActiveFlag="false" location="(0 0 0)" mass="0"/>
+               <CRTBallast name="ballast4" active="true" userDefined="false" setupActiveFlag="false" runningActiveFlag="false" location="(0 0 0)" mass="0"/>
+               <CRTBallast name="ballast5" active="true" userDefined="false" setupActiveFlag="false" runningActiveFlag="false" location="(0 0 0)" mass="0"/>
+               <CRTBallast name="ballast6" active="true" userDefined="false" setupActiveFlag="false" runningActiveFlag="false" location="(0 0 0)" mass="0"/>
+               <CRTBodyAuxiliaryMass name="driver" active="true" userDefined="false" activeFlag="false" location="(0 0 0)" mass="0"/>
+               <CRTBodyAuxiliaryMass name="passenger1" active="true" userDefined="false" activeFlag="false" location="(0 0 0)" mass="0"/>
+               <CRTBodyAuxiliaryMass name="passenger2" active="true" userDefined="false" activeFlag="false" location="(0 0 0)" mass="0"/>
+               <CRTBodyAuxiliaryMass name="passenger3" active="true" userDefined="false" activeFlag="false" location="(0 0 0)" mass="0"/>
+               <CRTBodyAuxiliaryMass name="passenger4" active="true" userDefined="false" activeFlag="false" location="(0 0 0)" mass="0"/>
+               <CRTBodyAuxiliaryMass name="passenger5" active="true" userDefined="false" activeFlag="false" location="(0 0 0)" mass="0"/>
+               <CRTBodyAuxiliaryMass name="fuel" active="true" userDefined="false" activeFlag="false" location="(0 0 0)" mass="0"/>
+               <CRTBodyAuxiliaryMass name="luggage" active="true" userDefined="false" activeFlag="false" location="(0 0 0)" mass="0"/>
+               <CRTBodyAuxiliaryMass name="hitch" active="true" userDefined="false" activeFlag="false" location="(0 0 0)" mass="0"/>
+          </CRTBodySetupData>
+          <CRTCrossWeightAdjustment name="cross_weight_adjustment" active="true" userDefined="false" crossWeightActiveFlag="false" crossWeightMethod="front_force" crossWeightForce="0" crossWeightRatio="0.5" unhookedForce="0" unhookedRatio="0.5"/>
+          <CRTAerodynamicForces name="aero_forces" active="false" propertyURI="mdids://RaceCar/aero_forces.tbl/RaceCar_RT_aerofile.aer" userDefined="false" activeFlag="true" frontDownForceLocation="(0 0 320.0)" rearDownForceLocation="(-3140.0 0 320.0)" dragForceLocation="(-1727.0 0 320.0)" frontDownForceSensor="(0 0 70.0)" frontAuxDownForceSensorActiveFlag="false" frontAuxDownForceSensor="(0 0 0)" rearDownForceSensor="(-3140.0 0 90.0)" dragForceSensor="(-1502.64 0 316.08)" frontDownForceShift="0" frontDownForceScale="1.0" frontDownForceSmoothingTime="0" rearDownForceShift="0" rearDownForceScale="1.0" rearDownForceSmoothingTime="0" centerDownForceShift="0" centerDownForceScale="0" centerDownForceSmoothingTime="0" dragForceShift="0" dragForceScale="1.0" dragForceSmoothingTime="0.5" frontDragForceShift="0" frontDragForceScale="0" frontDragForceSmoothingTime="0" rearDragForceShift="0" rearDragForceScale="0" rearDragForceSmoothingTime="0" frontSideForceShift="0" frontSideForceScale="1.0" frontSideForceSmoothingTime="0" rearSideForceShift="0" rearSideForceScale="1.0" rearSideForceSmoothingTime="0" centerSideForceShift="0" centerSideForceScale="0" centerSideForceSmoothingTime="0" rollMomentShift="0" rollMomentScale="1.0" rollMomentSmoothingTime="0.5" pitchMomentShift="0" pitchMomentScale="1.0" pitchMomentSmoothingTime="0.5" yawMomentShift="0" yawMomentScale="0" yawMomentSmoothingTime="0" compensationTorqueActiveFlag="true" compensationTorqueShift="0" compensationTorqueScale="1.0" propertyFile="mdids://SCG007C_R06/aero_forces.tbl/SCG007C_44-56_hyp_nopitch_CLS4.00_CDS1.00.aer"/>
+          <CRTVehicleGraphics name="vehicle_graphics" active="true" userDefined="false" graphicsCmdFile="mdids://SCG007C_R06/graphic_models.tbl/RaceCar.cmd" xgrActiveFlag="true" xgrFile="mdids://SCG007C_R06/graphic_models.tbl/RaceCar.xgr" graphicsType="full_vehicle" engineGraphicsActiveFlag="false" auxGraphicsActiveFlag="false" frontTwinWheelsActiveFlag="false" middleTwinWheelsActiveFlag="false" rearTwinWheelsActiveFlag="false"/>
+          <CRTSkidplatePoint name="FrontLeft" active="true" userDefined="false" activeFlag="true" actionBody="front_chassis" actionLoc="(-200.0 150.0 45.0)" contactStiffness="4000.0" contactDamping="40.0" contactExponent="1.1" contactFrictionCoefficient="0.1"/>
+          <CRTSkidplatePoint name="FrontRight" active="true" userDefined="false" activeFlag="true" actionBody="front_chassis" actionLoc="(-200.0 -150.0 45.0)" contactStiffness="4000.0" contactDamping="40.0" contactExponent="1.1" contactFrictionCoefficient="0.1"/>
+          <CRTSkidplatePoint name="RearLeft" active="true" userDefined="false" activeFlag="true" actionBody="front_chassis" actionLoc="(-3150.0 70.0 65.0)" contactStiffness="4000.0" contactDamping="40.0" contactExponent="1.1" contactFrictionCoefficient="0.1"/>
+          <CRTSkidplatePoint name="RearRight" active="true" userDefined="false" activeFlag="true" actionBody="front_chassis" actionLoc="(-3150.0 -70.0 65.0)" contactStiffness="4000.0" contactDamping="40.0" contactExponent="1.1" contactFrictionCoefficient="0.1"/>
+          <Spline name="front_ride_height_map_vs_front_load" id="0" active="true" userDefined="false" interpolation_method="akima" xUnit="force" yUnit="length">
+            <![CDATA[
+     6197.47371      82.7510035
+     6197.94242      82.7488974
+     6200.54686      82.7326363
+     6205.74337      82.6971794
+     6213.79755      82.6400886
+     6224.80843      82.5603438
+     6236.12706      82.4691552
+     6241.04419      82.4190722
+     6242.86506      82.3997664
+     6243.54681      82.3926427
+]]>
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </Spline>
+          <Spline name="rear_ride_height_map_vs_rear_load" id="0" active="true" userDefined="false" interpolation_method="akima" xUnit="force" yUnit="length">
+            <![CDATA[
+     7565.95619      96.3787093
+      7567.0386      96.3748677
+     7572.51751      96.3463393
+     7582.89621      96.2851406
+     7598.69491      96.1866355
+     7620.08733      96.0488595
+     7641.01802      95.8921266
+     7648.57248      95.8059516
+     7651.78099      95.7686852
+     7653.07327      95.7534281
+]]>
+          </Spline>
+          <CRTSensor name="gyro_fr" active="true" userDefined="false" activeFlag="false" type="Velocity" triggerS="1.0" typeOfFreedom="Translational" angleMethod="AX_AY_AZ" iBody="front_chassis" iLoc="(0 0 0)" iOri="(0 0 0)" jBody="ground" jLoc="(0 0 0)" jOri="(0 0 0)" refBody="gyro" refLoc="(0 0 0)" refOri="(0 0 0)">
+               <OutputChannel name="outputChannel_1" active="true" userDefined="false" activeFlag="true" resultSet="gyro_fr_sensor" component="VX" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_2" active="true" userDefined="false" activeFlag="true" resultSet="gyro_fr_sensor" component="VY" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_3" active="true" userDefined="false" activeFlag="true" resultSet="gyro_fr_sensor" component="VZ" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_4" active="true" userDefined="false" activeFlag="true" resultSet="gyro_fr_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_5" active="true" userDefined="false" activeFlag="true" resultSet="gyro_fr_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_6" active="true" userDefined="false" activeFlag="true" resultSet="gyro_fr_sensor" scale="1.0" offset="0" isLive="false"/>
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </CRTSensor>
+          <CRTSensor name="Slip.Corner.R1" active="true" userDefined="false" activeFlag="true" type="Velocity" triggerS="1.0" typeOfFreedom="Translational" angleMethod="AX_AY_AZ" iBody="front_chassis" iLoc="(18.5 -571.4 190.0)" iOri="(0 0 0)" jBody="ground" jLoc="(18.5 -571.4 0)" jOri="(0 0 0)" refBody="front_chassis" refLoc="(18.5 -571.4 190.0)" refOri="(0 0 0)">
+               <OutputChannel name="outputChannel_1" active="true" userDefined="false" activeFlag="true" resultSet="Slip.Corner.R1_sensor" component="VX" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_2" active="true" userDefined="false" activeFlag="true" resultSet="Slip.Corner.R1_sensor" component="VY" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_3" active="true" userDefined="false" activeFlag="true" resultSet="Slip.Corner.R1_sensor" component="VZ" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_4" active="true" userDefined="false" activeFlag="true" resultSet="Slip.Corner.R1_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_5" active="true" userDefined="false" activeFlag="true" resultSet="Slip.Corner.R1_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_6" active="true" userDefined="false" activeFlag="true" resultSet="Slip.Corner.R1_sensor" scale="1.0" offset="0" isLive="false"/>
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </CRTSensor>
+          <CRTSensor name="Front_Splitter" active="true" userDefined="false" activeFlag="true" type="Displacement" triggerS="1.0" typeOfFreedom="Translational" angleMethod="AX_AY_AZ" iBody="front_chassis" iLoc="(1000.0 0 55.0)" iOri="(0 0 0)" jBody="ground" jLoc="(0 0 0)" jOri="(0 0 0)" refBody="gyro" refLoc="(0 0 0)" refOri="(0 0 0)">
+               <OutputChannel name="outputChannel_1" active="true" userDefined="false" activeFlag="true" resultSet="Front_Splitter_sensor" component="X" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_2" active="true" userDefined="false" activeFlag="true" resultSet="Front_Splitter_sensor" component="Y" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_3" active="true" userDefined="false" activeFlag="true" resultSet="Front_Splitter_sensor" component="Z" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_4" active="true" userDefined="false" activeFlag="true" resultSet="Front_Splitter_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_5" active="true" userDefined="false" activeFlag="true" resultSet="Front_Splitter_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_6" active="true" userDefined="false" activeFlag="true" resultSet="Front_Splitter_sensor" scale="1.0" offset="0" isLive="false"/>
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </CRTSensor>
+          <CRTSensor name="FL_ACC" active="true" userDefined="false" activeFlag="true" type="Acceleration" triggerS="1.0" typeOfFreedom="Translational" angleMethod="AX_AY_AZ" iBody="front_chassis" iLoc="(0 827.0 0)" iOri="(0 0 0)" jBody="ground" jLoc="(0 827.0 0)" jOri="(0 0 0)" refBody="ground" refLoc="(0 0 0)" refOri="(0 0 0)">
+               <OutputChannel name="outputChannel_1" active="true" userDefined="false" activeFlag="true" resultSet="FL_ACC_sensor" component="ACCX" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_2" active="true" userDefined="false" activeFlag="true" resultSet="FL_ACC_sensor" component="ACCY" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_3" active="true" userDefined="false" activeFlag="true" resultSet="FL_ACC_sensor" component="ACCZ" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_4" active="true" userDefined="false" activeFlag="true" resultSet="FL_ACC_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_5" active="true" userDefined="false" activeFlag="true" resultSet="FL_ACC_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_6" active="true" userDefined="false" activeFlag="true" resultSet="FL_ACC_sensor" scale="1.0" offset="0" isLive="false"/>
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </CRTSensor>
+          <CRTSensor name="FR_ACC" active="true" userDefined="false" activeFlag="true" type="Acceleration" triggerS="1.0" typeOfFreedom="Translational" angleMethod="AX_AY_AZ" iBody="front_chassis" iLoc="(0 -827.0 0)" iOri="(0 0 0)" jBody="ground" jLoc="(0 -827.0 0)" jOri="(0 0 0)" refBody="ground" refLoc="(0 0 0)" refOri="(0 0 0)">
+               <OutputChannel name="outputChannel_1" active="true" userDefined="false" activeFlag="true" resultSet="FR_ACC_sensor" component="ACCX" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_2" active="true" userDefined="false" activeFlag="true" resultSet="FR_ACC_sensor" component="ACCY" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_3" active="true" userDefined="false" activeFlag="true" resultSet="FR_ACC_sensor" component="ACCZ" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_4" active="true" userDefined="false" activeFlag="true" resultSet="FR_ACC_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_5" active="true" userDefined="false" activeFlag="true" resultSet="FR_ACC_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_6" active="true" userDefined="false" activeFlag="true" resultSet="FR_ACC_sensor" scale="1.0" offset="0" isLive="false"/>
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </CRTSensor>
+          <CRTSensor name="RL_ACC" active="true" userDefined="false" activeFlag="true" type="Acceleration" triggerS="1.0" typeOfFreedom="Translational" angleMethod="AX_AY_AZ" iBody="rear_chassis" iLoc="(-2825.0 802.0 0)" iOri="(0 0 0)" jBody="ground" jLoc="(-2825.0 802.0 0)" jOri="(0 0 0)" refBody="ground" refLoc="(0 0 0)" refOri="(0 0 0)">
+               <OutputChannel name="outputChannel_1" active="true" userDefined="false" activeFlag="true" resultSet="RL_ACC_sensor" component="ACCX" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_2" active="true" userDefined="false" activeFlag="true" resultSet="RL_ACC_sensor" component="ACCY" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_3" active="true" userDefined="false" activeFlag="true" resultSet="RL_ACC_sensor" component="ACCZ" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_4" active="true" userDefined="false" activeFlag="true" resultSet="RL_ACC_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_5" active="true" userDefined="false" activeFlag="true" resultSet="RL_ACC_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_6" active="true" userDefined="false" activeFlag="true" resultSet="RL_ACC_sensor" scale="1.0" offset="0" isLive="false"/>
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </CRTSensor>
+          <CRTSensor name="RR_ACC" active="true" userDefined="false" activeFlag="true" type="Acceleration" triggerS="1.0" typeOfFreedom="Translational" angleMethod="AX_AY_AZ" iBody="rear_chassis" iLoc="(-2825.0 -802.0 0)" iOri="(0 0 0)" jBody="ground" jLoc="(-2825.0 -802.0 0)" jOri="(0 0 0)" refBody="gyro" refLoc="(0 0 0)" refOri="(0 0 0)">
+               <OutputChannel name="outputChannel_1" active="true" userDefined="false" activeFlag="true" resultSet="RR_ACC_sensor" component="ACCX" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_2" active="true" userDefined="false" activeFlag="true" resultSet="RR_ACC_sensor" component="ACCY" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_3" active="true" userDefined="false" activeFlag="true" resultSet="RR_ACC_sensor" component="ACCZ" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_4" active="true" userDefined="false" activeFlag="true" resultSet="RR_ACC_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_5" active="true" userDefined="false" activeFlag="true" resultSet="RR_ACC_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_6" active="true" userDefined="false" activeFlag="true" resultSet="RR_ACC_sensor" scale="1.0" offset="0" isLive="false"/>
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </CRTSensor>
+          <CRTSensor name="RH_FL" active="true" userDefined="true" activeFlag="true" type="Displacement" triggerS="1.0" typeOfFreedom="Translational" angleMethod="AX_AY_AZ" iBody="front_chassis" iLoc="(0 835.0 0)" iOri="(0 0 0)" jBody="ground" jLoc="(0 835.0 0)" jOri="(0 0 0)" refBody="ground" refLoc="(0 0 0)" refOri="(0 0 0)">
+               <OutputChannel name="outputChannel_1" active="true" userDefined="false" activeFlag="true" resultSet="RH_FL_sensor" component="X" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_2" active="true" userDefined="false" activeFlag="true" resultSet="RH_FL_sensor" component="Y" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_3" active="true" userDefined="false" activeFlag="true" resultSet="RH_FL_sensor" component="Z" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_4" active="true" userDefined="false" activeFlag="true" resultSet="RH_FL_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_5" active="true" userDefined="false" activeFlag="true" resultSet="RH_FL_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_6" active="true" userDefined="false" activeFlag="true" resultSet="RH_FL_sensor" scale="1.0" offset="0" isLive="false"/>
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </CRTSensor>
+          <CRTSensor name="RH_FR" active="true" userDefined="true" activeFlag="true" type="Displacement" triggerS="1.0" typeOfFreedom="Translational" angleMethod="AX_AY_AZ" iBody="front_chassis" iLoc="(0 -835.0 0)" iOri="(0 0 0)" jBody="ground" jLoc="(0 -835.0 0)" jOri="(0 0 0)" refBody="ground" refLoc="(0 0 0)" refOri="(0 0 0)">
+               <OutputChannel name="outputChannel_1" active="true" userDefined="false" activeFlag="true" resultSet="RH_FR_sensor" component="X" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_2" active="true" userDefined="false" activeFlag="true" resultSet="RH_FR_sensor" component="Y" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_3" active="true" userDefined="false" activeFlag="true" resultSet="RH_FR_sensor" component="Z" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_4" active="true" userDefined="false" activeFlag="true" resultSet="RH_FR_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_5" active="true" userDefined="false" activeFlag="true" resultSet="RH_FR_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_6" active="true" userDefined="false" activeFlag="true" resultSet="RH_FR_sensor" scale="1.0" offset="0" isLive="false"/>
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </CRTSensor>
+          <CRTSensor name="RH_RL" active="true" userDefined="true" activeFlag="true" type="Displacement" triggerS="1.0" typeOfFreedom="Translational" angleMethod="AX_AY_AZ" iBody="rear_chassis" iLoc="(-3140.0 815.0 0)" iOri="(0 0 0)" jBody="ground" jLoc="(-3140.0 815.0 0)" jOri="(0 0 0)" refBody="ground" refLoc="(0 0 0)" refOri="(0 0 0)">
+               <OutputChannel name="outputChannel_1" active="true" userDefined="false" activeFlag="true" resultSet="RH_RL_sensor" component="X" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_2" active="true" userDefined="false" activeFlag="true" resultSet="RH_RL_sensor" component="Y" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_3" active="true" userDefined="false" activeFlag="true" resultSet="RH_RL_sensor" component="Z" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_4" active="true" userDefined="false" activeFlag="true" resultSet="RH_RL_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_5" active="true" userDefined="false" activeFlag="true" resultSet="RH_RL_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_6" active="true" userDefined="false" activeFlag="true" resultSet="RH_RL_sensor" scale="1.0" offset="0" isLive="false"/>
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </CRTSensor>
+          <CRTSensor name="RH_RR" active="true" userDefined="true" activeFlag="true" type="Displacement" triggerS="1.0" typeOfFreedom="Translational" angleMethod="AX_AY_AZ" iBody="rear_chassis" iLoc="(-3140.0 -815.0 0)" iOri="(0 0 0)" jBody="ground" jLoc="(-3140.0 -815.0 0)" jOri="(0 0 0)" refBody="ground" refLoc="(0 0 0)" refOri="(0 0 0)">
+               <OutputChannel name="outputChannel_1" active="true" userDefined="false" activeFlag="true" resultSet="RH_RR_sensor" component="X" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_2" active="true" userDefined="false" activeFlag="true" resultSet="RH_RR_sensor" component="Y" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_3" active="true" userDefined="false" activeFlag="true" resultSet="RH_RR_sensor" component="Z" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_4" active="true" userDefined="false" activeFlag="true" resultSet="RH_RR_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_5" active="true" userDefined="false" activeFlag="true" resultSet="RH_RR_sensor" scale="1.0" offset="0" isLive="false"/>
+               <OutputChannel name="outputChannel_6" active="true" userDefined="false" activeFlag="true" resultSet="RH_RR_sensor" scale="1.0" offset="0" isLive="false"/>
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </CRTSensor>
+          <CRTSkidplatePoint name="SplitterFrontLeft" active="true" userDefined="false" activeFlag="false" actionBody="front_chassis" actionLoc="(960.0 850.0 12.0)" contactStiffness="0" contactDamping="40.0" contactExponent="1.1" contactFrictionCoefficient="0.1">
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </CRTSkidplatePoint>
+          <CRTSkidplatePoint name="SplitterFrontRight" active="true" userDefined="false" activeFlag="false" actionBody="front_chassis" actionLoc="(960.0 -850.0 12.0)" contactStiffness="0" contactDamping="40.0" contactExponent="1.1" contactFrictionCoefficient="0.1">
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </CRTSkidplatePoint>
+     </Subsystem>
+</afc>

@@ -1,0 +1,74 @@
+﻿$---------------------------------------------------------------------MDI_HEADER
+[MDI_HEADER]
+FILE_TYPE  =  'aer'
+FILE_VERSION  =  5.00
+FILE_FORMAT  =  'ASCII'
+(COMMENTS)
+{comment_string}
+'First Aero Map from CFD 13th March 2020'
+'NOTE: the user-defined unit tags are not supported within tables'
+'      They are accepted for single value parameters only.'
+$--------------------------------------------------------------------------UNITS
+[UNITS]
+(BASE)
+{length  force      angle       mass    time}
+'mm'   'N'   'degree'   'kg'    'sec'
+(USER)
+{unit_type    length  force  angle  mass  time  conversion}
+'kmh'            1       0      0      0    -1    277.77778
+$----------------------------------------------------------------TEST_CONDITIONS                                   
+[TEST_CONDITIONS]                                   
+reference_velocity   <kmh>             =    255                                   
+air_density          <kgpm3>           =  1.22       $[kg/m^3]
+reference_density                      =  1.22                          
+front_ride_height_min     =   30.0                                   
+front_ride_height_max     =   90.0                                   
+rear_ride_height_min      =   30.0                                   
+rear_ride_height_max      =   110.0                                   
+DRAG_ARM_HEIGHT_MIN = 0.0                                   
+DRAG_ARM_HEIGHT_MAX = 0.0                                   
+$----------------------------------------------------------------FRONT_DOWNFORCE                                   
+[FRONT_DOWNFORCE]                                   
+(Z_DATA)                                   
+{rear_ride_height }
+30
+50
+70
+90
+110
+(XY_DATA)                                   
+{front_ride_height   downforce }
+30	5658	6804	7815	8403	8319
+50	3522	4794	5205	5916	6761
+70	1595	2792	3499	4096	4783
+90	181	1211	1872	2286	2884
+$-----------------------------------------------------------------REAR_DOWNFORCE                                   
+[REAR_DOWNFORCE]                                   
+(Z_DATA)                                   
+{rear_ride_height }                                   
+30
+50
+70
+90
+110
+(XY_DATA)                                   
+{front_ride_height   downforce }                                   
+30	6297	6162	5515	5025	4912
+50	5938	6658	5915	5113	4790
+70	6207	6657	5805	5290	5149
+90	6009	7435	6322	5677	5171
+$---------------------------------------------------------------------------DRAG                                   
+[DRAG]                                   
+(Z_DATA)                                   
+{rear_ride_height }
+30
+50
+70
+90
+110
+(XY_DATA)                                   
+{front_ride_height   drag }                                   
+30	3024	3016	3092	3169	3235
+50	3166	3179	3240	3223	3250
+70	3111	3159	3239	3296	3370
+90	3085	3185	3232	3288	3380

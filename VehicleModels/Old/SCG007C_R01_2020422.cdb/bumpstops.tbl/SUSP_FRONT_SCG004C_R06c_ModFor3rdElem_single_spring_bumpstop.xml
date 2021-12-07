@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<afc xmlns="http://www.mscsoftware.com/:vfc" xmlns:afc="http://www.mscsoftware.com/:afc">
+     <afc:Bibliography>
+          <File schema="afc" version="2.0.0.0" URI="mdids://SCG007C_R01/bumpstops.tbl/SUSP_FRONT_SCG004C_R06c_ModFor3rdElem_single_spring_bumpstop.xml" publicationDate="2019-10-16 11:36:23+02:00"/>
+          <Revision version="17.0"/>
+          <Corporation author="MSC.Software" URI="http://www.mscsoftware.com/"/>
+          <Author user="Stefano.Rapisarda" name="-unknown name-"/>
+          <Environment hostName="PE-NTBK-007" operatingSystem="MS Windows NT 6.2"/>
+          <Application name="MSC/AFC" version="02.00.00"/>
+     </afc:Bibliography>
+     <afc:Units>
+          <afc:UnitSetting name="angle" current="deg"/>
+          <afc:UnitSetting name="current" current="ampere"/>
+          <afc:UnitSetting name="force" current="newton"/>
+          <afc:UnitSetting name="length" current="mm"/>
+          <afc:UnitSetting name="luminosity" current="candela"/>
+          <afc:UnitSetting name="mass" current="kg"/>
+          <afc:UnitSetting name="quantity" current="mole"/>
+          <afc:UnitSetting name="solidAngle" current="steradian"/>
+          <afc:UnitSetting name="temperature" current="kelvin"/>
+          <afc:UnitSetting name="time" current="sec"/>
+          <afc:UnitSetting name="frequency" current="Hz"/>
+     </afc:Units>
+     <BumpStopProperties name="bumpstop" active="true" userDefined="false" diameter="0" height="0" dampingMethod="linear" dampingRate="0" scaleFactor="1" linearRate="0" quadraticRate="0" cubicRate="0" method="polynomial">
+          <BumpStopSpline name="spline_data" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Compression" yLabel="Force" xUnit="length" yUnit="force" datablock="Bumpstop Force vs. Compression">
+            <![CDATA[
+              0               0
+              1           135.2
+              2           275.6
+              3           421.2
+              4             572
+              5             728
+              6           889.2
+              7          1055.6
+              8          1227.2
+              9            1404
+             10            1586
+             11          1773.2
+             12          1965.6
+             13          2163.2
+             14            2366
+             15            2574
+             16          2787.2
+             17          3005.6
+             18          3229.2
+             19            3458
+             20            3692
+             21          3931.2
+             22          4175.6
+             23          4425.2
+             24            4680
+             25            4940
+             26          5205.2
+             27          5475.6
+             28          5751.2
+             29            6032
+             30            6318
+             31          6609.2
+             32          6905.6
+             33          7207.2
+             34            7514
+             35            7826
+             36          8143.2
+             37          8465.6
+             38          8793.2
+             39            9126
+             40            9464
+             41          9807.2
+             42         10155.6
+             43         10509.2
+             44           10868
+             45           11232
+             46         11601.2
+             47         11975.6
+             48         12355.2
+             49           12740
+             50           13130
+]]>
+               <Comment userDefined="false">
+                 <![CDATA[]]>
+               </Comment>
+          </BumpStopSpline>
+          <BumpStopSpline name="damping_data" id="0" active="true" userDefined="false" interpolation_method="akima">
+            <![CDATA[
+         -50000               0
+         -20000               0
+              0               0
+          20000               0
+          50000               0
+]]>
+          </BumpStopSpline>
+     </BumpStopProperties>
+</afc>

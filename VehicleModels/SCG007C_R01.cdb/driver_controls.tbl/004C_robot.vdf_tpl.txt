@@ -1,0 +1,156 @@
+$-----------------------------------------------------------------VIGRADE_HEADER
+[VIGRADE_HEADER]
+FILE_TYPE = 'VDF'
+FILE_VERSION = 9
+FILE_FORMAT = 'ASCII'
+$--------------------------------------------------------------------------UNITS
+[UNITS]
+LENGTH = 'METER'
+ANGLE = 'RADIAN'
+FORCE = 'NEWTON'
+MASS = 'KILOGRAM'
+TIME = 'SECOND'
+$---------------------------------------------------------------DEBUG_PARAMETERS
+[DEBUG_PARAMETERS]
+ACTIVATION = 'FALSE'
+INITIALIZATION_DUMP = 'TRUE'
+$----------------------------------------------------------------GLOBAL_SETTINGS
+[GLOBAL_SETTINGS]
+MODEL_TYPE = 'CAR_STANDARD'
+$------------------------------------------------------------CONTROLLER_STANDARD
+[CONTROLLER_STANDARD]
+PREVIEW_TIME = 0.5
+MIN_PREVIEW_DISTANCE = 5
+LAT_ANT_COMP_TIME = 0.0
+LON_ANT_COMP_TIME = 0.0
+LONGITUDINAL_SPEED_CONTROL = 'LONVEL'
+PREVIEW_DISTANCE_CALC = 'STANDARD'
+STEERING_PDC_ACTIVE = 'TRUE'
+STEERING_YAW_PID_ACTIVE = 'TRUE'
+THROTTLE_FEED_FWD_TRQ_ACTIVE = 'TRUE'
+THROTTLE_SAT_TGTACCX_ACTIVE = 'TRUE'
+BRAKING_RATE_LIMITER_ACTIVE = 'FALSE' 
+BRAKING_ROLLON_MAX_RATE = 0.4
+BRAKING_ROLLOFF_MAX_RATE = 0.4
+STEERING_RATE_LIMITER_ACTIVE = 'FALSE' 
+STEERING_MAX_RATE = 6.28
+$--------------------------------------------------------------STEERING_STANDARD
+[STEERING_STANDARD]
+MAX_VALUE = 5.2
+MIN_VALUE = -5.2
+$--------------------------------------------------------------THROTTLE_STANDARD
+[THROTTLE_STANDARD]
+MAX_VALUE = 100
+MIN_VALUE = 0
+SCALING_FACTOR = 100
+$---------------------------------------------------------------BRAKING_STANDARD
+[BRAKING_STANDARD]
+MAX_VALUE = 100
+MIN_VALUE = 0
+SCALING_FACTOR = 100
+$------------------------------------------------------------------GEAR_STANDARD
+[GEAR_STANDARD]
+MODEL = 'STANDARD'
+MAX_VALUE = 7
+MIN_VALUE = 1
+UPSHIFTING_AFTER_UPSHIFTING_DELAY = 0
+UPSHIFTING_AFTER_DOWNSHIFTING_DELAY = 0
+DOWNSHIFTING_AFTER_UPSHIFTING_DELAY = 0
+DOWNSHIFTING_AFTER_DOWNSHIFTING_DELAY = 0
+(PROPERTIES_MAP)
+{id  opt  upRPM  dwRPM  up_sftT  up_tfallT  up_criseT  up_cfallT  up_triseT  up_dt1  up_dt2  dw_sftT  dw_tfallT  dw_criseT  dw_cfallT  dw_triseT  dw_dt1  dw_dt2  }
+1   0 6500  4500   0.05  0.01   0.01   0.01   0.05    0  -0.01   0.05  0.01   0.01   0.01   0.05    0  -0.01
+2   0 6500  4500   0.05  0.01   0.01   0.01   0.05    0  -0.01   0.05  0.01   0.01   0.01   0.05    0  -0.01
+3   0 6500  4500   0.05  0.01   0.01   0.01   0.05    0  -0.01   0.05  0.01   0.01   0.01   0.05    0  -0.01
+4   0 6500  4500   0.05  0.01   0.01   0.01   0.05    0  -0.01   0.05  0.01   0.01   0.01   0.05    0  -0.01
+5   0 6500  4500   0.05  0.01   0.01   0.01   0.05    0  -0.01   0.05  0.01   0.01   0.01   0.05    0  -0.01
+6   0 6500  4500   0.05  0.01   0.01   0.01   0.05    0  -0.01   0.05  0.01   0.01   0.01   0.05    0  -0.01
+$----------------------------------------------------------------CLUTCH_STANDARD
+[CLUTCH_STANDARD]
+MAX_VALUE = 0
+MIN_VALUE = 0
+SCALING_FACTOR = 1
+MIN_RPM = 500
+ACTIVATION = 'FALSE'
+MODEL = 'STANDARD'
+$----------------------------------------------------------TIRE_LONSLIP_STANDARD
+[TIRE_LONSLIP_STANDARD]
+CONTROLLER_DATA = 'TIRE_LONSLIP'
+ACTIVATION = 'TRUE'
+MAX_ALLOWED_SLIP = 0.10
+MIN_ALLOWED_SLIP = -1
+ACTIVE_TIRE_1 = 3
+ACTIVE_TIRE_2 = 4
+REF_SLIP_1_COEFF = 0.5
+REF_SLIP_2_COEFF = 0.75
+CORRECTION_GAIN_1 = 0.5
+$------------------------------------------------------------------------STARTUP
+[STARTUP]
+STARTING_TIME = 0
+INITIAL_SPEED = >>REPLACE_INIT_SPEED<<
+INITIAL_STEERING = 0
+INITIAL_THROTTLE = 0
+INITIAL_BRAKING = 0
+INITIAL_BRAKING2 = 0
+INITIAL_GEAR = >>REPLACE_INIT_GEAR<<
+INITIAL_CLUTCH = 0
+INITIAL_SETUP = 'STANDARD'
+$-----------------------------------------------------------------MANEUVERS_LIST
+[MANEUVERS_LIST]
+{ name  abort_time  sampling_step   }
+ 'MANEUVER_1' >>REPLACE_ABORT_TIME<< 0.01
+$---------------------------------------------------------------------MANEUVER_1
+[MANEUVER_1]
+TASK = 'STANDARD'
+CONTROLLER_SETTINGS = 'CONTROLLER_STANDARD'
+(STEERING)
+METHOD = 'MACHINE'
+SMOOTHING_ACTIVE = 'TRUE'
+SMOOTHING_TIME = 0.1
+(THROTTLE)
+METHOD = 'MACHINE'
+SMOOTHING_ACTIVE = 'TRUE'
+SMOOTHING_TIME = 0.1
+(BRAKING)
+METHOD = 'MACHINE'
+SMOOTHING_ACTIVE = 'TRUE'
+SMOOTHING_TIME = 0.1
+(GEAR)
+METHOD = 'MACHINE'
+SMOOTHING_ACTIVE = 'FALSE'
+SMOOTHING_TIME = 0
+(CLUTCH)
+METHOD = 'MACHINE'
+SMOOTHING_ACTIVE = 'TRUE'
+SMOOTHING_TIME = 0.1
+(TIRE_LONSLIP)
+CONTROLLER_NAME = 'TIRE_LONSLIP_STANDARD'
+(BRAKING2)
+METHOD = 'USER'
+SMOOTHING_ACTIVE = 'TRUE'
+SMOOTHING_TIME = 0.1
+(MACHINE)
+PATH = 'MANEUVER_1_PATH'
+SPEED = 'MANEUVER_1_SPEED'
+(HUMAN)
+CONTROLLER_NAME = 'HUMAN_1'
+(OPTIONS)
+FOLLOW_TARGET_SPEED = 'TRUE'
+SPEED_MAP_ABS_TIME = 'FALSE'
+SPEED_MAP_GLOBAL_S = 'FALSE'
+CONNECT_PATH = 'TRUE'
+END_OF_PATH_CHECK = 'TRUE'
+PATH_POSITIONING = 'ABSOLUTE'
+$------------------------------------------------------------------------HUMAN_1
+[HUMAN_1]
+CONTROLLER_DATA = 'ROBOT'
+ACTIVATION = 'TRUE'
+$----------------------------------------------------------------MANEUVER_1_PATH
+[MANEUVER_1_PATH]
+TYPE = 'DRD_FILE'
+INTERPOLATION = 'CUBIC_SPLINE'
+FILE_NAME = '>>REPLACE_DRD_FILE<<'
+$---------------------------------------------------------------MANEUVER_1_SPEED
+[MANEUVER_1_SPEED]
+TYPE = 'DRD_FILE'
+FILE_NAME = '>>REPLACE_DRD_FILE<<'

@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<afc xmlns="http://www.mscsoftware.com/:vfc" xmlns:afc="http://www.mscsoftware.com/:afc">
+     <afc:Bibliography>
+          <File schema="afc" version="2.0.0.0" URI="mdids://SCG007C_2WD4WD_bck6Ott/subsystems.tbl/PWRT_LMH_4WD_WGears120_v4_EnableStrategyV2.xml" publicationDate="2020-10-08 10:07:17+02:00"/>
+          <Revision version="17.1"/>
+          <Corporation author="MSC Software" URI="http://www.mscsoftware.com/"/>
+          <Author user="Stefano.Rapisarda" name="-unknown name-"/>
+          <Environment hostName="PE-NTBK-047" operatingSystem="MS Windows NT 6.2"/>
+          <Application name="MSC/AFC" version="02.00.00"/>
+     </afc:Bibliography>
+     <afc:Units>
+          <afc:UnitSetting name="angle" current="deg"/>
+          <afc:UnitSetting name="current" current="ampere"/>
+          <afc:UnitSetting name="force" current="newton"/>
+          <afc:UnitSetting name="length" current="mm"/>
+          <afc:UnitSetting name="luminosity" current="candela"/>
+          <afc:UnitSetting name="mass" current="kg"/>
+          <afc:UnitSetting name="quantity" current="mole"/>
+          <afc:UnitSetting name="solidAngle" current="steradian"/>
+          <afc:UnitSetting name="temperature" current="kelvin"/>
+          <afc:UnitSetting name="time" current="sec"/>
+          <afc:UnitSetting name="frequency" current="Hz"/>
+     </afc:Units>
+     <Subsystem name="PWRT_LMH_4WD_WGears120_v4_EnableStrategyV2" active="true" userDefined="false">
+          <CRTDriveline name="Driveline" active="true" userDefined="false" intComEngineActive="false" topDrvMotorActive="false" centralDrvMotorActive="false" frontDrvMotorActive="true" rearDrvMotorActive="true" fLWheelMotorActive="false" fRWheelMotorActive="false" rLWheelMotorActive="true" rRWheelMotorActive="true" driveMethod="dual motor awd" driveTorqueFrontBias="1.0" clutchTCConfig="inactive" gearboxConfig="inactive">
+               <CRTInternalCombustionEngine name="internalCombustionEngine" active="true" userDefined="false" method="standard" torqueMapFileFlag="true" torqueMapFile="mdids://SCG007C_2WD4WD_bck6Ott/powertrains.tbl/4WD_ICEMap.pwr" eMotorTorqueMapFileFlag="false" inertia="70000.0" stallRPM="2000.0" idleRPM="1500.0" revLimitRPM="7550.0" revLimitMapActiveFlag="false" torqueReactionDirection="No Torque Reaction" simpleEngineMinimumTorque="-10000.0" simpleEngineMaximumTorque="400000.0" simpleEngineMaximumPower="4e+11" torqueOutputOption="Clutch" simpleEngineTau="0" efficiency="1.0" torqueScalingFactor="1.0" idleControlActiveFlag="true" idleControlMaximumThrottle="1.0" idleControlGain="0.002" maxRPMControlActiveFlag="true" maxRPMControlGain="0.005" transmissionRatio="1.0" tractionControlActiveFlag="true" tractionControlGain="500.0" tractionControlThreshold="0.08" regenerativeBrakingFactor="0" longitudinalVelocityThreshold="0" eMotorRegenerationMapFlag="false" eMotorEfficiencyMapFlag="false">
+                    <Spline3d name="torqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Powertrain Map" zLabel="Throttle">
+                         <afc:VectorAttribute name="x_data">
+                           0 38 77 115 153 192 230 268 307 345 384 422 460 499 537 575 614 652 690 729 767 805 844 882 920 928 936 943 951 959 966 974 982 989 997 1035 1074 1112 1151 1189 1227 1266 1304 1342 1381 1419 1457 1496 1534 1572 1611 1649 1687 1726 1764 1803 1841 1879 1918 1956 1994 2033 2071 2109 2148 2186 2224 2263 2301 2339 2378 2416 2454 2493 2531 2570 2608
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10000000 10000000 10000000 10000000 10000000 10000000 10000000 10000000 10000000 10000000 10000000 10000000 10000000 9581538 8897143 8304000 7785000 7327059 6920000 6555789 6228000 5931429 5661818 5415652 3114000 3088264 3062951 3038049 3013548 2989440 2965714 2942362 2919375 2896744 2874462 2768000 2669143 2577103 2491200 2410839 2335500 2264727 2198118 2135314 2076000 2019892 1966737 1916308 1868400 1822829 1779429 1738047 1698545 1660800 1624696 1590128 1557000 1525224 1494720 1465412 1437231 1410113 1384000 1358836 1334571 1311158 1288552 1266712 1245600 1225180 1205419 1186286 1167750 1149785 1132364 1115463 1099059
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline3d>
+                    <Spline3d name="eMotorTorqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Electric Motor Torque  vs. RPM vs Throttle demand" zLabel="Throttle">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorBrakingTorqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Torque" yUnit="torque" datablock="Braking (generator) Torque  vs. RPM vs Brake demand" zLabel="Brake demand [-]">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline name="eMotorCoastingTorqueMap" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Electric Motor Torque  vs. RPM">
+                      <![CDATA[
+              0               0
+           4000               0
+           8000               0
+          12000               0
+]]>
+                    </Spline>
+                    <Spline3d name="eMotorRegenerationMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Regeneration Factor [-]" datablock="Regeneration Factor vs. RPM vs Torque" zLabel="Torque" zUnit="torque">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 100 200
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorEfficiencyMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Efficiency [-]" datablock="Efficiency vs. RPM vs Torque" zLabel="Torque" zUnit="torque">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           1 1 1 1 1 1 1 1 1 1 1 1
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 100 200
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline name="revLimitRPMMap" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Gear [-]" yLabel="Rev Limit [RPM]" datablock="Rev Limit">
+                      <![CDATA[
+              0               0
+              1           10000
+              2           10000
+              3           10000
+              4           10000
+              5           10000
+              6           10000
+              7           10000
+              8           10000
+]]>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline>
+                    <CRTRamAir name="ramAir" active="true" userDefined="false" activeFlag="false" referenceAirDensity="1.2e-09" ambientPressure="0.101325" ambientTemperature="293.15">
+                         <Spline name="ramAirEfficiency" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Longitudinal Velocity" yLabel="Efficiency" xUnit="velocity" datablock="Ram Air Efficiency">
+                           <![CDATA[
+              0               1
+          25000               1
+          50000               1
+          75000               1
+         100000               1
+]]>
+                              <Comment userDefined="false">
+                                <![CDATA[]]>
+                              </Comment>
+                         </Spline>
+                    </CRTRamAir>
+                    <CRTFuelConsumption name="fuelConsumption" active="true" userDefined="false" fuelDensity="7.3e-07" engineVolume="2900000.0">
+                         <Spline3d name="bSFCTable" active="true" userDefined="false" interpolation_method="akima">
+                              <afc:VectorAttribute name="x_data">
+                                -2 0 25 50
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                262.19 262.19 262.19 262.19 270.33 270.33 270.33 270.33 259.27 259.27 259.27 259.27 268.03 268.03 268.03 268.03 261.37 261.37 261.37 261.37 260.29 260.29 260.29 260.29 268.15 268.15 268.15 268.15 278.15 278.15 278.15 278.15
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                4000 4500 5000 5500 6000 6500 7000 7500
+                              </afc:VectorAttribute>
+                              <Comment userDefined="false">
+                                <![CDATA[]]>
+                              </Comment>
+                         </Spline3d>
+                    </CRTFuelConsumption>
+               </CRTInternalCombustionEngine>
+               <CRTTorqueConverter name="torqueConverter" active="true" userDefined="false" capacityFactor="1.0" shiftCycleTime="0.1" oilDumpThreshold="1.0" oilDumpResidual="0" throttleOff="10.0" torqueReactionDirection="No Torque Reaction" clutchLockUpFlag="false" clutchLockUpGearId="3" clutchLockUpSpeed="10000.0" clutchLockUpTimeDelay="0.5">
+                    <Spline2d name="capacityFactorTable" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Speed Ratio (Output Shaft Angular Velocity/ Input Shaft Angular Velocity) [-]" yLabel="Capacity Factor  (Input Shaft Angular Velocity/ SQRT (Input Shaft Torque) [rad/sec/(N-m**0.5)] )" datablock="Capacity Factor">
+                      <![CDATA[
+             -5              25
+              0              25
+          0.123              25
+          0.953              50
+          0.955              80
+          0.957              80
+          0.959              90
+          0.961              90
+          0.963             100
+          0.965             100
+          0.996             105
+          0.997             105
+          0.998             105
+          1.001             105
+          1.006             100
+          1.013      79.4574243
+          1.019      65.2027534
+           1.02      56.5330355
+          1.025      51.1279521
+          1.032      45.7228687
+          1.052      40.0839547
+            1.1       34.858741
+          1.208      30.8296605
+          1.258       28.923042
+          1.328      27.1693128
+          1.423       25.442564
+          1.592      24.3453591
+          1.808      23.0053301
+          2.166        21.99806
+          2.833      21.6563076
+          4.172      21.3235487
+          8.283       21.179653
+]]>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline2d>
+                    <Spline2d name="torqueRatioTable" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Speed Ratio (Output Shaft Angular Velocity/ Input Shaft Angular Velocity) [-]" yLabel="Torque Ratio  (Output Shaft Torque/ Input Shaft Torque) [-]" datablock="Torque Ratio Factor">
+                      <![CDATA[
+             -5           1.769
+             -2           1.769
+             -1           1.769
+              0           1.769
+          0.123           1.769
+          0.251           1.573
+          0.382           1.457
+          0.509           1.348
+          0.636           1.241
+          0.736           1.159
+          0.809           1.094
+          0.868           1.038
+          0.895           1.012
+          0.903           1.009
+          0.908           1.009
+          0.914           1.009
+          0.918           1.009
+          0.922           1.009
+          0.926           1.009
+           0.93           1.009
+          0.934           1.009
+          0.937           1.007
+           0.94           1.007
+          0.943           1.007
+          0.945           1.007
+          0.948           1.007
+           0.95           1.007
+          0.953           1.006
+          0.955           1.006
+          0.957           1.004
+          0.959           1.004
+          0.961           1.004
+          0.963           1.004
+          0.965           1.004
+          0.996           1.004
+          0.997           1.004
+          0.998           1.004
+          1.001            1.13
+          1.006            1.12
+          1.013           1.058
+          1.019            1.04
+           1.02            1.03
+          1.025           1.025
+          1.032           1.021
+          1.052           1.015
+            1.1           1.012
+          1.208            1.01
+          1.258           1.009
+          1.328           1.006
+          1.423           1.005
+          1.592           1.006
+          1.808           1.004
+          2.166           1.005
+          2.833           1.006
+          4.172           1.005
+          8.283           1.005
+]]>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline2d>
+               </CRTTorqueConverter>
+               <CRTClutch name="clutch" active="true" userDefined="false" method="dual" inertia="1000.0" tau="0.05" capacity="1000000.0" stiffness="2000.0" damping="800.0" clutchOpen="2.0" clutchClose="1.0" efficiency="1.0" shiftCycleTime="0.03" torqueReactionDirection="No Torque Reaction"/>
+               <CRTManualGearbox name="manualGearbox" active="true" userDefined="false" inertia="1000.0" gearShiftMethod="table" inertiaMethod="constant" upshiftRPM="7400.0" downshiftRPM="5000.0" torqueReactionDirection="No Torque Reaction">
+                    <Spline2d name="gearRatios" id="0" active="true" userDefined="false" interpolation_method="akima">
+                      <![CDATA[
+             -1              -3
+              0               0
+              1           2.846
+              2             2.2
+              3           1.765
+              4           1.474
+              5           1.273
+              6            1.13
+              7               1
+]]>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline2d>
+                    <Spline2d name="gearInertia" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Gear [-]" yLabel="Inertia" yUnit="inertia" datablock="Gear Inertias">
+                      <![CDATA[
+              1               1
+              2               1
+              3               1
+              4               1
+              5               1
+              6               1
+              7               1
+              8               1
+]]>
+                    </Spline2d>
+                    <Spline3d name="efficiency" active="true" userDefined="false" interpolation_method="akima">
+                         <afc:VectorAttribute name="x_data">
+                           -1 0 1 2 3 4 5 6 7
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           1 1 1 1 1 1 1 1 1
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0
+                         </afc:VectorAttribute>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline3d>
+                    <Spline3d name="gearShiftTable" active="true" userDefined="false" interpolation_method="akima" xLabel="Gear" yLabel="RPM">
+                         <afc:VectorAttribute name="x_data">
+                           -1 0 1 2 3 4 5 6 7
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 3500 4500 4500 5000 5500 6000 10000 10000 7500 7500 7500 7500 7500 7500 7500
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           -1 1
+                         </afc:VectorAttribute>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline3d>
+               </CRTManualGearbox>
+               <CRTAutomaticTransmission name="automaticTransmission" active="true" userDefined="false" inertiaMethod="constant" inertia="1000.0" rpmInputMethod="engine RPM" gearShiftingMode="comfort" torqueReactionDirection="No Torque Reaction">
+                    <Spline2d name="gearRatios" id="0" active="true" userDefined="false" interpolation_method="akima">
+                      <![CDATA[
+             -1              -3
+              0               0
+              1           2.846
+              2           2.357
+              3           1.938
+              4           1.579
+              5           1.316
+              6           1.105
+              7           0.926
+]]>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline2d>
+                    <Spline2d name="gearInertia" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Gear [-]" yLabel="Inertia" yUnit="inertia" datablock="Gear Inertias">
+                      <![CDATA[
+              1               1
+              2               1
+              3               1
+              4               1
+              5               1
+              6               1
+              7               1
+              8               1
+]]>
+                    </Spline2d>
+                    <Spline3d name="efficiency" active="true" userDefined="false" interpolation_method="akima">
+                         <afc:VectorAttribute name="x_data">
+                           -1 0 1 2 3 4 5 6
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           1 1 1 1 1 1 1 1
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           1
+                         </afc:VectorAttribute>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline3d>
+                    <Spline3d name="gearUpShiftTable" active="true" userDefined="false" interpolation_method="akima">
+                         <afc:VectorAttribute name="x_data">
+                           -1 0 1 2 3 4 5 6 7
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           10000 10000 6900 6900 6900 6900 6900 6900 6900 10000 10000 6900 6900 6900 6900 6900 6900 6900 10000 10000 6900 6900 6900 6900 6900 6900 6900
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 0.5 1
+                         </afc:VectorAttribute>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline3d>
+                    <Spline3d name="gearDownShiftTable" active="true" userDefined="false" interpolation_method="akima">
+                         <afc:VectorAttribute name="x_data">
+                           -1 0 1 2 3 4 5 6 7
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 4000 5000 5000 5000 5000 5000 0 0 0 4000 5000 5000 5000 5000 5000 0 0 0 4000 5000 5000 5000 5000 5000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 0.5 1
+                         </afc:VectorAttribute>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline3d>
+                    <Spline3d name="gearSportUpShiftTable" active="true" userDefined="false" interpolation_method="akima">
+                         <afc:VectorAttribute name="x_data">
+                           -50000 -20000 0 20000 50000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           -1 0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="gearSportDownShiftTable" active="true" userDefined="false" interpolation_method="akima">
+                         <afc:VectorAttribute name="x_data">
+                           -50000 -20000 0 20000 50000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           -1 0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+               </CRTAutomaticTransmission>
+               <Differential name="frontDifferential" active="true" userDefined="false" activeFlag="true" inertia="100.0" driveRatio="1.0" method="LSD" LSD_C0_pos="50000.0" LSD_C0_neg="50000.0" LSD_C2="75.88" LSD_C3="0.5037" detroitLocker="false" efficiency="1.0" tripotOuter1="(0 0 0)" tripotInner1="(0 0 0)" tripotOuter2="(0 0 0)" tripotInner2="(0 0 0)" shaftReactionComputation="false" torqueReactionBody="No Reaction Part" frontTorqueReactionDirection="No Torque Reaction" rearTorqueReactionDirection="No Torque Reaction">
+                    <CRTSuspensionData name="LSD_C1" active="true" userDefined="false" method="table" constant="0" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xUnit="torque" datablock="Limited Slip Differential C1">
+                              <afc:VectorAttribute name="x_data">
+                                -2000000 -1600000 -800000 -450000 -100000 -5000 0 5000 100000 400000 700000 1000000 2000000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                1.19 1.19 1.19 1.19 1.19 0 0 0 0.7 0.7 0.7 0.7 0.7
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                              <Comment userDefined="false">
+                                <![CDATA[]]>
+                              </Comment>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <Spline2d name="userSpline" id="0" active="true" userDefined="false" interpolation_method="akima">
+                      <![CDATA[
+         -50000               0
+         -20000               0
+              0               0
+          20000               0
+          50000               0
+]]>
+                    </Spline2d>
+               </Differential>
+               <Differential name="rearDifferential" active="true" userDefined="false" activeFlag="true" inertia="1.0" driveRatio="1.0" method="LSD" LSD_C0_pos="50000.0" LSD_C0_neg="50000.0" LSD_C2="75.88" LSD_C3="0.5037" detroitLocker="false" efficiency="1.0" tripotOuter1="(0 0 0)" tripotInner1="(0 0 0)" tripotOuter2="(0 0 0)" tripotInner2="(0 0 0)" shaftReactionComputation="false" torqueReactionBody="Chassis" frontTorqueReactionDirection="No Torque Reaction" rearTorqueReactionDirection="No Torque Reaction">
+                    <CRTSuspensionData name="LSD_C1" active="true" userDefined="false" method="table" constant="0" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xUnit="torque" datablock="Limited Slip Differential C1">
+                              <afc:VectorAttribute name="x_data">
+                                -2000000 -1600000 -800000 -450000 -100000 -5000 0 5000 100000 400000 700000 1000000 2000000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                1.19 1.19 1.19 1.19 1.19 0 0 0 0.7 0.7 0.7 0.7 0.7
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                0
+                              </afc:VectorAttribute>
+                              <Comment userDefined="false">
+                                <![CDATA[]]>
+                              </Comment>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <Spline2d name="userSpline" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Delta Angular Velocity" yLabel="Differential Torque" xUnit="angular_velocity" yUnit="torque">
+                      <![CDATA[
+           -540        -9288000
+           -510        -7288000
+           -480        -5288000
+           -450        -3288000
+           -426        -1688000
+           -414        -1248000
+           -390        -1088000
+           -360         -888000
+           -330         -688000
+           -300         -488000
+           -270         -288000
+           -246         -128000
+           -234          -84000
+           -210          -68000
+           -180          -48000
+           -150          -28000
+           -126          -12000
+           -114           -7600
+            -90           -6000
+            -60           -4000
+            -30           -2000
+              0               0
+             30            2000
+             60            4000
+             90            6000
+            114            7600
+            126           12000
+            150           28000
+            180           48000
+            210           68000
+            234           84000
+            246          128000
+            270          288000
+            300          488000
+            330          688000
+            360          888000
+            390         1088000
+            414         1248000
+            426         1688000
+            450         3288000
+            480         5288000
+            510         7288000
+            540         9288000
+]]>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline2d>
+               </Differential>
+               <Differential name="centralDifferential" active="true" userDefined="false" activeFlag="true" inertia="100.0" driveRatio="1.0" method="open" LSD_C0_pos="10.0" LSD_C0_neg="10.0" LSD_C2="0.8" LSD_C3="0.5" detroitLocker="false" efficiency="1.0" tripotOuter1="(0 0 0)" tripotInner1="(0 0 0)" tripotOuter2="(0 0 0)" tripotInner2="(0 0 0)" shaftReactionComputation="false" torqueReactionBody="No Reaction Part" frontTorqueReactionDirection="No Torque Reaction" rearTorqueReactionDirection="No Torque Reaction">
+                    <CRTSuspensionData name="LSD_C1" active="true" userDefined="false" method="constant" constant="0" mirror="none" scaleFactor="1.0">
+                         <Spline3d name="table" active="true" userDefined="false" interpolation_method="akima" xUnit="torque" datablock="Limited Slip Differential C1">
+                              <afc:VectorAttribute name="x_data">
+                                -50000 -20000 0 20000 50000
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="y_data">
+                                0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                              </afc:VectorAttribute>
+                              <afc:VectorAttribute name="z_data">
+                                -1 0 1
+                              </afc:VectorAttribute>
+                         </Spline3d>
+                    </CRTSuspensionData>
+                    <Spline2d name="userSpline" id="0" active="true" userDefined="false" interpolation_method="akima">
+                      <![CDATA[
+         -50000               0
+         -20000               0
+              0               0
+          20000               0
+          50000               0
+]]>
+                    </Spline2d>
+               </Differential>
+               <CRTMotor name="topDrivelineMotor" active="true" userDefined="false" method="standard" torqueMapFileFlag="false" torqueMapFile="mdids://SCG007C_2WD4WD/powertrains.tbl/VI_engine_map.pwr" eMotorTorqueMapFileFlag="false" inertia="70000.0" stallRPM="1.0" idleRPM="1000.0" revLimitRPM="7000.0" revLimitMapActiveFlag="false" torqueReactionDirection="No Torque Reaction" simpleEngineMinimumTorque="0" simpleEngineMaximumTorque="1.0" simpleEngineMaximumPower="1.0" torqueOutputOption="Clutch" simpleEngineTau="0" efficiency="1.0" torqueScalingFactor="1.0" idleControlActiveFlag="false" idleControlMaximumThrottle="1.0" idleControlGain="0.005" maxRPMControlActiveFlag="false" maxRPMControlGain="0.005" transmissionRatio="1.0" tractionControlActiveFlag="true" tractionControlGain="5.0" tractionControlThreshold="0.08" regenerativeBrakingFactor="0" longitudinalVelocityThreshold="0" eMotorRegenerationMapFlag="false" eMotorEfficiencyMapFlag="false">
+                    <Spline3d name="torqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Powertrain Map" zLabel="Throttle">
+                         <afc:VectorAttribute name="x_data">
+                           0 7.6 15.2 22.8 30.4 38 45.6 53.2 60.8 68.40000000000001 76 83.59999999999999 91.3 98.90000000000001 106.5 114.1 121.7 129.3 136.9 144.5 152.1 159.7 167.3 174.9 182.5 190.1 197.7 205.3 212.9 220.5 228.1 235.7 243.3 250.9 258.5 266.2 273.8 281.4 289 296.6 304.2 311.8 319.4 327 334.6 342.2 349.8 357.4 365 372.6 380.2 387.8 395.4 403 410.6 418.2 425.8 433.4 441.1 448.7 456.3 463.9 471.5 479.1 486.7 494.3 501.9 509.5 517.1 524.7000000000001 532.3 539.9 547.5 555.1 562.7000000000001 570.3 577.9 585.5 593.1 600.7000000000001 608.4 616 623.6 631.2000000000001 638.8 646.4 654 661.6 669.2000000000001 676.8 684.4 692 699.6 707.2000000000001 714.8 722.4 730 737.6 745.2000000000001 752.8 760.4 768 775.6 783.3 790.9 798.5 806.1 813.7000000000001 821.3 828.9 836.5 844.1 851.7000000000001 859.3 866.9 874.5 882.1 889.7000000000001 897.3 904.9 912.5 920.1 927.7000000000001 935.3 942.9 950.5 958.2000000000001 965.8 973.4 981 988.6 996.2000000000001 1003.8 1011.4 1019 1026.6 1034.2 1041.8 1049.4 1057 1064.6 1072.2 1079.8 1087.4 1095 1102.6 1110.2 1117.8 1125.4 1133.1 1140.7 1148.3 1155.9 1163.5 1171.1 1178.7 1186.3 1193.9 1201.5 1209.1 1216.7 1224.3 1231.9 1239.5 1247.1 1254.7 1262.3 1269.9 1277.5 1285.1 1292.7 1300.3 1308 1315.6 1323.2 1330.8 1338.4 1346 1353.6 1361.2 1368.8 1376.4 1384 1391.6 1399.2 1406.8 1414.4 1422 1429.6 1437.2 1444.8 1452.4 1460 1467.6 1475.2 1482.9 1490.5 1498.1 1505.7 1513.3 1520.9 1528.5 1536.1 1543.7 1551.3 1558.9 1566.5 1574.1 1581.7 1589.3 1596.9 1604.5 1612.1 1619.7 1627.3 1634.9 1642.5 1650.1 1657.8 1665.4 1673 1680.6 1688.2 1695.8 1703.4 1711 1718.6 1726.2 1733.8 1741.4 1749 1756.6 1764.2 1771.8 1779.4 1787 1794.6 1802.2 1809.8 1817.4 1825.1 1832.7 1840.3 1847.9 1855.5 1863.1 1870.7 1878.3 1885.9 1893.5 1901.1 1908.7 1916.3 1923.9 1931.5 1939.1 1946.7 1954.3 1961.9 1969.5 1977.1 1984.7 1992.3 2000 2007.6 2015.2 2022.8 2030.4 2038 2045.6 2053.2 2060.8 2068.4 2076 2083.6 2091.2 2098.8 2106.4 2114 2121.6 2129.2 2136.8 2144.4 2152 2159.6 2167.2 2174.9 2182.5 2190.1 2197.7 2205.3 2212.9 2220.5 2228.1 2235.7 2243.3 2250.9 2258.5 2266.1 2273.7 2281.3 2288.9 2296.5 2304.1 2311.7 2319.3 2326.9 2334.5 2342.1 2349.8 2357.4 2365 2372.6 2380.2 2387.8 2395.4 2403 2410.6 2418.2 2425.8 2433.4 2441 2448.6 2456.2 2463.8 2471.4 2479 2486.6 2494.2 2501.8 2509.4 2517 2524.7 2532.3 2539.9 2547.5 2555.1 2562.7 2570.3 2577.9 2585.5 2593.1 2600.7 2608.3 2615.9 2623.5 2631.1 2638.7 2646.3 2653.9 2661.5
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 3868009 4237407 4293377 4354573 4420319 4489961 4562869 4638437 4716079 4795234 4875363 4955951 5036503 5116550 5195645 5273362 5349300 5423080 5494345 5562764 5628024 5689838 5747942 5802094 5852074 5897687 5938758 5975137 6006697 6033333 6054962 6071525 6082985 6089330 6090568 6086732 6077876 6064078 6045439 6022081 5994152 5961821 5925279 5884741 5840445 5792651 5741642 5687725 5631228 5572503 5511926 5449892 4587240 4609606 4629764 4647674 4663300 4676614 4687594 4696223 4702493 4706399 4707946 4707141 4704001 4698548 4690810 4680821 4668622 4654261 4637790 4619269 4598765 4576349 4552101 4526105 4498452 4469240 4438573 4406560 4373319 4338972 4303647 4267481 4230615 4193197 3841802 3846287 3849477 3851374 3851979 3851297 3849337 3846107 3841619 3835888 3828930 3820763 3811409 3800892 3789236 3776471 3762626 3747734 3731830 3714951 3697137 3678430 3658874 3638516 3617403 3595589 3573125 3550068 3526475 3502408 3477929 3453102 3427996 3145360 3148439 3150809 3152468 3153417 3153658 3153194 3152027 3150162 3147604 3144359 3140432 3135832 3130568 3124647 3118081 3110880 3103056 3094622 3085591 3075977 3065796 3055064 3043797 3032013 3019730 3006969 2993749 2980092 2966019 2951554 2936719 2921540 2906041 2890250 2874192 2857897 2841392 2824708 2807874 2649477 2649433 2648971 2648093 2646800 2645097 2642984 2640466 2637546 2634228 2630516 2626415 2621929 2617064 2611825 2606220 2600253 2593931 2587263 2580254 2572914 2565249 2557269 2548983 2540399 2531527 2522377 2512960 2503286 2493366 2483211 2472834 2462245 2451458 2440485 2429340 2418036 2406586 2395005 2383308 2371509 2359624 2310171 2307096 2303760 2300165 2296315 2292214 2287865 2283271 2278438 2273368 2268067 2262539 2256788 2250820 2244640 2238252 2231663 2224878 2217903 2210744 2203407 2195898 2188225 2180393 2172411 2164284 2156021 2147628 2139115 2130487 2121754 2112924 2104005 2095006 2085935 2076802 2067616 2032994 2030335 2027500 2024491 2021309 2017957 2014438 2010752 2006904 2002895 1998728 1994407 1989933 1985310 1980541 1975629 1970577 1965389 1960069 1954619 1949043 1943346 1937530 1931601 1925562 1919417 1913170 1906826 1900390 1893865 1887257 1880570 1873809 1866979 1860085 1853133 1846127 1839073 1831976 1824842 0 0 0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           -1 0 1
+                         </afc:VectorAttribute>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline3d>
+                    <Spline3d name="eMotorTorqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Electric Motor Torque  vs. RPM vs Throttle demand" zLabel="Throttle">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorBrakingTorqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Torque" yUnit="torque" datablock="Braking (generator) Torque  vs. RPM vs Brake demand" zLabel="Brake demand [-]">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline name="eMotorCoastingTorqueMap" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Electric Motor Torque  vs. RPM">
+                      <![CDATA[
+              0               0
+           4000               0
+           8000               0
+          12000               0
+]]>
+                    </Spline>
+                    <Spline3d name="eMotorRegenerationMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Regeneration Factor [-]" datablock="Regeneration Factor vs. RPM vs Torque" zLabel="Torque" zUnit="torque">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 100 200
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorEfficiencyMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Efficiency [-]" datablock="Efficiency vs. RPM vs Torque" zLabel="Torque" zUnit="torque">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           1 1 1 1 1 1 1 1 1 1 1 1
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 100 200
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline name="revLimitRPMMap" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Gear [-]" yLabel="Rev Limit [RPM]" datablock="Rev Limit">
+                      <![CDATA[
+              0               0
+              1           10000
+              2           10000
+              3           10000
+              4           10000
+              5           10000
+              6           10000
+              7           10000
+              8           10000
+]]>
+                    </Spline>
+               </CRTMotor>
+               <CRTMotor name="centralDrivelineMotor" active="true" userDefined="false" method="standard" eMotorTorqueMapFileFlag="false" inertia="1.0" stallRPM="1.0" idleRPM="0" revLimitRPM="1.0" revLimitMapActiveFlag="false" torqueReactionDirection="No Torque Reaction" simpleEngineMinimumTorque="0" simpleEngineMaximumTorque="1.0" simpleEngineMaximumPower="1.0" torqueOutputOption="Clutch" simpleEngineTau="0" efficiency="1.0" torqueScalingFactor="1.0" idleControlActiveFlag="false" idleControlMaximumThrottle="1.0" idleControlGain="1.0" maxRPMControlActiveFlag="false" maxRPMControlGain="1.0" transmissionRatio="1.0" tractionControlActiveFlag="true" tractionControlGain="1.0" tractionControlThreshold="0.1" regenerativeBrakingFactor="0" longitudinalVelocityThreshold="0" eMotorRegenerationMapFlag="false" eMotorEfficiencyMapFlag="false">
+                    <Spline3d name="torqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Powertrain Map" zLabel="Throttle">
+                         <afc:VectorAttribute name="x_data">
+                           -50000 -20000 0 20000 50000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           -1 0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorTorqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Electric Motor Torque  vs. RPM vs Throttle demand" zLabel="Throttle">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorBrakingTorqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Torque" yUnit="torque" datablock="Braking (generator) Torque  vs. RPM vs Brake demand" zLabel="Brake demand [-]">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline name="eMotorCoastingTorqueMap" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Electric Motor Torque  vs. RPM">
+                      <![CDATA[
+              0               0
+           4000               0
+           8000               0
+          12000               0
+]]>
+                    </Spline>
+                    <Spline3d name="eMotorRegenerationMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Regeneration Factor [-]" datablock="Regeneration Factor vs. RPM vs Torque" zLabel="Torque" zUnit="torque">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 100 200
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorEfficiencyMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Efficiency [-]" datablock="Efficiency vs. RPM vs Torque" zLabel="Torque" zUnit="torque">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           1 1 1 1 1 1 1 1 1 1 1 1
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 100 200
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline name="revLimitRPMMap" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Gear [-]" yLabel="Rev Limit [RPM]" datablock="Rev Limit">
+                      <![CDATA[
+              0               0
+              1           10000
+              2           10000
+              3           10000
+              4           10000
+              5           10000
+              6           10000
+              7           10000
+              8           10000
+]]>
+                    </Spline>
+               </CRTMotor>
+               <CRTMotor name="frontDrivelineMotor" active="true" userDefined="false" method="standard" torqueMapFileFlag="false" torqueMapFile="mdids://carrealtime_shared/powertrains.tbl/VI_engine_electric_map.pwr" eMotorTorqueMapFileFlag="false" inertia="1.0" stallRPM="1.0" idleRPM="0" revLimitRPM="3000.0" revLimitMapActiveFlag="false" torqueReactionDirection="No Torque Reaction" simpleEngineMinimumTorque="0" simpleEngineMaximumTorque="1.0" simpleEngineMaximumPower="1.0" torqueOutputOption="Clutch" simpleEngineTau="0" efficiency="1.0" torqueScalingFactor="1.0" idleControlActiveFlag="false" idleControlMaximumThrottle="1.0" idleControlGain="1.0" maxRPMControlActiveFlag="false" maxRPMControlGain="1.0" transmissionRatio="1.0" tractionControlActiveFlag="true" tractionControlGain="5.0" tractionControlThreshold="0.08" regenerativeBrakingFactor="0" longitudinalVelocityThreshold="0" eMotorRegenerationMapFlag="false" eMotorEfficiencyMapFlag="false">
+                    <Spline3d name="torqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Powertrain Map" zLabel="Throttle">
+                         <afc:VectorAttribute name="x_data">
+                           0 7.58 15.17 22.75 30.33 37.91 45.5 53.08 60.66 68.24 75.83 83.41 90.99 98.56999999999999 106.16 113.74 121.32 128.91 136.49 144.07 151.65 159.24 166.82 174.4 181.98 189.57 197.15 204.73 212.31 219.9 227.48 235.06 242.64 250.23 257.81 265.39 272.98 280.56 288.14 295.72 303.31 310.89 318.47 326.05 333.64 341.22 348.8 356.38 363.97 371.55 379.13 386.72 394.3 401.88 409.46 417.05 424.63 432.21 439.79 447.38 454.96 462.54 470.12 477.71 485.29 492.87 500.45 508.04 515.62 523.2000000000001 530.79 538.37 545.9500000000001 553.53 561.12 568.7000000000001 576.28 583.86 591.4500000000001 599.03 606.61 614.1900000000001 621.78 629.36 636.9400000000001 644.53 652.11 659.6900000000001 667.27 674.86 682.4400000000001 690.02 697.6 705.1900000000001 712.77 720.35 727.93 735.52 743.1 750.68 758.27 765.85 773.43 781.01 788.6 796.18 803.76 811.34 818.93 826.51 834.09 841.67 849.26 856.84 864.42 872 879.59 887.17 894.75 902.34 909.92 917.5 925.08 932.67 940.25 947.83 955.41 963 970.58 978.16 985.74 993.33 1000.91 1008.49 1016.08 1023.66 1031.24 1038.82 1046.41 1053.99 1061.57 1069.15 1076.74 1084.32 1091.9 1099.48 1107.07 1114.65 1122.23 1129.81 1137.4 1144.98 1152.56 1160.15 1167.73 1175.31 1182.89 1190.48 1198.06 1205.64 1213.22 1220.81 1228.39 1235.97 1243.55 1251.14 1258.72 1266.3 1273.89 1281.47 1289.05 1296.63 1304.22 1311.8 1319.38 1326.96 1334.55 1342.13 1349.71 1357.29 1364.88 1372.46 1380.04 1387.63 1395.21 1402.79 1410.37 1417.96 1425.54 1433.12 1440.7 1448.29 1455.87 1463.45 1471.03 1478.62 1486.2 1493.78 1501.36 1508.95 1516.53 1524.11 1531.7 1539.28 1546.86 1554.44 1562.03 1569.61 1577.19 1584.77 1592.36 1599.94 1607.52 1615.1 1622.69 1630.27 1637.85 1645.44 1653.02 1660.6 1668.18 1675.77 1683.35 1690.93 1698.51 1706.1 1713.68 1721.26 1728.84 1736.43 1744.01 1751.59 1759.18 1766.76 1774.34 1781.92 1789.51 1797.09 1804.67 1812.25 1819.84 1827.42 1835 1842.58 1850.17 1857.75 1865.33 1872.91 1880.5 1888.08 1895.66 1903.25 1910.83 1918.41 1925.99 1933.58 1941.16 1948.74 1956.32 1963.91 1971.49 1979.07 1986.65 1994.24 2001.82 2009.4 2016.99 2024.57 2032.15 2039.73 2047.32 2054.9 2062.48 2070.06 2077.65 2085.23 2092.81 2100.39 2107.98 2115.56 2123.14 2130.72 2138.31 2145.89 2153.47 2161.06 2168.64 2176.22 2183.8 2191.39 2198.97 2206.55 2214.13 2221.72 2229.3 2236.88 2244.46 2252.05 2259.63 2267.21 2274.8 2282.38 2289.96 2297.54 2305.13 2312.71 2320.29 2327.87 2335.46 2343.04 2350.62 2358.2 2365.79 2373.37 2380.95 2388.54 2396.12 2403.7 2411.28 2418.87 2426.45 2434.03 2441.61 2449.2 2456.78 2464.36 2471.94 2479.53 2487.11 2494.69 2502.27 2509.86 2517.44 2525.02 2532.61 2540.19 2547.77 2555.35 2562.94 2570.52 2578.1 2585.68 2593.27 2600.85 2608.43 2616.01 2623.6 2631.18 2638.76 2646.35 2653.93
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1159200 2295446 2272941 2250874 2229231 2208000 2187170 2166729 2146667 2126972 2107636 2088649 2070000 2051681 2033684 2016000 1998621 1981538 1964746 1948235 1932000 1916033 1900328 1884878 1869677 1854720 1840000 1825512 1811250 1797209 1783385 1769771 1756364 1743158 1730149 1717333 1704706 1692263 1680000 1667914 1656000 1644255 1632676 1621259 1610000 1598897 1587945 1577143 1566486 1555973 1545600 1535364 1525263 1515294 1505455 1495742 1486154 1476688 1467342 1458113 1449000 1440000 1431111 1422331 1413659 1405091 1396627 1388263 1380000 1371834 1363765 1355789 1347907 1340116 1332414 1324800 1317273 1309831 1302472 1295196 1288000 1280884 1273846 1266885 1260000 1253189 1246452 1239786 1233191 1226667 1220211 1213822 1207500 1201244 1195052 1188923 1182857 1176853 1170909 1165025 1159200 1153433 1147723 1142069 1136471 1130927 1125437 1120000 1114615 1109282 1104000 1098768 1093585 1088451 1083364 1078326 1073333 1068387 1063486 1058630 1053818 1049050 1044324 1039641 1035000 1030400 1025841 1021322 1016842 1012402 1008000 1003636 999310 995021 990769 986553 982373 978228 974118 970042 966000 961992 958017 954074 950164 946286 942439 938623 934839 931084 927360 923665 920000 916364 912756 909176 905625 902101 898605 895135 891692 888276 884885 881521 878182 874868 871579 868315 865075 861859 858667 855498 852353 849231 846131 843055 840000 836968 833957 830968 828000 825053 822128 819223 816338 813474 810629 807805 805000 802215 799448 796701 793973 791263 788571 785898 783243 780606 777987 775385 772800 770233 767682 765149 762632 760131 757647 755179 752727 750291 747871 745466 743077 740703 738344 736000 733671 731356 729057 726771 724500 722243 720000 717771 715556 713354 711166 708991 706829 704681 702545 700423 698313 696216 694132 692060 690000 687953 685917 683894 681882 679883 677895 675918 673953 672000 670058 668127 666207 664298 662400
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           -1 0 1
+                         </afc:VectorAttribute>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline3d>
+                    <Spline3d name="eMotorTorqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Electric Motor Torque  vs. RPM vs Throttle demand" zLabel="Throttle">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorBrakingTorqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Torque" yUnit="torque" datablock="Braking (generator) Torque  vs. RPM vs Brake demand" zLabel="Brake demand [-]">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline name="eMotorCoastingTorqueMap" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Electric Motor Torque  vs. RPM">
+                      <![CDATA[
+              0               0
+           4000               0
+           8000               0
+          12000               0
+]]>
+                    </Spline>
+                    <Spline3d name="eMotorRegenerationMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Regeneration Factor [-]" datablock="Regeneration Factor vs. RPM vs Torque" zLabel="Torque" zUnit="torque">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 100 200
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorEfficiencyMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Efficiency [-]" datablock="Efficiency vs. RPM vs Torque" zLabel="Torque" zUnit="torque">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           1 1 1 1 1 1 1 1 1 1 1 1
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 100 200
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline name="revLimitRPMMap" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Gear [-]" yLabel="Rev Limit [RPM]" datablock="Rev Limit">
+                      <![CDATA[
+              0               0
+              1           10000
+              2           10000
+              3           10000
+              4           10000
+              5           10000
+              6           10000
+              7           10000
+              8           10000
+]]>
+                    </Spline>
+               </CRTMotor>
+               <CRTMotor name="rearDrivelineMotor" active="true" userDefined="false" method="standard" eMotorTorqueMapFileFlag="false" inertia="1.0" stallRPM="1.0" idleRPM="0" revLimitRPM="3000.0" revLimitMapActiveFlag="false" torqueReactionDirection="No Torque Reaction" simpleEngineMinimumTorque="0" simpleEngineMaximumTorque="1.0" simpleEngineMaximumPower="1.0" torqueOutputOption="Clutch" simpleEngineTau="0" efficiency="1.0" torqueScalingFactor="1.0" idleControlActiveFlag="false" idleControlMaximumThrottle="1.0" idleControlGain="1.0" maxRPMControlActiveFlag="false" maxRPMControlGain="1.0" transmissionRatio="1.01" tractionControlActiveFlag="true" tractionControlGain="5.0" tractionControlThreshold="0.08" regenerativeBrakingFactor="0" longitudinalVelocityThreshold="0" eMotorRegenerationMapFlag="false" eMotorEfficiencyMapFlag="false">
+                    <Spline3d name="torqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Powertrain Map" zLabel="Throttle">
+                         <afc:VectorAttribute name="x_data">
+                           0 8 16.1 24.1 32.2 40.2 48.3 56.3 64.3 72.40000000000001 80.40000000000001 88.5 96.5 104.5 112.6 120.6 128.7 136.7 144.8 152.8 160.8 168.9 176.9 185 193 201.1 209.1 217.1 225.2 233.2 241.3 249.3 257.4 265.4 273.4 281.5 289.5 297.6 305.6 313.6 321.7 329.7 337.8 345.8 353.9 361.9 369.9 378 386 394.1 402.1 410.2 418.2 426.2 434.3 442.3 450.4 458.4 466.4 474.5 482.5 490.6 498.6 506.7 514.7000000000001 522.7000000000001 530.8 538.8 546.9 554.9 563 571 579 587.1 595.1 603.2000000000001 611.2000000000001 619.2000000000001 627.3 635.3 643.4 651.4 659.5 667.5 675.5 683.6 691.6 699.7000000000001 707.7000000000001 715.8 723.8 731.8 739.9 747.9 756 764 772.1 780.1 788.1 796.2000000000001 804.2000000000001 812.3 820.3 828.3 836.4 844.4 852.5 860.5 868.6 876.6 884.6 892.7000000000001 900.7000000000001 908.8 916.8 924.9 932.9 940.9 949 957 965.1 973.1 981.1 989.2000000000001 997.2000000000001 1005.3 1013.3 1021.4 1029.4 1037.4 1045.5 1053.5 1061.6 1069.6 1077.7 1085.7 1093.7 1101.8 1109.8 1117.9 1125.9 1134 1142 1150 1158.1 1166.1 1174.2 1182.2 1190.2 1198.3 1206.3 1214.4 1222.4 1230.5 1238.5 1246.5 1254.6 1262.6 1270.7 1278.7 1286.8 1294.8 1302.8 1310.9 1318.9 1327 1335 1343 1351.1 1359.1 1367.2 1375.2 1383.3 1391.3 1399.3 1407.4 1415.4 1423.5 1431.5 1439.6 1447.6 1455.6 1463.7 1471.7 1479.8 1487.8 1495.9 1503.9 1511.9 1520 1528 1536.1 1544.1 1552.1 1560.2 1568.2 1576.3 1584.3 1592.4 1600.4 1608.4 1616.5 1624.5 1632.6 1640.6 1648.7 1656.7 1664.7 1672.8 1680.8 1688.9 1696.9 1704.9 1713 1721 1729.1 1737.1 1745.2 1753.2 1761.2 1769.3 1777.3 1785.4 1793.4 1801.5 1809.5 1817.5 1825.6 1833.6 1841.7 1849.7 1857.7 1865.8 1873.8 1881.9 1889.9 1898 1906 1914 1922.1 1930.1 1938.2 1946.2 1954.3 1962.3 1970.3 1978.4 1986.4 1994.5 2002.5 2010.6 2018.6 2026.6 2034.7 2042.7 2050.8 2058.8 2066.8 2074.9 2082.9 2091 2099 2107.1 2115.1 2123.1 2131.2 2139.2 2147.3 2155.3 2163.4 2171.4 2179.4 2187.5 2195.5 2203.6 2211.6 2219.6 2227.7 2235.7 2243.8 2251.8 2259.9 2267.9 2275.9 2284 2292 2300.1 2308.1 2316.2 2324.2 2332.2 2340.3 2348.3 2356.4 2364.4 2372.5 2380.5 2388.5 2396.6 2404.6 2412.7 2420.7 2428.7 2436.8 2444.8 2452.9 2460.9 2469 2477 2485 2493.1 2501.1 2509.2 2517.2 2525.3 2533.3 2541.3 2549.4 2557.4 2565.5 2573.5 2581.5 2589.6 2597.6 2605.7 2613.7 2621.8 2629.8 2637.8 2645.9 2653.9 2662 2670 2678.1 2686.1 2694.1 2702.2 2710.2 2718.3 2726.3 2734.3 2742.4 2750.4 2758.5 2766.5 2774.6 2782.6 2790.6 2798.7 2806.7 2814.8
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4194641 4209329 4265375 4327644 4395324 4467631 4543812 4623139 4704916 4788473 4873170 4958395 5043565 5128125 5211549 5293339 5373027 5450172 5524362 5595213 5662372 5725512 5784334 5838571 5887982 5932354 5971505 6005280 6033552 6056224 6073227 6084520 6090091 6089957 6084163 6072783 6055919 6033702 6006292 5973876 5936671 5894923 5848904 5798918 5745295 5688394 5628604 5566341 5502050 5436205 4593626 4616573 4637035 4654966 4670328 4683091 4693232 4700736 4705599 4707820 4707409 4704383 4698767 4690594 4679905 4666749 4651182 4633267 4613079 4590697 4566208 4539710 4511305 4481105 4449231 4415809 4380975 4344873 4307652 4269473 4230502 4190914 3842400 3846941 3850035 3851683 3851887 3850655 3847997 3843924 3838453 3831601 3823390 3813843 3802988 3790855 3777476 3762887 3747126 3730235 3712258 3693242 3673238 3652297 3630477 3607836 3584434 3560338 3535614 3510333 3484568 3458394 3431891 3145023 3148331 3150845 3152564 3153490 3153624 3152970 3151531 3149312 3146321 3142563 3138048 3132785 3126784 3120057 3112617 3104476 3095650 3086155 3076007 3065225 3053827 3041833 3029264 3016143 3002493 2988338 2973703 2958615 2943101 2927190 2910911 2894296 2877375 2860182 2842750 2825114 2807311 2649490 2649390 2648824 2647792 2646298 2644345 2641935 2639074 2635765 2632014 2627825 2623204 2618157 2612692 2606814 2600532 2593852 2586785 2579338 2571521 2563343 2554815 2545947 2536750 2527236 2517416 2507304 2496911 2486251 2475338 2464185 2452809 2441222 2429442 2417484 2405364 2393099 2380706 2368204 2355610 2308991 2305622 2301962 2298015 2293784 2289275 2284492 2279439 2274120 2268542 2262710 2256628 2250304 2243743 2236950 2229934 2222700 2215256 2207608 2199764 2191733 2183521 2175136 2166588 2157885 2149036 2140049 2130934 2121701 2112359 2102918 2093389 2083782 2074107 2064376 2031928 2029034 2025944 2022661 2019186 2015522 2011672 2007639 2003426 1999037 1994473 1989740 1984840 1979776 1974554 1969176 1963646 1957970 1952150 1946192 1940100 1933878 1927532 1921065 1914484 1907793 1900998 1894104 1887116 1880040 1872882 1865647 1858342 1850973 1843546 1836067 1828543 1820980 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           -1 0 1
+                         </afc:VectorAttribute>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline3d>
+                    <Spline3d name="eMotorTorqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Electric Motor Torque  vs. RPM vs Throttle demand" zLabel="Throttle">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorBrakingTorqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Torque" yUnit="torque" datablock="Braking (generator) Torque  vs. RPM vs Brake demand" zLabel="Brake demand [-]">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline name="eMotorCoastingTorqueMap" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Electric Motor Torque  vs. RPM">
+                      <![CDATA[
+              0               0
+           4000               0
+           8000               0
+          12000               0
+]]>
+                    </Spline>
+                    <Spline3d name="eMotorRegenerationMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Regeneration Factor [-]" datablock="Regeneration Factor vs. RPM vs Torque" zLabel="Torque" zUnit="torque">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 100 200
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorEfficiencyMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Efficiency [-]" datablock="Efficiency vs. RPM vs Torque" zLabel="Torque" zUnit="torque">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           1 1 1 1 1 1 1 1 1 1 1 1
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 100 200
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline name="revLimitRPMMap" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Gear [-]" yLabel="Rev Limit [RPM]" datablock="Rev Limit">
+                      <![CDATA[
+              0               0
+              1           10000
+              2           10000
+              3           10000
+              4           10000
+              5           10000
+              6           10000
+              7           10000
+              8           10000
+]]>
+                    </Spline>
+               </CRTMotor>
+               <CRTMotor name="frontLeftWheelMotor" active="true" userDefined="false" method="standard" torqueMapFileFlag="false" eMotorTorqueMapFileFlag="false" inertia="1.0" stallRPM="1.0" idleRPM="0" revLimitRPM="3000.0" revLimitMapActiveFlag="false" torqueReactionDirection="No Torque Reaction" simpleEngineMinimumTorque="0" simpleEngineMaximumTorque="1.0" simpleEngineMaximumPower="1.0" torqueOutputOption="Clutch" simpleEngineTau="0" efficiency="1.0" torqueScalingFactor="1.0" idleControlActiveFlag="false" idleControlMaximumThrottle="1.0" idleControlGain="1.0" maxRPMControlActiveFlag="false" maxRPMControlGain="1.0" transmissionRatio="1.0" tractionControlActiveFlag="true" tractionControlGain="5.0" tractionControlThreshold="0.08" regenerativeBrakingFactor="0" longitudinalVelocityThreshold="0" eMotorRegenerationMapFlag="false" eMotorEfficiencyMapFlag="false">
+                    <Spline3d name="torqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Powertrain Map" zLabel="Throttle">
+                         <afc:VectorAttribute name="x_data">
+                           0 7.58 15.17 22.75 30.33 37.91 45.5 53.08 60.66 68.24 75.83 83.41 90.99 98.56999999999999 106.16 113.74 121.32 128.91 136.49 144.07 151.65 159.24 166.82 174.4 181.98 189.57 197.15 204.73 212.31 219.9 227.48 235.06 242.64 250.23 257.81 265.39 272.98 280.56 288.14 295.72 303.31 310.89 318.47 326.05 333.64 341.22 348.8 356.38 363.97 371.55 379.13 386.72 394.3 401.88 409.46 417.05 424.63 432.21 439.79 447.38 454.96 462.54 470.12 477.71 485.29 492.87 500.45 508.04 515.62 523.2000000000001 530.79 538.37 545.9500000000001 553.53 561.12 568.7000000000001 576.28 583.86 591.4500000000001 599.03 606.61 614.1900000000001 621.78 629.36 636.9400000000001 644.53 652.11 659.6900000000001 667.27 674.86 682.4400000000001 690.02 697.6 705.1900000000001 712.77 720.35 727.93 735.52 743.1 750.68 758.27 765.85 773.43 781.01 788.6 796.18 803.76 811.34 818.93 826.51 834.09 841.67 849.26 856.84 864.42 872 879.59 887.17 894.75 902.34 909.92 917.5 925.08 932.67 940.25 947.83 955.41 963 970.58 978.16 985.74 993.33 1000.91 1008.49 1016.08 1023.66 1031.24 1038.82 1046.41 1053.99 1061.57 1069.15 1076.74 1084.32 1091.9 1099.48 1107.07 1114.65 1122.23 1129.81 1137.4 1144.98 1152.56 1160.15 1167.73 1175.31 1182.89 1190.48 1198.06 1205.64 1213.22 1220.81 1228.39 1235.97 1243.55 1251.14 1258.72 1266.3 1273.89 1281.47 1289.05 1296.63 1304.22 1311.8 1319.38 1326.96 1334.55 1342.13 1349.71 1357.29 1364.88 1372.46 1380.04 1387.63 1395.21 1402.79 1410.37 1417.96 1425.54 1433.12 1440.7 1448.29 1455.87 1463.45 1471.03 1478.62 1486.2 1493.78 1501.36 1508.95 1516.53 1524.11 1531.7 1539.28 1546.86 1554.44 1562.03 1569.61 1577.19 1584.77 1592.36 1599.94 1607.52 1615.1 1622.69 1630.27 1637.85 1645.44 1653.02 1660.6 1668.18 1675.77 1683.35 1690.93 1698.51 1706.1 1713.68 1721.26 1728.84 1736.43 1744.01 1751.59 1759.18 1766.76 1774.34 1781.92 1789.51 1797.09 1804.67 1812.25 1819.84 1827.42 1835 1842.58 1850.17 1857.75 1865.33 1872.91 1880.5 1888.08 1895.66 1903.25 1910.83 1918.41 1925.99 1933.58 1941.16 1948.74 1956.32 1963.91 1971.49 1979.07 1986.65 1994.24 2001.82 2009.4 2016.99 2024.57 2032.15 2039.73 2047.32 2054.9 2062.48 2070.06 2077.65 2085.23 2092.81 2100.39 2107.98 2115.56 2123.14 2130.72 2138.31 2145.89 2153.47 2161.06 2168.64 2176.22 2183.8 2191.39 2198.97 2206.55 2214.13 2221.72 2229.3 2236.88 2244.46 2252.05 2259.63 2267.21 2274.8 2282.38 2289.96 2297.54 2305.13 2312.71 2320.29 2327.87 2335.46 2343.04 2350.62 2358.2 2365.79 2373.37 2380.95 2388.54 2396.12 2403.7 2411.28 2418.87 2426.45 2434.03 2441.61 2449.2 2456.78 2464.36 2471.94 2479.53 2487.11 2494.69 2502.27 2509.86 2517.44 2525.02 2532.61 2540.19 2547.77 2555.35 2562.94 2570.52 2578.1 2585.68 2593.27 2600.85 2608.43 2616.01 2623.6 2631.18 2638.76 2646.35 2653.93
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 148760 295082 439024 580645 720000 857143 992126 984375 976744 969231 961832 954545 947368 940299 933333 926471 919708 913043 906475 900000 893617 887324 881119 875000 868966 863014 857143 851351 845638 840000 834437 828947 823529 818182 812903 807692 802548 797468 792453 787500 782609 777778 773006 768293 763636 759036 754491 750000 745562 741176 736842 732558 728324 724138 720000 715909 711864 707865 703911 700000 696133 692308 688525 684783 681081 677419 673797 670213 666667 663158 659686 656250 652850 649485 646154 642857 639594 636364 633166 630000 626866 623762 620690 617647 614634 611650 608696 605769 602871 600000 597156 594340 591549 588785 586047 583333 580645 577982 575342 572727 570136 567568 565022 562500 560000 557522 555066 552632 550218 547826 545455 543103 540773 538462 536170 533898 531646 529412 527197 525000 522822 520661 518519 516393 514286 512195 510121 508065 506024 504000 501992 500000 498024 496063 494118 492188 490272 488372 486486 484615 482759 480916 479087 477273 475472 473684 471910 470149 468401 466667 464945 463235 461538 459854 458182 456522 454874 453237 451613 450000 448399 446809 445230 443662 442105 440559 439024 437500 435986 434483 432990 431507 430034 428571 427119 425676 424242 422819 421405 420000 418605 417219 415842 414474 413115 411765 410423 409091 407767 406452 405145 403846 402556 401274 400000 398734 397476 396226 394984 393750 392523 391304 390093 388889 387692 386503 385321 384146 382979 381818 380665 379518 378378 377246 376119 375000 373887 372781 371681 370588 369501 368421 367347 366279 365217 364162 363112 362069 361032 360000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           -1 0 1
+                         </afc:VectorAttribute>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline3d>
+                    <Spline3d name="eMotorTorqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Electric Motor Torque  vs. RPM vs Throttle demand" zLabel="Throttle">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorBrakingTorqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Torque" yUnit="torque" datablock="Braking (generator) Torque  vs. RPM vs Brake demand" zLabel="Brake demand [-]">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline name="eMotorCoastingTorqueMap" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Electric Motor Torque  vs. RPM">
+                      <![CDATA[
+              0               0
+           4000               0
+           8000               0
+          12000               0
+]]>
+                    </Spline>
+                    <Spline3d name="eMotorRegenerationMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Regeneration Factor [-]" datablock="Regeneration Factor vs. RPM vs Torque" zLabel="Torque" zUnit="torque">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 100 200
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorEfficiencyMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Efficiency [-]" datablock="Efficiency vs. RPM vs Torque" zLabel="Torque" zUnit="torque">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           1 1 1 1 1 1 1 1 1 1 1 1
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 100 200
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline name="revLimitRPMMap" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Gear [-]" yLabel="Rev Limit [RPM]" datablock="Rev Limit">
+                      <![CDATA[
+              0               0
+              1           10000
+              2           10000
+              3           10000
+              4           10000
+              5           10000
+              6           10000
+              7           10000
+              8           10000
+]]>
+                    </Spline>
+               </CRTMotor>
+               <CRTMotor name="frontRightWheelMotor" active="true" userDefined="false" method="standard" torqueMapFileFlag="false" eMotorTorqueMapFileFlag="false" inertia="1.0" stallRPM="1.0" idleRPM="0" revLimitRPM="3000.0" revLimitMapActiveFlag="false" torqueReactionDirection="No Torque Reaction" simpleEngineMinimumTorque="0" simpleEngineMaximumTorque="1.0" simpleEngineMaximumPower="1.0" torqueOutputOption="Clutch" simpleEngineTau="0" efficiency="1.0" torqueScalingFactor="1.0" idleControlActiveFlag="false" idleControlMaximumThrottle="1.0" idleControlGain="1.0" maxRPMControlActiveFlag="false" maxRPMControlGain="1.0" transmissionRatio="1.0" tractionControlActiveFlag="true" tractionControlGain="5.0" tractionControlThreshold="0.08" regenerativeBrakingFactor="0" longitudinalVelocityThreshold="0" eMotorRegenerationMapFlag="false" eMotorEfficiencyMapFlag="false">
+                    <Spline3d name="torqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Powertrain Map" zLabel="Throttle">
+                         <afc:VectorAttribute name="x_data">
+                           0 7.58 15.17 22.75 30.33 37.91 45.5 53.08 60.66 68.24 75.83 83.41 90.99 98.56999999999999 106.16 113.74 121.32 128.91 136.49 144.07 151.65 159.24 166.82 174.4 181.98 189.57 197.15 204.73 212.31 219.9 227.48 235.06 242.64 250.23 257.81 265.39 272.98 280.56 288.14 295.72 303.31 310.89 318.47 326.05 333.64 341.22 348.8 356.38 363.97 371.55 379.13 386.72 394.3 401.88 409.46 417.05 424.63 432.21 439.79 447.38 454.96 462.54 470.12 477.71 485.29 492.87 500.45 508.04 515.62 523.2000000000001 530.79 538.37 545.9500000000001 553.53 561.12 568.7000000000001 576.28 583.86 591.4500000000001 599.03 606.61 614.1900000000001 621.78 629.36 636.9400000000001 644.53 652.11 659.6900000000001 667.27 674.86 682.4400000000001 690.02 697.6 705.1900000000001 712.77 720.35 727.93 735.52 743.1 750.68 758.27 765.85 773.43 781.01 788.6 796.18 803.76 811.34 818.93 826.51 834.09 841.67 849.26 856.84 864.42 872 879.59 887.17 894.75 902.34 909.92 917.5 925.08 932.67 940.25 947.83 955.41 963 970.58 978.16 985.74 993.33 1000.91 1008.49 1016.08 1023.66 1031.24 1038.82 1046.41 1053.99 1061.57 1069.15 1076.74 1084.32 1091.9 1099.48 1107.07 1114.65 1122.23 1129.81 1137.4 1144.98 1152.56 1160.15 1167.73 1175.31 1182.89 1190.48 1198.06 1205.64 1213.22 1220.81 1228.39 1235.97 1243.55 1251.14 1258.72 1266.3 1273.89 1281.47 1289.05 1296.63 1304.22 1311.8 1319.38 1326.96 1334.55 1342.13 1349.71 1357.29 1364.88 1372.46 1380.04 1387.63 1395.21 1402.79 1410.37 1417.96 1425.54 1433.12 1440.7 1448.29 1455.87 1463.45 1471.03 1478.62 1486.2 1493.78 1501.36 1508.95 1516.53 1524.11 1531.7 1539.28 1546.86 1554.44 1562.03 1569.61 1577.19 1584.77 1592.36 1599.94 1607.52 1615.1 1622.69 1630.27 1637.85 1645.44 1653.02 1660.6 1668.18 1675.77 1683.35 1690.93 1698.51 1706.1 1713.68 1721.26 1728.84 1736.43 1744.01 1751.59 1759.18 1766.76 1774.34 1781.92 1789.51 1797.09 1804.67 1812.25 1819.84 1827.42 1835 1842.58 1850.17 1857.75 1865.33 1872.91 1880.5 1888.08 1895.66 1903.25 1910.83 1918.41 1925.99 1933.58 1941.16 1948.74 1956.32 1963.91 1971.49 1979.07 1986.65 1994.24 2001.82 2009.4 2016.99 2024.57 2032.15 2039.73 2047.32 2054.9 2062.48 2070.06 2077.65 2085.23 2092.81 2100.39 2107.98 2115.56 2123.14 2130.72 2138.31 2145.89 2153.47 2161.06 2168.64 2176.22 2183.8 2191.39 2198.97 2206.55 2214.13 2221.72 2229.3 2236.88 2244.46 2252.05 2259.63 2267.21 2274.8 2282.38 2289.96 2297.54 2305.13 2312.71 2320.29 2327.87 2335.46 2343.04 2350.62 2358.2 2365.79 2373.37 2380.95 2388.54 2396.12 2403.7 2411.28 2418.87 2426.45 2434.03 2441.61 2449.2 2456.78 2464.36 2471.94 2479.53 2487.11 2494.69 2502.27 2509.86 2517.44 2525.02 2532.61 2540.19 2547.77 2555.35 2562.94 2570.52 2578.1 2585.68 2593.27 2600.85 2608.43 2616.01 2623.6 2631.18 2638.76 2646.35 2653.93
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 148760 295082 439024 580645 720000 857143 992126 984375 976744 969231 961832 954545 947368 940299 933333 926471 919708 913043 906475 900000 893617 887324 881119 875000 868966 863014 857143 851351 845638 840000 834437 828947 823529 818182 812903 807692 802548 797468 792453 787500 782609 777778 773006 768293 763636 759036 754491 750000 745562 741176 736842 732558 728324 724138 720000 715909 711864 707865 703911 700000 696133 692308 688525 684783 681081 677419 673797 670213 666667 663158 659686 656250 652850 649485 646154 642857 639594 636364 633166 630000 626866 623762 620690 617647 614634 611650 608696 605769 602871 600000 597156 594340 591549 588785 586047 583333 580645 577982 575342 572727 570136 567568 565022 562500 560000 557522 555066 552632 550218 547826 545455 543103 540773 538462 536170 533898 531646 529412 527197 525000 522822 520661 518519 516393 514286 512195 510121 508065 506024 504000 501992 500000 498024 496063 494118 492188 490272 488372 486486 484615 482759 480916 479087 477273 475472 473684 471910 470149 468401 466667 464945 463235 461538 459854 458182 456522 454874 453237 451613 450000 448399 446809 445230 443662 442105 440559 439024 437500 435986 434483 432990 431507 430034 428571 427119 425676 424242 422819 421405 420000 418605 417219 415842 414474 413115 411765 410423 409091 407767 406452 405145 403846 402556 401274 400000 398734 397476 396226 394984 393750 392523 391304 390093 388889 387692 386503 385321 384146 382979 381818 380665 379518 378378 377246 376119 375000 373887 372781 371681 370588 369501 368421 367347 366279 365217 364162 363112 362069 361032 360000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           -1 0 1
+                         </afc:VectorAttribute>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline3d>
+                    <Spline3d name="eMotorTorqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Electric Motor Torque  vs. RPM vs Throttle demand" zLabel="Throttle">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorBrakingTorqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Torque" yUnit="torque" datablock="Braking (generator) Torque  vs. RPM vs Brake demand" zLabel="Brake demand [-]">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline name="eMotorCoastingTorqueMap" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Electric Motor Torque  vs. RPM">
+                      <![CDATA[
+              0               0
+           4000               0
+           8000               0
+          12000               0
+]]>
+                    </Spline>
+                    <Spline3d name="eMotorRegenerationMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Regeneration Factor [-]" datablock="Regeneration Factor vs. RPM vs Torque" zLabel="Torque" zUnit="torque">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 100 200
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorEfficiencyMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Efficiency [-]" datablock="Efficiency vs. RPM vs Torque" zLabel="Torque" zUnit="torque">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           1 1 1 1 1 1 1 1 1 1 1 1
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 100 200
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline name="revLimitRPMMap" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Gear [-]" yLabel="Rev Limit [RPM]" datablock="Rev Limit">
+                      <![CDATA[
+              0               0
+              1           10000
+              2           10000
+              3           10000
+              4           10000
+              5           10000
+              6           10000
+              7           10000
+              8           10000
+]]>
+                    </Spline>
+               </CRTMotor>
+               <CRTMotor name="rearLeftWheelMotor" active="true" userDefined="false" method="standard" eMotorTorqueMapFileFlag="false" inertia="1.0" stallRPM="1.0" idleRPM="0" revLimitRPM="3000.0" revLimitMapActiveFlag="false" torqueReactionDirection="No Torque Reaction" simpleEngineMinimumTorque="0" simpleEngineMaximumTorque="1.0" simpleEngineMaximumPower="1.0" torqueOutputOption="Clutch" simpleEngineTau="0" efficiency="1.0" torqueScalingFactor="0.5" idleControlActiveFlag="false" idleControlMaximumThrottle="1.0" idleControlGain="1.0" maxRPMControlActiveFlag="false" maxRPMControlGain="1.0" transmissionRatio="1.02" tractionControlActiveFlag="true" tractionControlGain="2.5" tractionControlThreshold="0.08" regenerativeBrakingFactor="0" longitudinalVelocityThreshold="0" eMotorRegenerationMapFlag="false" eMotorEfficiencyMapFlag="false">
+                    <Spline3d name="torqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Powertrain Map" zLabel="Throttle">
+                         <afc:VectorAttribute name="x_data">
+                           0 8 16.1 24.1 32.2 40.2 48.3 56.3 64.3 72.40000000000001 80.40000000000001 88.5 96.5 104.5 112.6 120.6 128.7 136.7 144.8 152.8 160.8 168.9 176.9 185 193 201.1 209.1 217.1 225.2 233.2 241.3 249.3 257.4 265.4 273.4 281.5 289.5 297.6 305.6 313.6 321.7 329.7 337.8 345.8 353.9 361.9 369.9 378 386 394.1 402.1 410.2 418.2 426.2 434.3 442.3 450.4 458.4 466.4 474.5 482.5 490.6 498.6 506.7 514.7000000000001 522.7000000000001 530.8 538.8 546.9 554.9 563 571 579 587.1 595.1 603.2000000000001 611.2000000000001 619.2000000000001 627.3 635.3 643.4 651.4 659.5 667.5 675.5 683.6 691.6 699.7000000000001 707.7000000000001 715.8 723.8 731.8 739.9 747.9 756 764 772.1 780.1 788.1 796.2000000000001 804.2000000000001 812.3 820.3 828.3 836.4 844.4 852.5 860.5 868.6 876.6 884.6 892.7000000000001 900.7000000000001 908.8 916.8 924.9 932.9 940.9 949 957 965.1 973.1 981.1 989.2000000000001 997.2000000000001 1005.3 1013.3 1021.4 1029.4 1037.4 1045.5 1053.5 1061.6 1069.6 1077.7 1085.7 1093.7 1101.8 1109.8 1117.9 1125.9 1134 1142 1150 1158.1 1166.1 1174.2 1182.2 1190.2 1198.3 1206.3 1214.4 1222.4 1230.5 1238.5 1246.5 1254.6 1262.6 1270.7 1278.7 1286.8 1294.8 1302.8 1310.9 1318.9 1327 1335 1343 1351.1 1359.1 1367.2 1375.2 1383.3 1391.3 1399.3 1407.4 1415.4 1423.5 1431.5 1439.6 1447.6 1455.6 1463.7 1471.7 1479.8 1487.8 1495.9 1503.9 1511.9 1520 1528 1536.1 1544.1 1552.1 1560.2 1568.2 1576.3 1584.3 1592.4 1600.4 1608.4 1616.5 1624.5 1632.6 1640.6 1648.7 1656.7 1664.7 1672.8 1680.8 1688.9 1696.9 1704.9 1713 1721 1729.1 1737.1 1745.2 1753.2 1761.2 1769.3 1777.3 1785.4 1793.4 1801.5 1809.5 1817.5 1825.6 1833.6 1841.7 1849.7 1857.7 1865.8 1873.8 1881.9 1889.9 1898 1906 1914 1922.1 1930.1 1938.2 1946.2 1954.3 1962.3 1970.3 1978.4 1986.4 1994.5 2002.5 2010.6 2018.6 2026.6 2034.7 2042.7 2050.8 2058.8 2066.8 2074.9 2082.9 2091 2099 2107.1 2115.1 2123.1 2131.2 2139.2 2147.3 2155.3 2163.4 2171.4 2179.4 2187.5 2195.5 2203.6 2211.6 2219.6 2227.7 2235.7 2243.8 2251.8 2259.9 2267.9 2275.9 2284 2292 2300.1 2308.1 2316.2 2324.2 2332.2 2340.3 2348.3 2356.4 2364.4 2372.5 2380.5 2388.5 2396.6 2404.6 2412.7 2420.7 2428.7 2436.8 2444.8 2452.9 2460.9 2469 2477 2485 2493.1 2501.1 2509.2 2517.2 2525.3 2533.3 2541.3 2549.4 2557.4 2565.5 2573.5 2581.5 2589.6 2597.6 2605.7 2613.7 2621.8 2629.8 2637.8 2645.9 2653.9 2662 2670 2678.1 2686.1 2694.1 2702.2 2710.2 2718.3 2726.3 2734.3 2742.4 2750.4 2758.5 2766.5 2774.6 2782.6 2790.6 2798.7 2806.7 2814.8
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70263 146641 220241 291212 359693 425813 489691 566129 681900 801967 925609 1052131 1180858 1311139 1442348 1573884 1705170 1835652 1964804 2092125 2217138 2339393 2458467 2573961 2685505 2792752 2895385 2993112 3085668 3172815 3254343 3330069 3399835 3463513 3521000 3572224 3617137 3655720 3687981 3713957 3733711 3747336 3754951 3756702 3752766 3743345 3728671 3709003 3684627 3655859 3623043 3586548 3546776 3504152 3459134 3412205 2588194 2629373 2667738 2703252 2735886 2765617 2792432 2816323 2837291 2855345 2870501 2882783 2892222 2898857 2902735 2903910 2902446 2898410 2891882 2882947 2871697 2858233 2842664 2825105 2805682 2784526 2761775 2737579 2712090 2685473 2657898 2629543 2292102 2307561 2321420 2333683 2344356 2353450 2360976 2366951 2371392 2374321 2375760 2375738 2374283 2371427 2367205 2361656 2354821 2346742 2337466 2327042 2315523 2302964 2289422 2274958 2259634 2243519 2226680 2209190 2191124 2172559 2153576 1874140 1884794 1894569 1903467 1911490 1918641 1924925 1930346 1934912 1938630 1941508 1943556 1944785 1945206 1944831 1943675 1941753 1939079 1935671 1931547 1926725 1921226 1915070 1908280 1900878 1892889 1884338 1875251 1865655 1855579 1845051 1834103 1822766 1811072 1799055 1786750 1774191 1761416 1608576 1613409 1617729 1621538 1624840 1627638 1629935 1631738 1633050 1633877 1634225 1634100 1633509 1632459 1630957 1629012 1626631 1623825 1620601 1616971 1612943 1608529 1603740 1598587 1593082 1587237 1581066 1574582 1567797 1560727 1553385 1545788 1537950 1529887 1521615 1513152 1504514 1495719 1486785 1477730 1434623 1434737 1434533 1434015 1433186 1432052 1430617 1428886 1426864 1424558 1421971 1419111 1415983 1412594 1408950 1405058 1400926 1396559 1391966 1387155 1382133 1376908 1371489 1365885 1360104 1354156 1348049 1341793 1335399 1328875 1322232 1315482 1308633 1301697 1294686 1264938 1264727 1264300 1263661 1262812 1261756 1260497 1259036 1257379 1255526 1253484 1251253 1248840 1246246 1243477 1240536 1237427 1234155 1230725 1227140 1223405 1219525 1215506 1211351 1207067 1202658 1198130 1193488 1188739 1183887 1178939 1173900 1168777 1163577 1158304 1152967 1147571 1142123 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           -1 0 1
+                         </afc:VectorAttribute>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline3d>
+                    <Spline3d name="eMotorTorqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Electric Motor Torque  vs. RPM vs Throttle demand" zLabel="Throttle">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorBrakingTorqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Torque" yUnit="torque" datablock="Braking (generator) Torque  vs. RPM vs Brake demand" zLabel="Brake demand [-]">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline name="eMotorCoastingTorqueMap" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Electric Motor Torque  vs. RPM">
+                      <![CDATA[
+              0               0
+           4000               0
+           8000               0
+          12000               0
+]]>
+                    </Spline>
+                    <Spline3d name="eMotorRegenerationMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Regeneration Factor [-]" datablock="Regeneration Factor vs. RPM vs Torque" zLabel="Torque" zUnit="torque">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 100 200
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorEfficiencyMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Efficiency [-]" datablock="Efficiency vs. RPM vs Torque" zLabel="Torque" zUnit="torque">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           1 1 1 1 1 1 1 1 1 1 1 1
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 100 200
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline name="revLimitRPMMap" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Gear [-]" yLabel="Rev Limit [RPM]" datablock="Rev Limit">
+                      <![CDATA[
+              0               0
+              1           10000
+              2           10000
+              3           10000
+              4           10000
+              5           10000
+              6           10000
+              7           10000
+              8           10000
+]]>
+                    </Spline>
+               </CRTMotor>
+               <CRTMotor name="rearRightWheelMotor" active="true" userDefined="false" method="standard" eMotorTorqueMapFileFlag="false" inertia="1.0" stallRPM="1.0" idleRPM="0" revLimitRPM="3000.0" revLimitMapActiveFlag="false" torqueReactionDirection="No Torque Reaction" simpleEngineMinimumTorque="0" simpleEngineMaximumTorque="1.0" simpleEngineMaximumPower="1.0" torqueOutputOption="Clutch" simpleEngineTau="0" efficiency="1.0" torqueScalingFactor="0.5" idleControlActiveFlag="false" idleControlMaximumThrottle="1.0" idleControlGain="1.0" maxRPMControlActiveFlag="false" maxRPMControlGain="1.0" transmissionRatio="1.02" tractionControlActiveFlag="true" tractionControlGain="2.5" tractionControlThreshold="0.08" regenerativeBrakingFactor="0" longitudinalVelocityThreshold="0" eMotorRegenerationMapFlag="false" eMotorEfficiencyMapFlag="false">
+                    <Spline3d name="torqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Powertrain Map" zLabel="Throttle">
+                         <afc:VectorAttribute name="x_data">
+                           0 8 16.1 24.1 32.2 40.2 48.3 56.3 64.3 72.40000000000001 80.40000000000001 88.5 96.5 104.5 112.6 120.6 128.7 136.7 144.8 152.8 160.8 168.9 176.9 185 193 201.1 209.1 217.1 225.2 233.2 241.3 249.3 257.4 265.4 273.4 281.5 289.5 297.6 305.6 313.6 321.7 329.7 337.8 345.8 353.9 361.9 369.9 378 386 394.1 402.1 410.2 418.2 426.2 434.3 442.3 450.4 458.4 466.4 474.5 482.5 490.6 498.6 506.7 514.7000000000001 522.7000000000001 530.8 538.8 546.9 554.9 563 571 579 587.1 595.1 603.2000000000001 611.2000000000001 619.2000000000001 627.3 635.3 643.4 651.4 659.5 667.5 675.5 683.6 691.6 699.7000000000001 707.7000000000001 715.8 723.8 731.8 739.9 747.9 756 764 772.1 780.1 788.1 796.2000000000001 804.2000000000001 812.3 820.3 828.3 836.4 844.4 852.5 860.5 868.6 876.6 884.6 892.7000000000001 900.7000000000001 908.8 916.8 924.9 932.9 940.9 949 957 965.1 973.1 981.1 989.2000000000001 997.2000000000001 1005.3 1013.3 1021.4 1029.4 1037.4 1045.5 1053.5 1061.6 1069.6 1077.7 1085.7 1093.7 1101.8 1109.8 1117.9 1125.9 1134 1142 1150 1158.1 1166.1 1174.2 1182.2 1190.2 1198.3 1206.3 1214.4 1222.4 1230.5 1238.5 1246.5 1254.6 1262.6 1270.7 1278.7 1286.8 1294.8 1302.8 1310.9 1318.9 1327 1335 1343 1351.1 1359.1 1367.2 1375.2 1383.3 1391.3 1399.3 1407.4 1415.4 1423.5 1431.5 1439.6 1447.6 1455.6 1463.7 1471.7 1479.8 1487.8 1495.9 1503.9 1511.9 1520 1528 1536.1 1544.1 1552.1 1560.2 1568.2 1576.3 1584.3 1592.4 1600.4 1608.4 1616.5 1624.5 1632.6 1640.6 1648.7 1656.7 1664.7 1672.8 1680.8 1688.9 1696.9 1704.9 1713 1721 1729.1 1737.1 1745.2 1753.2 1761.2 1769.3 1777.3 1785.4 1793.4 1801.5 1809.5 1817.5 1825.6 1833.6 1841.7 1849.7 1857.7 1865.8 1873.8 1881.9 1889.9 1898 1906 1914 1922.1 1930.1 1938.2 1946.2 1954.3 1962.3 1970.3 1978.4 1986.4 1994.5 2002.5 2010.6 2018.6 2026.6 2034.7 2042.7 2050.8 2058.8 2066.8 2074.9 2082.9 2091 2099 2107.1 2115.1 2123.1 2131.2 2139.2 2147.3 2155.3 2163.4 2171.4 2179.4 2187.5 2195.5 2203.6 2211.6 2219.6 2227.7 2235.7 2243.8 2251.8 2259.9 2267.9 2275.9 2284 2292 2300.1 2308.1 2316.2 2324.2 2332.2 2340.3 2348.3 2356.4 2364.4 2372.5 2380.5 2388.5 2396.6 2404.6 2412.7 2420.7 2428.7 2436.8 2444.8 2452.9 2460.9 2469 2477 2485 2493.1 2501.1 2509.2 2517.2 2525.3 2533.3 2541.3 2549.4 2557.4 2565.5 2573.5 2581.5 2589.6 2597.6 2605.7 2613.7 2621.8 2629.8 2637.8 2645.9 2653.9 2662 2670 2678.1 2686.1 2694.1 2702.2 2710.2 2718.3 2726.3 2734.3 2742.4 2750.4 2758.5 2766.5 2774.6 2782.6 2790.6 2798.7 2806.7 2814.8
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70263 146641 220241 291212 359693 425813 489691 566129 681900 801967 925609 1052131 1180858 1311139 1442348 1573884 1705170 1835652 1964804 2092125 2217138 2339393 2458467 2573961 2685505 2792752 2895385 2993112 3085668 3172815 3254343 3330069 3399835 3463513 3521000 3572224 3617137 3655720 3687981 3713957 3733711 3747336 3754951 3756702 3752766 3743345 3728671 3709003 3684627 3655859 3623043 3586548 3546776 3504152 3459134 3412205 2588194 2629373 2667738 2703252 2735886 2765617 2792432 2816323 2837291 2855345 2870501 2882783 2892222 2898857 2902735 2903910 2902446 2898410 2891882 2882947 2871697 2858233 2842664 2825105 2805682 2784526 2761775 2737579 2712090 2685473 2657898 2629543 2292102 2307561 2321420 2333683 2344356 2353450 2360976 2366951 2371392 2374321 2375760 2375738 2374283 2371427 2367205 2361656 2354821 2346742 2337466 2327042 2315523 2302964 2289422 2274958 2259634 2243519 2226680 2209190 2191124 2172559 2153576 1874140 1884794 1894569 1903467 1911490 1918641 1924925 1930346 1934912 1938630 1941508 1943556 1944785 1945206 1944831 1943675 1941753 1939079 1935671 1931547 1926725 1921226 1915070 1908280 1900878 1892889 1884338 1875251 1865655 1855579 1845051 1834103 1822766 1811072 1799055 1786750 1774191 1761416 1608576 1613409 1617729 1621538 1624840 1627638 1629935 1631738 1633050 1633877 1634225 1634100 1633509 1632459 1630957 1629012 1626631 1623825 1620601 1616971 1612943 1608529 1603740 1598587 1593082 1587237 1581066 1574582 1567797 1560727 1553385 1545788 1537950 1529887 1521615 1513152 1504514 1495719 1486785 1477730 1434623 1434737 1434533 1434015 1433186 1432052 1430617 1428886 1426864 1424558 1421971 1419111 1415983 1412594 1408950 1405058 1400926 1396559 1391966 1387155 1382133 1376908 1371489 1365885 1360104 1354156 1348049 1341793 1335399 1328875 1322232 1315482 1308633 1301697 1294686 1264938 1264727 1264300 1263661 1262812 1261756 1260497 1259036 1257379 1255526 1253484 1251253 1248840 1246246 1243477 1240536 1237427 1234155 1230725 1227140 1223405 1219525 1215506 1211351 1207067 1202658 1198130 1193488 1188739 1183887 1178939 1173900 1168777 1163577 1158304 1152967 1147571 1142123 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           -1 0 1
+                         </afc:VectorAttribute>
+                         <Comment userDefined="false">
+                           <![CDATA[]]>
+                         </Comment>
+                    </Spline3d>
+                    <Spline3d name="eMotorTorqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Electric Motor Torque  vs. RPM vs Throttle demand" zLabel="Throttle">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorBrakingTorqueMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Torque" yUnit="torque" datablock="Braking (generator) Torque  vs. RPM vs Brake demand" zLabel="Brake demand [-]">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 1
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline name="eMotorCoastingTorqueMap" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="RPM" yLabel="Torque" yUnit="force-length" datablock="Electric Motor Torque  vs. RPM">
+                      <![CDATA[
+              0               0
+           4000               0
+           8000               0
+          12000               0
+]]>
+                    </Spline>
+                    <Spline3d name="eMotorRegenerationMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Regeneration Factor [-]" datablock="Regeneration Factor vs. RPM vs Torque" zLabel="Torque" zUnit="torque">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           0 0 0 0 0 0 0 0 0 0 0 0
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 100 200
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline3d name="eMotorEfficiencyMap" active="true" userDefined="false" interpolation_method="akima" xLabel="Angular Velocity [RPM]" yLabel="Efficiency [-]" datablock="Efficiency vs. RPM vs Torque" zLabel="Torque" zUnit="torque">
+                         <afc:VectorAttribute name="x_data">
+                           0 4000 8000 12000
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="y_data">
+                           1 1 1 1 1 1 1 1 1 1 1 1
+                         </afc:VectorAttribute>
+                         <afc:VectorAttribute name="z_data">
+                           0 100 200
+                         </afc:VectorAttribute>
+                    </Spline3d>
+                    <Spline name="revLimitRPMMap" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Gear [-]" yLabel="Rev Limit [RPM]" datablock="Rev Limit">
+                      <![CDATA[
+              0               0
+              1           10000
+              2           10000
+              3           10000
+              4           10000
+              5           10000
+              6           10000
+              7           10000
+              8           10000
+]]>
+                    </Spline>
+               </CRTMotor>
+          </CRTDriveline>
+     </Subsystem>
+</afc>

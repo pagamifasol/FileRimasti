@@ -1,0 +1,202 @@
+$-----------------------------------------------------------------VIGRADE_HEADER
+[VIGRADE_HEADER]
+ FILE_TYPE     = 'aer'
+ FILE_VERSION  = 2.0
+ FILE_FORMAT   = 'ASCII'
+(COMMENTS)
+{comment_string}
+'VI-grade advanced aerodynamics sample data file'
+'NOTE: the user-defined unit tags are not supported within tables'
+'      They are accepted for single value parameters only.'
+$--------------------------------------------------------------------------UNITS
+[UNITS]
+(BASE)
+{length  force      angle       mass    time }
+'mm'  'newton'   'degree'    'kg'    'sec'
+(USER)
+{unit_type  length  force   angle   mass    time    conversion}
+'mps'           1     0       0       0      -1        1e3
+'kgpm3'        -3     0       0       1       0        1e-9 
+'kmh'           1       0      0      0      -1        277.78
+$-------------------------------------------------------------------------MODEL
+[MODEL]
+ PROPERTY_FILE_FORMAT   = 'ADVANCED'
+$------------------------------------------------------------GENERAL_PARAMETERS
+[GENERAL_PARAMETERS]
+ AIR_DENSITY <kgpm3>     =  1.18       $[kg/m^3]
+ AERO_FRONTAL_AREA      =  1.0e+6
+ FRONT_RIDE_HEIGHT_MIN  =  30
+ FRONT_RIDE_HEIGHT_MAX  =  70
+ REAR_RIDE_HEIGHT_MIN   =  30
+ REAR_RIDE_HEIGHT_MAX   =  90
+ DRAG_ARM_HEIGHT_MIN    =  -1.0e3
+ DRAG_ARM_HEIGHT_MAX    =  1.0e3
+$--------------------------------------------------------------OFFSET_PARAMETERS
+[OFFSET_PARAMETERS]
+ VELOCITY_THRESHOLD <kmh>           = 0.0    $[km/h]
+ REFERENCE_VELOCITY_OF_OFFSET <kmh> = 0.0    $[km/h]
+ CZ        =  0.0       $[per REFERENCE_VELOCITY_OF_OFFSET]
+ BALANCE_Z =  0.0       $[per REFERENCE_VELOCITY_OF_OFFSET]
+ CX_BODY   =  0.0       $[per REFERENCE_VELOCITY_OF_OFFSET]
+ CX_FRONT  =  0.0       $[per REFERENCE_VELOCITY_OF_OFFSET]
+ CX_REAR   =  0.0       $[per REFERENCE_VELOCITY_OF_OFFSET]
+$
+$ downforce coefficients and modifiers
+$-----------------------------------------------------------------------------CZ
+[CZ]
+(Z_DATA)
+{rear_ride_height}   
+30
+40
+50
+60
+70
+80
+90
+(XY_DATA)
+{ front_ride_height  cz_coeff }  
+30	3.870	4.157	4.358	4.420	4.452	4.502	4.586
+40	3.309	3.825	3.935	3.958	4.023	4.160	4.297
+50	3.027	3.563	3.720	3.731	3.802	3.971	4.026
+60	2.771	3.363	3.497	3.558	3.663	3.781	3.877
+70	2.504	3.074	3.256	3.321	3.426	3.561	3.676
+$----------------------------------------------------------------------BALANCE_Z
+[BALANCE_Z]
+(Z_DATA)                                        
+{rear_ride_height}  
+30
+40
+50
+60
+70
+80
+90
+(XY_DATA)
+{ front_ride_height  balance_coeff }   
+30	47.804	48.689	50.161	52.172	54.223	55.375	56.433
+40	43.095	42.222	44.091	46.286	48.670	50.601	52.292
+50	38.190	38.086	40.430	42.643	44.792	47.368	47.988
+60	32.588	33.006	35.945	39.179	41.687	43.719	45.499
+70	26.398	27.846	30.989	34.417	37.361	39.624	41.812
+$-------------------------------------------------------------------------CZF_YAW
+[CZF_YAW]
+{ yaw_angle  cfront_effect }
+    -9.0        1.016
+    -6.0        1.037
+    -3.0        1.030
+     0.0        1.0
+     3.0        1.016
+     6.0        1.037
+     9.0        1.016	 
+$-------------------------------------------------------------------CZF_STEERING
+[CZF_STEERING]
+{ steering_angle  cfront_effect }
+    -9.0        0.855
+    -6.0        0.944
+    -3.0        0.987
+     0.0        1.0
+     3.0        0.987
+     6.0        0.944
+     9.0        0.855
+$-----------------------------------------------------------------------CZF_ROLL
+[CZF_ROLL]
+{ roll_angle  cfront_effect }
+    -1.6       1.152
+    -1.2       1.114
+    -0.8       1.077
+    -0.4       1.040
+     0.0       1.0
+     0.4       1.040
+     0.8       1.077 
+     1.2       1.114
+     1.6       1.152
+$------------------------------------------------------------------------CZR_YAW
+[CZR_YAW]
+{ yaw_angle  crear_effect }
+    -9.0        0.870
+    -6.0        0.972
+    -3.0        1.010
+     0.0        1.0
+     3.0        1.010
+     6.0        0.972
+     9.0        0.870
+$-------------------------------------------------------------------CZR_STEERING
+[CZR_STEERING]
+{ steering_angle  crear_effect }
+    -9.0        1.018
+    -6.0        0.998
+    -3.0        0.995
+     0.0        1.0
+     3.0        0.995
+     6.0        0.998
+     9.0        1.018
+$-----------------------------------------------------------------------CZR_ROLL
+[CZR_ROLL]
+{ roll_angle  crear_effect }
+    -1.6       1.060
+    -1.2       1.045
+    -0.8       1.023
+    -0.4       1.005
+     0.0       1.0
+     0.4       1.005
+     0.8       1.023
+     1.2       1.045
+     1.6       1.060
+$
+$ dragforce coefficients and modifiers
+$------------------------------------------------------------------------CX_BODY
+[CX_BODY]
+(Z_DATA)
+{rear_ride_height} 
+30
+40
+50
+60
+70
+80
+90
+(XY_DATA)
+{ front_ride_height  cx_body_coeff } 
+30	1.031	1.058	1.088	1.109	1.130	1.147	1.168
+40	1.029	1.064	1.089	1.110	1.133	1.155	1.177
+50	1.041	1.076	1.101	1.114	1.133	1.155	1.177
+60	1.049	1.090	1.114	1.133	1.152	1.171	1.185
+70	1.043	1.086	1.110	1.132	1.153	1.174	1.196
+$-------------------------------------------------------------------------CX_YAW
+[CX_YAW]
+{ yaw_angle  cdrag_effect }
+    -9.0        1.094
+    -6.0        1.046
+    -3.0        1.009
+     0.0        1.0
+     3.0        1.009
+     6.0        1.046
+     9.0        1.094
+$-------------------------------------------------------------------------CX_YAW
+[CX_STEER]
+{ steering_angle  cdrag_effect }
+    -9.0        0.955
+    -6.0        0.981
+    -3.0        0.995
+     0.0        1.0
+     3.0        0.995
+     6.0        0.981
+     9.0        0.955
+$-------------------------------------------------------------------------CX_YAW
+[CX_ROLL]
+{ roll_angle  cdrag_effect }
+    -1.6       1.018
+    -1.2       1.021
+    -0.8       1.017
+    -0.4       1.008
+     0.0       1.0
+     0.4       1.008
+     0.8       1.017
+     1.2       1.021
+     1.6       1.018
+$-------------------------------------------------------------------WIND_EFFECT
+[WIND_EFFECT]
+$ Direction w.r.t. X axis (angle units)
+DIRECTION = 180.0
+$ Wind velocity
+SPEED     = 0

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<afc xmlns="http://www.mscsoftware.com/:vfc" xmlns:afc="http://www.mscsoftware.com/:afc">
+  <afc:Bibliography>
+    <File schema="afc" version="2.0.0.0" publicationDate="2007-11-04 22:09:49+01:00" />
+    <Revision version="17.0" />
+    <Corporation author="MSC.Software" URI="http://www.mscsoftware.com/" />
+    <Author user="FAmbr" name="-unknown name-" />
+    <Environment hostName="LFAmbr" operatingSystem="MS Windows NT 5.1" />
+    <Application name="MSC/AFC" version="02.00.00" />
+    <SuspensionGenFile name="mdids://SCG007C_R01/suspensions.tbl/SUSP_FRONT_SCG004C_R06c_ModFor3rdElem_output.sgs"/>
+  </afc:Bibliography>
+  <afc:Units>
+    <afc:UnitSetting name="angle" current="deg" />
+    <afc:UnitSetting name="current" current="ampere" />
+    <afc:UnitSetting name="force" current="newton" />
+    <afc:UnitSetting name="length" current="mm" />
+    <afc:UnitSetting name="luminosity" current="candela" />
+    <afc:UnitSetting name="mass" current="kg" />
+    <afc:UnitSetting name="quantity" current="mole" />
+    <afc:UnitSetting name="solidAngle" current="steradian" />
+    <afc:UnitSetting name="temperature" current="kelvin" />
+    <afc:UnitSetting name="time" current="sec" />
+    <afc:UnitSetting name="frequency" current="Hz" />
+  </afc:Units>
+  <DamperProperties name="damper" active="true" userDefined="false" method="non_linear" upperDiameter="60" upperLength="50" lowerDiameter="300" lowerLength="300" rate="10" dampingMethod="non_linear" gasPreloadMethod="none" gasPreloadConstant="0">
+    <Spline name="spline_data" id="0" active="true" userDefined="false" interpolation_method="akima" xLabel="Damper Velocity (positive in extension)" yLabel="Damper Force" xUnit="velocity" yUnit="force" datablock="Damper Force vs. Velocity">
+      <![CDATA[
+         -612.118 -6121.18
+         -510.887 -5108.87
+         -410.1 -4101
+         -309.069 -3090.69
+         -207.296 -2072.96
+         -104.385 -1043.85
+         2.74327e-006 2.74327e-005
+         106.166 1061.66
+         214.406 2144.06
+         325.012 3250.12
+         438.29 4382.9
+         554.563 5545.63
+         674.189 6741.89
+]]>
+    </Spline>
+    <Spline name="gasPreloadForceCurve" id="0" active="true" userDefined="false" interpolation_method="akima">
+      <![CDATA[
+         -50000               0
+         -20000               0
+              0               0
+          20000               0
+          50000               0
+]]>
+    </Spline>
+  </DamperProperties>
+</afc>
